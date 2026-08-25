@@ -38,7 +38,7 @@
     .hint { color:var(--muted); font-weight:750; margin:0 0 14px; }
     footer { padding:18px 20px 36px; color:var(--muted); font-size:12px; text-align:center; }
   </style>
-</head>
+<style>.quote-line{margin:10px 0;padding:8px 10px;border-radius:12px;background:#eff6ff;border:1px solid #bfdbfe;color:#1e3a8a;font-weight:900;font-size:13px;line-height:1.45}</style></head>
 <body>
 <header><div class="wrap"><h1>台股 AI 情報官 Dashboard</h1><div class="sub">更新時間：2026-08-25 16:24｜追蹤 14 檔自選股｜資料源：TWSE / FinMind / Yahoo best-effort / Google News RSS</div><nav class="tabs"><button class="tab-btn active" data-tab="watch">自選股</button><button class="tab-btn" data-tab="hot">自選熱門</button><button class="tab-btn" data-tab="market">市場推薦</button><button class="tab-btn" data-tab="table">總表</button><button class="tab-btn" data-tab="risk">風險觀察</button><button class="tab-btn" data-tab="news">新聞</button><button class="tab-btn" data-tab="sources">資料源</button></nav></div></header>
 <main class="wrap">
@@ -754,6 +754,47 @@
     btn.classList.add('active');
     document.getElementById(btn.dataset.tab).classList.add('active');
   }));
+</script>
+
+<script>
+(function(){
+  function text(el){ return (el && el.textContent || '').trim(); }
+  function codeFromArticle(article){
+    const h = article.querySelector('h2,h3');
+    const m = text(h).match(/(\d{4}[A-Z]?)/);
+    return m && m[1];
+  }
+  const tableMap = {};
+  document.querySelectorAll('#table tbody tr').forEach(tr => {
+    const tds = [...tr.querySelectorAll('td')].map(td => td.textContent.trim());
+    if (tds.length >= 7) tableMap[tds[0]] = { price: tds[5], change: tds[6], target: tds[10], support: tds[11] };
+  });
+  document.querySelectorAll('#hot article, #risk article').forEach(article => {
+    if (article.querySelector('.quote-line')) return;
+    const code = codeFromArticle(article);
+    const q = tableMap[code];
+    if (!q) return;
+    const p = document.createElement('p');
+    p.className = 'quote-line';
+    p.textContent = `最新股價現況：最新 ${q.price}｜今日 ${q.change}｜目標 ${q.target}｜支撐 ${q.support}`;
+    const anchor = article.querySelector('.big') || article.querySelector('h3');
+    if (anchor) anchor.insertAdjacentElement('afterend', p);
+  });
+  document.querySelectorAll('#market article').forEach(article => {
+    if (article.querySelector('.quote-line')) return;
+    const body = text(article);
+    const p = document.createElement('p');
+    p.className = 'quote-line';
+    if (body.includes('市場推薦暫停')) {
+      p.textContent = '最新股價現況：市場推薦今日未更新；自選股與風險觀察仍正常顯示。';
+    } else {
+      const m = body.match(/日漲幅\s*([\d.-]+)%/);
+      p.textContent = '最新股價現況：依 TWSE 最新日資料' + (m ? `｜日漲幅 ${m[1]}%` : '') + '｜詳細成交/量價依據見卡片說明。';
+    }
+    const anchor = article.querySelector('.big') || article.querySelector('h3');
+    if (anchor) anchor.insertAdjacentElement('afterend', p);
+  });
+})();
 </script>
 </body>
 </html>
