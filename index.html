@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>台股 AI 情報官 Dashboard</title>
+  <style>
+    :root { --bg:#f7f7f2; --ink:#151515; --muted:#6b7280; --line:#151515; --bull:#16a34a; --bear:#dc2626; --neutral:#ca8a04; --card:#fff; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Noto Sans TC","Segoe UI",sans-serif; background:var(--bg); color:var(--ink); }
+    header { padding:32px 20px 20px; border-bottom:3px solid var(--line); background:#fff; }
+    .wrap { max-width:1180px; margin:0 auto; }
+    h1 { margin:0; font-size:32px; letter-spacing:-.04em; }
+    .sub { color:var(--muted); font-weight:700; margin-top:8px; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:16px; padding:22px 20px; }
+    .card { background:var(--card); border:2px solid var(--line); border-radius:18px; padding:16px; box-shadow:4px 4px 0 var(--line); }
+    .card.bull { border-left:8px solid var(--bull); } .card.bear { border-left:8px solid var(--bear); } .card.neutral { border-left:8px solid var(--neutral); }
+    .card-head { display:flex; justify-content:space-between; gap:12px; align-items:flex-start; }
+    .code { font-size:12px; font-weight:900; color:var(--muted); }
+    h2 { margin:2px 0 0; font-size:20px; }
+    .score { min-width:54px; height:54px; border:2px solid var(--line); border-radius:14px; display:grid; place-items:center; font-size:22px; font-weight:950; background:#fde68a; }
+    .meta { margin-top:8px; color:var(--muted); font-size:13px; font-weight:700; }
+    .bias { display:inline-block; margin-top:10px; padding:4px 10px; border-radius:999px; border:1.5px solid var(--line); font-size:13px; font-weight:900; background:#f8fafc; }
+    dl { display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:14px 0; }
+    dl div { background:#f8fafc; border:1px solid #e5e7eb; border-radius:10px; padding:8px; }
+    dt { color:var(--muted); font-size:11px; font-weight:800; } dd { margin:2px 0 0; font-weight:900; }
+    .notes,.news { font-size:13px; line-height:1.5; } .news { color:#1d4ed8; font-weight:750; }
+    section.table { padding:0 20px 32px; }
+    .tablebox { overflow:auto; background:#fff; border:2px solid var(--line); border-radius:18px; box-shadow:4px 4px 0 var(--line); }
+    table { width:100%; border-collapse:collapse; min-width:860px; }
+    th,td { text-align:left; padding:12px 14px; border-bottom:1px solid #e5e7eb; font-size:14px; } th { background:#111827; color:#fff; position:sticky; top:0; }
+    .pill { display:inline-block; min-width:46px; text-align:center; padding:4px 8px; border-radius:999px; color:#fff; font-weight:900; } .pill.bull { background:var(--bull); } .pill.bear { background:var(--bear); } .pill.neutral { background:var(--neutral); }
+    footer { padding:18px 20px 36px; color:var(--muted); font-size:12px; text-align:center; }
+  </style>
+</head>
+<body>
+<header><div class="wrap"><h1>台股 AI 情報官 Dashboard</h1><div class="sub">更新時間：2026-08-25 15:34｜追蹤 14 檔｜資料源：TWSE / Yahoo best-effort / Google News RSS</div></div></header>
+<main class="wrap">
+  <div class="grid">
+        <article class="card neutral">
+          <div class="card-head">
+            <div><div class="code">0052</div><h2>富邦科技</h2></div>
+            <div class="score">73</div>
+          </div>
+          <div class="meta">科技 ETF</div>
+          <div class="bias">偏多</div>
+          <dl>
+            <div><dt>收盤</dt><dd>61.00</dd></div>
+            <div><dt>日變動</dt><dd>0.74%</dd></div>
+            <div><dt>RSI14</dt><dd>52.76</dd></div>
+            <div><dt>量能比</dt><dd>0.46x</dd></div>
+          </dl>
+          <p class="notes">站上 MA5、站上 MA20、短均線優於月線、RSI 位於健康區間、MACD 柱狀體偏弱</p>
+          <p class="news">高含「積」ETF 長線俏 0052、0050、006208等掌握成長契機</p>
+        </article>
+        
+        <article class="card bull">
+          <div class="card-head">
+            <div><div class="code">0056</div><h2>元大高股息</h2></div>
+            <div class="score">81</div>
+          </div>
+          <div class="meta">高股息 ETF</div>
+          <div class="bias">偏多</div>
+          <dl>
+            <div><dt>收盤</dt><dd>53.25</dd></div>
+            <div><dt>日變動</dt><dd>2.80%</dd></div>
+            <div><dt>RSI14</dt><dd>59.42</dd></div>
+            <div><dt>量能比</dt><dd>0.78x</dd></div>
+          </dl>
+          <p class="notes">站上 MA5、站上 MA20、站上 MA60、短均線優於月線、RSI 位於健康區間</p>
+          <p class="news">高股息接棒漲 0056規模衝破6,000億元關卡</p>
+        </article>
+        
+        <article class="card bull">
+          <div class="card-head">
+            <div><div class="code">00912</div><h2>中信臺灣智慧50</h2></div>
+            <div class="score">81</div>
+          </div>
+          <div class="meta">智慧型 ETF</div>
+          <div class="bias">偏多</div>
+          <dl>
+            <div><dt>收盤</dt><dd>34.09</dd></div>
+            <div><dt>日變動</dt><dd>1.04%</dd></div>
+            <div><dt>RSI14</dt><dd>64.90</dd></div>
+            <div><dt>量能比</dt><dd>0.26x</dd></div>
+          </dl>
+          <p class="notes">站上 MA5、站上 MA20、站上 MA60、短均線優於月線、RSI 位於健康區間</p>
+          <p class="news">萬金股行情帶旺00912、00406A 重倉布局信驊、川湖</p>
+        </article>
+        
+        <article class="card bull">
+          <div class="card-head">
+            <div><div class="code">00919</div><h2>群益台灣精選高息</h2></div>
+            <div class="score">84</div>
+          </div>
+          <div class="meta">高股息 ETF</div>
+          <div class="bias">偏多</div>
+          <dl>
+            <div><dt>收盤</dt><dd>29.01</dd></div>
+            <div><dt>日變動</dt><dd>2.11%</dd></div>
+            <div><dt>RSI14</dt><dd>82.34</dd></div>
+            <div><dt>量能比</dt><dd>0.67x</dd></div>
+          </dl>
+          <p class="notes">站上 MA5、站上 MA20、站上 MA60、短均線優於月線、RSI 偏熱，追價風險升高</p>
+          <p class="news">百萬國民高股息 ETF 00919成分股調整名單出爐 18進18出</p>
+        </article>
+        
+        <article class="card bull">
+          <div class="card-head">
+            <div><div class="code">00940</div><h2>元大台灣價值高息</h2></div>
+            <div class="score">81</div>
+          </div>
+          <div class="meta">高股息 ETF</div>
+          <div class="bias">偏多</div>
+          <dl>
+            <div><dt>收盤</dt><dd>12.53</dd></div>
+            <div><dt>日變動</dt><dd>0.48%</dd></div>
+            <div><dt>RSI14</dt><dd>53.57</dd></div>
+            <div><dt>量能比</dt><dd>0.60x</dd></div>
+          </dl>
+          <p class="notes">站上 MA5、站上 MA20、站上 MA60、短均線優於月線、RSI 位於健康區間</p>
+          <p class="news">32萬股東注意！00940月配息調高至0.055元 創掛牌新高</p>
+        </article>
+        
+        <article class="card bull">
+          <div class="card-head">
+            <div><div class="code">00982A</div><h2>主動群益台灣強棒</h2></div>
+            <div class="score">97</div>
+          </div>
+          <div class="meta">主動式 ETF</div>
+          <div class="bias">偏多</div>
+          <dl>
+            <div><dt>收盤</dt><dd>24.34</dd></div>
+            <div><dt>日變動</dt><dd>2.23%</dd></div>
+            <div><dt>RSI14</dt><dd>59.05</dd></div>
+            <div><dt>量能比</dt><dd>0.47x</dd></div>
+          </dl>
+          <p class="notes">站上 MA5、站上 MA20、站上 MA60、短均線優於月線、RSI 位於健康區間</p>
+          <p class="news">00982A 主動群益台灣強棒- 指數漲你卻賠?主動 ETF 821 換股筆記買金融出電子? - 股市爆料同學會</p>
+        </article>
+        
+        <article class="card bull">
+          <div class="card-head">
+            <div><div class="code">1718</div><h2>中纖</h2></div>
+            <div class="score">84</div>
+          </div>
+          <div class="meta">化纖 / 紡織原料</div>
+          <div class="bias">偏多</div>
+          <dl>
+            <div><dt>收盤</dt><dd>13.45</dd></div>
+            <div><dt>日變動</dt><dd>9.80%</dd></div>
+            <div><dt>RSI14</dt><dd>81.27</dd></div>
+            <div><dt>量能比</dt><dd>2.19x</dd></div>
+          </dl>
+          <p class="notes">站上 MA5、站上 MA20、站上 MA60、短均線優於月線、RSI 偏熱，追價風險升高</p>
+          <p class="news">1718 中纖 - 💡💡 今天因該會亮起來 - 股市爆料同學會</p>
+        </article>
+        
+        <article class="card neutral">
+          <div class="card-head">
+            <div><div class="code">2330</div><h2>台積電</h2></div>
+            <div class="score">73</div>
+          </div>
+          <div class="meta">晶圓代工 / AI 權值</div>
+          <div class="bias">偏多</div>
+          <dl>
+            <div><dt>收盤</dt><dd>2400.00</dd></div>
+            <div><dt>日變動</dt><dd>1.05%</dd></div>
+            <div><dt>RSI14</dt><dd>49.23</dd></div>
+            <div><dt>量能比</dt><dd>0.51x</dd></div>
+          </dl>
+          <p class="notes">站上 MA5、站上 MA20、站上 MA60、RSI 位於健康區間、MACD 柱狀體偏弱</p>
+          <p class="news">【零股排行榜】盤中零股成交量TOP20｜0050 元大台灣50、00981A 主動統一台股增長、2330 台積電、2609 陽明、4958 臻鼎-KY (0821)｜豐雲學堂2026 年 08 月</p>
+        </article>
+        
+        <article class="card bull">
+          <div class="card-head">
+            <div><div class="code">2855</div><h2>統一證</h2></div>
+            <div class="score">76</div>
+          </div>
+          <div class="meta">證券 / 金融</div>
+          <div class="bias">偏多</div>
+          <dl>
+            <div><dt>收盤</dt><dd>29.40</dd></div>
+            <div><dt>日變動</dt><dd>-2.65%</dd></div>
+            <div><dt>RSI14</dt><dd>69.78</dd></div>
+            <div><dt>量能比</dt><dd>1.30x</dd></div>
+          </dl>
+          <p class="notes">站上 MA20、短均線優於月線、MACD 柱狀體偏多</p>
+          <p class="news">統一證 代子公司統一證券投資顧問(股)公司公告向統一綜合證券(股)公司取得使用權資產</p>
+        </article>
+        
+        <article class="card bull">
+          <div class="card-head">
+            <div><div class="code">2883</div><h2>凱基金</h2></div>
+            <div class="score">81</div>
+          </div>
+          <div class="meta">金融控股</div>
+          <div class="bias">偏多</div>
+          <dl>
+            <div><dt>收盤</dt><dd>31.70</dd></div>
+            <div><dt>日變動</dt><dd>2.26%</dd></div>
+            <div><dt>RSI14</dt><dd>50.88</dd></div>
+            <div><dt>量能比</dt><dd>0.73x</dd></div>
+          </dl>
+          <p class="notes">站上 MA5、站上 MA20、站上 MA60、短均線優於月線、RSI 位於健康區間</p>
+          <p class="news">2883 凱基金- 券商籌資潮！凱基證通過213億聯貸案，台股熱到銀行也緊張💰 - 股市爆料同學會</p>
+        </article>
+        
+        <article class="card neutral">
+          <div class="card-head">
+            <div><div class="code">3481</div><h2>群創</h2></div>
+            <div class="score">N/A</div>
+          </div>
+          <div class="meta">面板 / 顯示器</div>
+          <div class="bias">沒有足夠股價資料</div>
+          <dl>
+            <div><dt>收盤</dt><dd>N/A</dd></div>
+            <div><dt>日變動</dt><dd>N/A%</dd></div>
+            <div><dt>RSI14</dt><dd>N/A</dd></div>
+            <div><dt>量能比</dt><dd>N/Ax</dd></div>
+          </dl>
+          <p class="notes">資料源暫不支援或資料不足</p>
+          <p class="news">群創法說會後挫逾半根停板 分析師揭關鍵：先別急著接</p>
+        </article>
+        
+        <article class="card neutral">
+          <div class="card-head">
+            <div><div class="code">3711</div><h2>日月光投控</h2></div>
+            <div class="score">63</div>
+          </div>
+          <div class="meta">封測 / 半導體</div>
+          <div class="bias">中性觀察</div>
+          <dl>
+            <div><dt>收盤</dt><dd>591.00</dd></div>
+            <div><dt>日變動</dt><dd>-0.17%</dd></div>
+            <div><dt>RSI14</dt><dd>49.17</dd></div>
+            <div><dt>量能比</dt><dd>0.55x</dd></div>
+          </dl>
+          <p class="notes">站上 MA5、站上 MA60、RSI 位於健康區間、MACD 柱狀體偏弱、量能偏低，突破可信度不足</p>
+          <p class="news">封測廠被大哥盯上！「這2檔」遭投信脫手5663張 日月光投控連挨6刀今又被出清3324張</p>
+        </article>
+        
+        <article class="card neutral">
+          <div class="card-head">
+            <div><div class="code">4707</div><h2>磐亞</h2></div>
+            <div class="score">N/A</div>
+          </div>
+          <div class="meta">化工</div>
+          <div class="bias">沒有足夠股價資料</div>
+          <dl>
+            <div><dt>收盤</dt><dd>N/A</dd></div>
+            <div><dt>日變動</dt><dd>N/A%</dd></div>
+            <div><dt>RSI14</dt><dd>N/A</dd></div>
+            <div><dt>量能比</dt><dd>N/Ax</dd></div>
+          </dl>
+          <p class="notes">資料源暫不支援或資料不足</p>
+          <p class="news">【10:28 即時新聞】磐亞(4707)股價勁揚逾6%至35.1元，受電子與AI特殊化學品題材點火＋均線多頭與主力成本支撐偏多</p>
+        </article>
+        
+        <article class="card bull">
+          <div class="card-head">
+            <div><div class="code">6658</div><h2>聯策</h2></div>
+            <div class="score">81</div>
+          </div>
+          <div class="meta">電子零組件 / 題材股</div>
+          <div class="bias">偏多</div>
+          <dl>
+            <div><dt>收盤</dt><dd>220.00</dd></div>
+            <div><dt>日變動</dt><dd>1.62%</dd></div>
+            <div><dt>RSI14</dt><dd>61.92</dd></div>
+            <div><dt>量能比</dt><dd>0.81x</dd></div>
+          </dl>
+          <p class="notes">站上 MA20、短均線優於月線、RSI 位於健康區間、MACD 柱狀體偏多</p>
+          <p class="news">【08/21 產業即時新聞】電子上游-PCB-材料設備 族群震盪走跌，設備與部分材料股逆勢突圍</p>
+        </article>
+        </div>
+  <section class="table"><div class="tablebox"><table>
+    <thead><tr><th>代號</th><th>名稱</th><th>分數</th><th>判斷</th><th>收盤</th><th>日變動</th><th>MA5</th><th>MA20</th><th>MA60</th><th>新聞</th></tr></thead>
+    <tbody>
+          <tr>
+            <td>0052</td>
+            <td>富邦科技</td>
+            <td><span class="pill neutral">73</span></td>
+            <td>偏多</td>
+            <td>61.00</td>
+            <td>0.74%</td>
+            <td>60.60</td>
+            <td>59.61</td>
+            <td>N/A</td>
+            <td>5</td>
+          </tr>
+        
+          <tr>
+            <td>0056</td>
+            <td>元大高股息</td>
+            <td><span class="pill bull">81</span></td>
+            <td>偏多</td>
+            <td>53.25</td>
+            <td>2.80%</td>
+            <td>52.57</td>
+            <td>51.99</td>
+            <td>46.20</td>
+            <td>5</td>
+          </tr>
+        
+          <tr>
+            <td>00912</td>
+            <td>中信臺灣智慧50</td>
+            <td><span class="pill bull">81</span></td>
+            <td>偏多</td>
+            <td>34.09</td>
+            <td>1.04%</td>
+            <td>33.88</td>
+            <td>33.66</td>
+            <td>32.52</td>
+            <td>3</td>
+          </tr>
+        
+          <tr>
+            <td>00919</td>
+            <td>群益台灣精選高息</td>
+            <td><span class="pill bull">84</span></td>
+            <td>偏多</td>
+            <td>29.01</td>
+            <td>2.11%</td>
+            <td>28.33</td>
+            <td>26.25</td>
+            <td>24.18</td>
+            <td>5</td>
+          </tr>
+        
+          <tr>
+            <td>00940</td>
+            <td>元大台灣價值高息</td>
+            <td><span class="pill bull">81</span></td>
+            <td>偏多</td>
+            <td>12.53</td>
+            <td>0.48%</td>
+            <td>12.46</td>
+            <td>12.33</td>
+            <td>11.00</td>
+            <td>5</td>
+          </tr>
+        
+          <tr>
+            <td>00982A</td>
+            <td>主動群益台灣強棒</td>
+            <td><span class="pill bull">97</span></td>
+            <td>偏多</td>
+            <td>24.34</td>
+            <td>2.23%</td>
+            <td>24.09</td>
+            <td>22.84</td>
+            <td>18.24</td>
+            <td>5</td>
+          </tr>
+        
+          <tr>
+            <td>1718</td>
+            <td>中纖</td>
+            <td><span class="pill bull">84</span></td>
+            <td>偏多</td>
+            <td>13.45</td>
+            <td>9.80%</td>
+            <td>11.25</td>
+            <td>9.81</td>
+            <td>7.75</td>
+            <td>5</td>
+          </tr>
+        
+          <tr>
+            <td>2330</td>
+            <td>台積電</td>
+            <td><span class="pill neutral">73</span></td>
+            <td>偏多</td>
+            <td>2400.00</td>
+            <td>1.05%</td>
+            <td>2382.00</td>
+            <td>2383.00</td>
+            <td>2331.92</td>
+            <td>5</td>
+          </tr>
+        
+          <tr>
+            <td>2855</td>
+            <td>統一證</td>
+            <td><span class="pill bull">76</span></td>
+            <td>偏多</td>
+            <td>29.40</td>
+            <td>-2.65%</td>
+            <td>29.53</td>
+            <td>27.67</td>
+            <td>N/A</td>
+            <td>5</td>
+          </tr>
+        
+          <tr>
+            <td>2883</td>
+            <td>凱基金</td>
+            <td><span class="pill bull">81</span></td>
+            <td>偏多</td>
+            <td>31.70</td>
+            <td>2.26%</td>
+            <td>31.01</td>
+            <td>30.80</td>
+            <td>26.74</td>
+            <td>5</td>
+          </tr>
+        
+          <tr>
+            <td>3481</td>
+            <td>群創</td>
+            <td><span class="pill neutral">N/A</span></td>
+            <td>沒有足夠股價資料</td>
+            <td>N/A</td>
+            <td>N/A%</td>
+            <td>N/A</td>
+            <td>N/A</td>
+            <td>N/A</td>
+            <td>5</td>
+          </tr>
+        
+          <tr>
+            <td>3711</td>
+            <td>日月光投控</td>
+            <td><span class="pill neutral">63</span></td>
+            <td>中性觀察</td>
+            <td>591.00</td>
+            <td>-0.17%</td>
+            <td>589.60</td>
+            <td>609.55</td>
+            <td>577.52</td>
+            <td>5</td>
+          </tr>
+        
+          <tr>
+            <td>4707</td>
+            <td>磐亞</td>
+            <td><span class="pill neutral">N/A</span></td>
+            <td>沒有足夠股價資料</td>
+            <td>N/A</td>
+            <td>N/A%</td>
+            <td>N/A</td>
+            <td>N/A</td>
+            <td>N/A</td>
+            <td>5</td>
+          </tr>
+        
+          <tr>
+            <td>6658</td>
+            <td>聯策</td>
+            <td><span class="pill bull">81</span></td>
+            <td>偏多</td>
+            <td>220.00</td>
+            <td>1.62%</td>
+            <td>222.40</td>
+            <td>189.32</td>
+            <td>N/A</td>
+            <td>4</td>
+          </tr>
+        </tbody>
+  </table></div></section>
+</main>
+<footer>免責聲明：本內容僅供資訊整理與研究學習，不構成任何投資建議或買賣依據。</footer>
+</body>
+</html>
