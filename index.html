@@ -29,7 +29,7 @@
     dl { display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:14px 0; }
     dl div { background:#f8fafc; border:1px solid #e5e7eb; border-radius:10px; padding:8px; }
     dt { color:var(--muted); font-size:11px; font-weight:800; } dd { margin:2px 0 0; font-weight:900; }
-    .notes,.news,.hot-card p,.risk-card p { font-size:13px; line-height:1.5; } .news { color:#1d4ed8; font-weight:750; } a { color:#1d4ed8; text-decoration:none; border-bottom:1px solid #93c5fd; } a:hover { color:#1e40af; border-bottom-color:#1e40af; } .quick,.quick-inline { margin-top:10px; padding:10px 12px; border-radius:14px; background:#ecfeff; border:1px solid #a5f3fc; color:#155e75; font-size:13px; line-height:1.45; } .quick b { display:block; color:#0f172a; margin-bottom:2px; }
+    .notes,.news,.hot-card p,.risk-card p { font-size:13px; line-height:1.5; } .news { color:#1d4ed8; font-weight:750; } a { color:#1d4ed8; text-decoration:none; border-bottom:1px solid #93c5fd; } a:hover { color:#1e40af; border-bottom-color:#1e40af; } .warn { display:inline-block; margin-left:6px; padding:2px 6px; border-radius:999px; background:#fef3c7; color:#92400e; font-style:normal; font-size:11px; font-weight:900; } .quick,.quick-inline { margin-top:10px; padding:10px 12px; border-radius:14px; background:#ecfeff; border:1px solid #a5f3fc; color:#155e75; font-size:13px; line-height:1.45; } .quick b { display:block; color:#0f172a; margin-bottom:2px; }
     .tablebox { overflow:auto; background:#fff; border:2px solid var(--line); border-radius:18px; box-shadow:4px 4px 0 var(--line); }
     table { width:100%; border-collapse:collapse; min-width:860px; }
     th,td { text-align:left; padding:12px 14px; border-bottom:1px solid #e5e7eb; font-size:14px; } th { background:#111827; color:#fff; position:static; top:auto; }
@@ -40,8 +40,8 @@
   </style>
 </head>
 <body>
-<header><div class="wrap"><h1>台股 AI 情報官 Dashboard</h1><div class="sub">更新時間：2026-08-25 17:00｜追蹤 14 檔自選股｜資料源：TWSE / FinMind / Yahoo best-effort / Google News RSS</div><nav class="tabs"><button class="tab-btn active" data-tab="watch">自選股</button><button class="tab-btn" data-tab="hot">自選熱門</button><button class="tab-btn" data-tab="market">市場推薦</button><button class="tab-btn" data-tab="table">總表</button><button class="tab-btn" data-tab="risk">風險觀察</button><button class="tab-btn" data-tab="news">新聞</button><button class="tab-btn" data-tab="sources">資料源</button></nav></div></header>
-<main class="wrap">
+<header><div class="wrap"><h1>台股 AI 情報官 Dashboard</h1><div class="sub">更新時間：2026-08-26 00:05｜追蹤 14 檔自選股｜資料源：TWSE / FinMind / Yahoo best-effort / Google News RSS</div><nav class="tabs"><button class="tab-btn active" data-tab="watch">自選股</button><button class="tab-btn" data-tab="hot">自選熱門</button><button class="tab-btn" data-tab="market">市場推薦</button><button class="tab-btn" data-tab="table">總表</button><button class="tab-btn" data-tab="risk">風險觀察</button><button class="tab-btn" data-tab="news">新聞</button><button class="tab-btn" data-tab="sources">資料源</button></nav></div></header>
+<main class="wrap"><section class="tab active source-alert"><b>資料源異常註記</b><ul><li>磐亞（4707）：TWSE歷史: OK(45筆)｜Yahoo盤中: FAIL(HTTPError)｜新聞: OK(3則)</li></ul><p>上述異常會影響即時性或完整度；若歷史資料正常，技術分析仍以最新可用收盤/歷史資料為基礎。</p></section>
   <section id="watch" class="tab active"><div class="grid">
         <article class="card bull">
           <div class="card-head">
@@ -57,13 +57,13 @@
             <div><dt>量能比</dt><dd>0.46x</dd></div>
             <div><dt>目標觀察價</dt><dd>62.80</dd></div>
             <div><dt>支撐觀察價</dt><dd>60.50</dd></div>
-            <div><dt>EPS / TTM</dt><dd>N/A / N/A</dd></div>
-            <div><dt>PER / PBR</dt><dd>N/A / N/A</dd></div>
+            <div><dt>EPS / TTM</dt><dd>ETF 不適用</dd></div>
+            <div><dt>PER / PBR</dt><dd>ETF 不適用</dd></div>
           </dl>
           <p class="kline"><b>K 線：</b>長紅偏強，短多排列；接近 20 日高檔，留意追價風險與突破量。</p>
           <p class="notes">站上 MA5、站上 MA20、站上 MA60、短均線優於月線、RSI 位於健康區間</p>
           <p class="target"><b>目標依據：</b>取近 20 日高點作為第一壓力/目標觀察價。<br><b>支撐依據：</b>前一交易日收盤附近支撐。<br><b>估值/EPS：</b>ETF：EPS / PER / PBR 不適用｜殖利率：資料源暫無<br><b>基本面短評：</b>ETF 不看單一公司 EPS；後續應改接成分股、折溢價、配息與追蹤誤差分析。</p>
-          <p class="news">高含「積」ETF 長線俏 0052、0050、006208等掌握成長契機</p>
+          <p class="news"><a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE9Na1FLVDJrM1gzTHN3RnV6OTV5ZXRHcmtwMnBXQlhJcklESG1aYTQxbnpMTGZzaDBETnFKcXB2WEF5ekdrdmQ5RFI2ZE81VTdjc2F6Qy05UUVEQdIBX0FVX3lxTFBGZ1ViVmtfWE91VlU1R1RWd0VCMGpEUC10bk5pOHduZzg4eURVSlF2WFRlbFFuNTE1WjVHTHRHdnlzR1FpVzQzbDl2bmFQQ0czcjZ2TWJYTC1ud2pjbnJF?oc=5" target="_blank" rel="noopener noreferrer">高含「積」ETF 長線俏 0052、0050、006208等掌握成長契機</a><span>經濟日報</span></p>
         </article>
         
         <article class="card bull">
@@ -80,13 +80,13 @@
             <div><dt>量能比</dt><dd>0.48x</dd></div>
             <div><dt>目標觀察價</dt><dd>54.00</dd></div>
             <div><dt>支撐觀察價</dt><dd>52.30</dd></div>
-            <div><dt>EPS / TTM</dt><dd>N/A / N/A</dd></div>
-            <div><dt>PER / PBR</dt><dd>N/A / N/A</dd></div>
+            <div><dt>EPS / TTM</dt><dd>ETF 不適用</dd></div>
+            <div><dt>PER / PBR</dt><dd>ETF 不適用</dd></div>
           </dl>
           <p class="kline"><b>K 線：</b>長紅偏強，短多排列；接近 20 日高檔，留意追價風險與突破量。</p>
           <p class="notes">站上 MA5、站上 MA20、站上 MA60、短均線優於月線、RSI 位於健康區間</p>
           <p class="target"><b>目標依據：</b>取近 20 日高點作為第一壓力/目標觀察價。<br><b>支撐依據：</b>前一交易日收盤附近支撐。<br><b>估值/EPS：</b>ETF：EPS / PER / PBR 不適用｜殖利率：資料源暫無<br><b>基本面短評：</b>ETF 不看單一公司 EPS；後續應改接成分股、折溢價、配息與追蹤誤差分析。</p>
-          <p class="news">高股息接棒漲 0056規模衝破6,000億元關卡</p>
+          <p class="news"><a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE9jZkpMODlCX2ZtRmMyRm80MTRQSE1JNW8yclNZaWt6LUtmLTIzNDBkN0QwQlJnSUZjd1RPVW5lOWhfS2lKT0EtRFVVYThMSnR1QmtsalNfeXJnUdIBX0FVX3lxTFBTMkhUeEg1bUlwVk1JU0xmRkJLbm5MT0dKNW9pSTRmNmlTQnNQY1hIenJwRWM2SGxNby1CbDIydWlRWnZkajJzbWViczVZRkFmaTYzOUlqNzZpT3B6eDVr?oc=5" target="_blank" rel="noopener noreferrer">高股息接棒漲 0056規模衝破6,000億元關卡</a><span>經濟日報</span></p>
         </article>
         
         <article class="card bull">
@@ -103,13 +103,13 @@
             <div><dt>量能比</dt><dd>0.26x</dd></div>
             <div><dt>目標觀察價</dt><dd>35.10</dd></div>
             <div><dt>支撐觀察價</dt><dd>33.75</dd></div>
-            <div><dt>EPS / TTM</dt><dd>N/A / N/A</dd></div>
-            <div><dt>PER / PBR</dt><dd>N/A / N/A</dd></div>
+            <div><dt>EPS / TTM</dt><dd>ETF 不適用</dd></div>
+            <div><dt>PER / PBR</dt><dd>ETF 不適用</dd></div>
           </dl>
           <p class="kline"><b>K 線：</b>長紅偏強，短多排列；接近 20 日高檔，留意追價風險與突破量。</p>
           <p class="notes">站上 MA5、站上 MA20、站上 MA60、短均線優於月線、RSI 位於健康區間</p>
           <p class="target"><b>目標依據：</b>取近 20 日高點作為第一壓力/目標觀察價。<br><b>支撐依據：</b>前一交易日收盤附近支撐。<br><b>估值/EPS：</b>ETF：EPS / PER / PBR 不適用｜殖利率：資料源暫無<br><b>基本面短評：</b>ETF 不看單一公司 EPS；後續應改接成分股、折溢價、配息與追蹤誤差分析。</p>
-          <p class="news">萬金股行情帶旺00912、00406A 重倉布局信驊、川湖</p>
+          <p class="news"><a href="https://news.google.com/rss/articles/CBMiT0FVX3lxTE1Gcnk1Q08zTnNGV2Fucm05T3REOWFpWEstMjlPOFE2TVgtb2UySmR1UmUwWlJxUEsxYkxRMTg1eTJob1ZlcXJCcmF2WW5GaTg?oc=5" target="_blank" rel="noopener noreferrer">萬金股行情帶旺00912、00406A 重倉布局信驊、川湖</a><span>news.cnyes.com</span></p>
         </article>
         
         <article class="card bull">
@@ -126,13 +126,13 @@
             <div><dt>量能比</dt><dd>1.43x</dd></div>
             <div><dt>目標觀察價</dt><dd>31.50</dd></div>
             <div><dt>支撐觀察價</dt><dd>30.65</dd></div>
-            <div><dt>EPS / TTM</dt><dd>N/A / N/A</dd></div>
-            <div><dt>PER / PBR</dt><dd>N/A / N/A</dd></div>
+            <div><dt>EPS / TTM</dt><dd>ETF 不適用</dd></div>
+            <div><dt>PER / PBR</dt><dd>ETF 不適用</dd></div>
           </dl>
           <p class="kline"><b>K 線：</b>長紅偏強，短多排列；接近 20 日高檔，留意追價風險與突破量。</p>
           <p class="notes">站上 MA5、站上 MA20、站上 MA60、短均線優於月線、MACD 柱狀體偏多</p>
           <p class="target"><b>目標依據：</b>已在近期高檔，改用 ATR 波動推估下一段觀察價。<br><b>支撐依據：</b>前一交易日收盤附近支撐。<br><b>估值/EPS：</b>ETF：EPS / PER / PBR 不適用｜殖利率：資料源暫無<br><b>基本面短評：</b>ETF 不看單一公司 EPS；後續應改接成分股、折溢價、配息與追蹤誤差分析。</p>
-          <p class="news">百萬國民高股息 ETF 00919成分股調整名單出爐 18進18出</p>
+          <p class="news"><a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE51WTFZdlItVnpxY2hKZnZsdzF2Y29RbDJLVUthTzU4cTRMZG5WVlN2SDhpTlQ0MkJmR0tkMDRSeWhJLXF2Y0pyNGRqNHFHbkVkQzVteG5DRV84UdIBX0FVX3lxTE5TTFFDck8tdGY1Vm5PZTVrM2tpLW9YUXRLZThlWFlYc1FWcjhOY1ZGLTRkZGdTUXZtTkpTR2xyTVo4eFVWUDhYWjRqeTlDNlNGYU5uOGtBNzFzTmRQdTJ3?oc=5" target="_blank" rel="noopener noreferrer">百萬國民高股息 ETF 00919成分股調整名單出爐 18進18出</a><span>經濟日報</span></p>
         </article>
         
         <article class="card bull">
@@ -149,13 +149,13 @@
             <div><dt>量能比</dt><dd>0.67x</dd></div>
             <div><dt>目標觀察價</dt><dd>12.65</dd></div>
             <div><dt>支撐觀察價</dt><dd>12.45</dd></div>
-            <div><dt>EPS / TTM</dt><dd>N/A / N/A</dd></div>
-            <div><dt>PER / PBR</dt><dd>N/A / N/A</dd></div>
+            <div><dt>EPS / TTM</dt><dd>ETF 不適用</dd></div>
+            <div><dt>PER / PBR</dt><dd>ETF 不適用</dd></div>
           </dl>
           <p class="kline"><b>K 線：</b>長紅偏強，短多排列；接近 20 日高檔，留意追價風險與突破量。</p>
           <p class="notes">站上 MA5、站上 MA20、站上 MA60、短均線優於月線、RSI 位於健康區間</p>
           <p class="target"><b>目標依據：</b>取近 20 日高點作為第一壓力/目標觀察價。<br><b>支撐依據：</b>前一交易日收盤附近支撐。<br><b>估值/EPS：</b>ETF：EPS / PER / PBR 不適用｜殖利率：資料源暫無<br><b>基本面短評：</b>ETF 不看單一公司 EPS；後續應改接成分股、折溢價、配息與追蹤誤差分析。</p>
-          <p class="news">32萬股東注意！00940月配息調高至0.055元 創掛牌新高</p>
+          <p class="news"><a href="https://news.google.com/rss/articles/CBMiS0FVX3lxTE5mN0puY3pTWjdOU0lHS2VPTU1GVVhEMXRnWVBqU0ZERnFMRmR5Z2lDazBqSlBSLVdTMzRWWHFLQTJnN1VpVGVtZ0daUQ?oc=5" target="_blank" rel="noopener noreferrer">32萬股東注意！00940月配息調高至0.055元 創掛牌新高</a><span>鉅亨網</span></p>
         </article>
         
         <article class="card neutral">
@@ -172,13 +172,13 @@
             <div><dt>量能比</dt><dd>0.92x</dd></div>
             <div><dt>目標觀察價</dt><dd>21.80</dd></div>
             <div><dt>支撐觀察價</dt><dd>21.40</dd></div>
-            <div><dt>EPS / TTM</dt><dd>N/A / N/A</dd></div>
-            <div><dt>PER / PBR</dt><dd>N/A / N/A</dd></div>
+            <div><dt>EPS / TTM</dt><dd>ETF 不適用</dd></div>
+            <div><dt>PER / PBR</dt><dd>ETF 不適用</dd></div>
           </dl>
           <p class="kline"><b>K 線：</b>長紅偏強，月線下方；位於 20 日區間中段，等方向表態。</p>
           <p class="notes">站上 MA5、MACD 柱狀體偏弱</p>
           <p class="target"><b>目標依據：</b>目前在 MA20 下方，目標先看能否站回月線。<br><b>支撐依據：</b>前一交易日收盤附近支撐。<br><b>估值/EPS：</b>ETF：EPS / PER / PBR 不適用｜殖利率：資料源暫無<br><b>基本面短評：</b>ETF 不看單一公司 EPS；後續應改接成分股、折溢價、配息與追蹤誤差分析。</p>
-          <p class="news">00982A 主動群益台灣強棒- 指數漲你卻賠?主動 ETF 821 換股筆記買金融出電子? - 股市爆料同學會</p>
+          <p class="news"><a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTFB6X0pJNFpVdGN0RHY2ZFNJUmo1bENiUENZOFNpaDYyUzNDLWJtTENZQTJTMmRUcURKdWNQNlltTFZvX2ZmTU1uUkhGQWZYT3U5U1UtR3EzWmI?oc=5" target="_blank" rel="noopener noreferrer">00982A 主動群益台灣強棒- 指數漲你卻賠?主動 ETF 821 換股筆記買金融出電子? - 股市爆料同學會</a><span>CMoney</span></p>
         </article>
         
         <article class="card bull">
@@ -195,13 +195,13 @@
             <div><dt>量能比</dt><dd>0.50x</dd></div>
             <div><dt>目標觀察價</dt><dd>11.45</dd></div>
             <div><dt>支撐觀察價</dt><dd>10.20</dd></div>
-            <div><dt>EPS / TTM</dt><dd>N/A / N/A</dd></div>
-            <div><dt>PER / PBR</dt><dd>N/A / N/A</dd></div>
+            <div><dt>EPS / TTM</dt><dd>0.29 / 0.59</dd></div>
+            <div><dt>PER / PBR</dt><dd>18.05 / 0.60</dd></div>
           </dl>
           <p class="kline"><b>K 線：</b>十字線，短多排列；位於 20 日區間中段，等方向表態。</p>
           <p class="notes">站上 MA5、站上 MA20、短均線優於月線、RSI 位於健康區間、MACD 柱狀體偏多</p>
-          <p class="target"><b>目標依據：</b>取近 20 日高點作為第一壓力/目標觀察價。<br><b>支撐依據：</b>MA20 月線支撐。<br><b>估值/EPS：</b>FinMind 暫無 EPS / PER / PBR 資料<br><b>基本面短評：</b>FinMind 目前沒有可用 EPS，先以量價、新聞與公告觀察。</p>
-          <p class="news">1714 和桐- 低價成長股和桐，今日順利填息- 股市爆料同學會</p>
+          <p class="target"><b>目標依據：</b>取近 20 日高點作為第一壓力/目標觀察價。<br><b>支撐依據：</b>MA20 月線支撐。<br><b>估值/EPS：</b>EPS 0.29｜TTM 0.59｜PER 18.05｜PBR 0.60｜殖利率 0.00%<br><b>基本面短評：</b>最近一季 EPS 為正；PER 位於可觀察區間</p>
+          <p class="news"><a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTFBjenZJY1JrQ1ZJZzdlOVFPUjZGQzdXQlJnaV9BNnY3OVVJMDRFc3VkNElyd0dmTi1nNmo1bHNreGlMVWZqMzRkdVVkZUlmTHFOWUR0TldodWc?oc=5" target="_blank" rel="noopener noreferrer">1714 和桐- 低價成長股和桐，今日順利填息- 股市爆料同學會（RSS 可能誤配，僅供參考）</a><span>CMoney</span><em class="warn">RSS 可能誤配</em></p>
         </article>
         
         <article class="card bull">
@@ -218,13 +218,13 @@
             <div><dt>量能比</dt><dd>0.47x</dd></div>
             <div><dt>目標觀察價</dt><dd>2445.00</dd></div>
             <div><dt>支撐觀察價</dt><dd>2375.00</dd></div>
-            <div><dt>EPS / TTM</dt><dd>N/A / N/A</dd></div>
-            <div><dt>PER / PBR</dt><dd>N/A / N/A</dd></div>
+            <div><dt>EPS / TTM</dt><dd>27.25 / 86.28</dd></div>
+            <div><dt>PER / PBR</dt><dd>27.82 / 9.68</dd></div>
           </dl>
           <p class="kline"><b>K 線：</b>長紅偏強，短多排列；接近 20 日高檔，留意追價風險與突破量。</p>
           <p class="notes">站上 MA5、站上 MA20、站上 MA60、短均線優於月線、RSI 位於健康區間</p>
-          <p class="target"><b>目標依據：</b>取近 20 日高點作為第一壓力/目標觀察價。<br><b>支撐依據：</b>前一交易日收盤附近支撐。<br><b>估值/EPS：</b>FinMind 暫無 EPS / PER / PBR 資料<br><b>基本面短評：</b>FinMind 目前沒有可用 EPS，先以量價、新聞與公告觀察。</p>
-          <p class="news">【零股排行榜】盤中零股成交量TOP20｜0050 元大台灣50、00981A 主動統一台股增長、2330 台積電、2609 陽明、4958 臻鼎-KY (0821)｜豐雲學堂2026 年 08 月</p>
+          <p class="target"><b>目標依據：</b>取近 20 日高點作為第一壓力/目標觀察價。<br><b>支撐依據：</b>前一交易日收盤附近支撐。<br><b>估值/EPS：</b>EPS 27.25｜TTM 86.28｜PER 27.82｜PBR 9.68｜殖利率 0.92%<br><b>基本面短評：</b>最近一季 EPS 為正；PER 位於可觀察區間</p>
+          <p class="news"><a href="https://news.google.com/rss/articles/CBMiUkFVX3lxTFBIc1U5YVNGTkFsS2Y3dEFRa3pGbFJCeVRnZUJUS2pqRlZYTDBTS085QmpFc3RCSC1RYkljUUxYMDhjSENQeS01QVAzLWpyaVBzaWfSAVdBVV95cUxNZDdDYlFPSFhGZUxmVWtPcWY3VGotaDRSMUpNWVVmemlpM2xVSndtQ2Jucklrc0NfS3BNbHhHVGFpZWw0NzZ5cUFLSm9ERVFCMzAwcFRyWjA?oc=5" target="_blank" rel="noopener noreferrer">台股4萬6震盪！杜金龍看好拉回打第二隻腳：台積電（2330）先獲利了結</a><span>UDN</span></p>
         </article>
         
         <article class="card bull">
@@ -242,12 +242,12 @@
             <div><dt>目標觀察價</dt><dd>48.50</dd></div>
             <div><dt>支撐觀察價</dt><dd>45.40</dd></div>
             <div><dt>EPS / TTM</dt><dd>1.33 / 3.00</dd></div>
-            <div><dt>PER / PBR</dt><dd>N/A / N/A</dd></div>
+            <div><dt>PER / PBR</dt><dd>10.34 / 1.77</dd></div>
           </dl>
           <p class="kline"><b>K 線：</b>下影線轉強，站上月線；位於 20 日區間中段，等方向表態。</p>
           <p class="notes">站上 MA20、短均線優於月線、RSI 位於健康區間、MACD 柱狀體偏多</p>
-          <p class="target"><b>目標依據：</b>取近 20 日高點作為第一壓力/目標觀察價。<br><b>支撐依據：</b>MA20 月線支撐。<br><b>估值/EPS：</b>EPS 1.33｜TTM 3.00｜PER N/A｜PBR N/A｜殖利率 N/A%<br><b>基本面短評：</b>最近一季 EPS 為正</p>
-          <p class="news">統一證 代子公司統一證券投資顧問(股)公司公告向統一綜合證券(股)公司取得使用權資產</p>
+          <p class="target"><b>目標依據：</b>取近 20 日高點作為第一壓力/目標觀察價。<br><b>支撐依據：</b>MA20 月線支撐。<br><b>估值/EPS：</b>EPS 1.33｜TTM 3.00｜PER 10.34｜PBR 1.77｜殖利率 4.57%<br><b>基本面短評：</b>最近一季 EPS 為正；PER 相對低，留意是否為景氣循環或一次性因素；殖利率具防禦性</p>
+          <p class="news"><a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTE96V0Zaa25EQzVXc1BfS0kwRDlMOVRKOElXdDhtUkpEQURsTE92NFhwWldmd0lOeEthQS11V0haOHhnelRSRXROdm41VFkxdnlwczhCU1E0N3U?oc=5" target="_blank" rel="noopener noreferrer">統一證 代子公司統一證券投資顧問(股)公司公告向統一綜合證券(股)公司取得使用權資產</a><span>CMoney</span></p>
         </article>
         
         <article class="card bull">
@@ -264,13 +264,13 @@
             <div><dt>量能比</dt><dd>0.83x</dd></div>
             <div><dt>目標觀察價</dt><dd>31.95</dd></div>
             <div><dt>支撐觀察價</dt><dd>31.00</dd></div>
-            <div><dt>EPS / TTM</dt><dd>N/A / N/A</dd></div>
-            <div><dt>PER / PBR</dt><dd>N/A / N/A</dd></div>
+            <div><dt>EPS / TTM</dt><dd>0.65 / 1.74</dd></div>
+            <div><dt>PER / PBR</dt><dd>17.81 / 1.59</dd></div>
           </dl>
           <p class="kline"><b>K 線：</b>長紅偏強，短多排列；接近 20 日高檔，留意追價風險與突破量。</p>
           <p class="notes">站上 MA5、站上 MA20、站上 MA60、短均線優於月線、RSI 位於健康區間</p>
-          <p class="target"><b>目標依據：</b>取近 20 日高點作為第一壓力/目標觀察價。<br><b>支撐依據：</b>前一交易日收盤附近支撐。<br><b>估值/EPS：</b>FinMind 暫無 EPS / PER / PBR 資料<br><b>基本面短評：</b>FinMind 目前沒有可用 EPS，先以量價、新聞與公告觀察。</p>
-          <p class="news">凱基金(2883) 個股概覽 | 個股 - 股市</p>
+          <p class="target"><b>目標依據：</b>取近 20 日高點作為第一壓力/目標觀察價。<br><b>支撐依據：</b>前一交易日收盤附近支撐。<br><b>估值/EPS：</b>EPS 0.65｜TTM 1.74｜PER 17.81｜PBR 1.59｜殖利率 3.15%<br><b>基本面短評：</b>最近一季 EPS 為正；PER 位於可觀察區間</p>
+          <p class="news"><a href="https://news.google.com/rss/articles/CBMiU0FVX3lxTE5razMwcGM0azNqYW5MRDVOWVRHSnI0ZlhJNnFDekNVcURPdXZURGMzQUlPQ2h4dHhTTjczdGl3RDlqYk5KbDJWQTdYdnJYWU9OMkZv?oc=5" target="_blank" rel="noopener noreferrer">凱基金(2883) 個股概覽 | 個股 - 股市</a><span>CMoney</span></p>
         </article>
         
         <article class="card neutral">
@@ -287,13 +287,13 @@
             <div><dt>量能比</dt><dd>0.66x</dd></div>
             <div><dt>目標觀察價</dt><dd>47.60</dd></div>
             <div><dt>支撐觀察價</dt><dd>45.45</dd></div>
-            <div><dt>EPS / TTM</dt><dd>N/A / N/A</dd></div>
-            <div><dt>PER / PBR</dt><dd>N/A / N/A</dd></div>
+            <div><dt>EPS / TTM</dt><dd>0.57 / 0.78</dd></div>
+            <div><dt>PER / PBR</dt><dd>60.00 / 1.66</dd></div>
           </dl>
           <p class="kline"><b>K 線：</b>長紅偏強，月線下方；位於 20 日區間中段，等方向表態。</p>
           <p class="notes">站上 MA5、RSI 位於健康區間、MACD 柱狀體偏弱</p>
-          <p class="target"><b>目標依據：</b>目前在 MA20 下方，目標先看能否站回月線。<br><b>支撐依據：</b>前一交易日收盤附近支撐。<br><b>估值/EPS：</b>FinMind 暫無 EPS / PER / PBR 資料<br><b>基本面短評：</b>FinMind 目前沒有可用 EPS，先以量價、新聞與公告觀察。</p>
-          <p class="news">群創法說會後挫逾半根停板 分析師揭關鍵：先別急著接</p>
+          <p class="target"><b>目標依據：</b>目前在 MA20 下方，目標先看能否站回月線。<br><b>支撐依據：</b>前一交易日收盤附近支撐。<br><b>估值/EPS：</b>EPS 0.57｜TTM 0.78｜PER 60.00｜PBR 1.66｜殖利率 2.14%<br><b>基本面短評：</b>最近一季 EPS 為正；PER 偏高，估值需留意</p>
+          <p class="news"><a href="https://news.google.com/rss/articles/CBMi_AJBVV95cUxNYkJPeE1XbDNDampyOTNLdDhiNENrVFlwSk4ydl9FZllqLVlwX3NzVmVPUWgtcndkUFBQRXVTODNhUTliR2VNSmFhOTBsbjdnbFFzTnRhV2dXcllqUXdUdWF5LXhGMFlJNmh6MmF0aTN5b2ZYNElRaUJocWpLNVBKSXlPSWVvZXZ2bFFyQmI0Qzk0dG5QUXVnSFMyLXVod2NUak9nV3ZxM1ZIX211ZnVjY2tXTjhYb3FPSDM1NkkzSmd6cVNNUG1WemhKSVdSNi10c0lTVmhncGZZQlJMZmlhMXl4dmdDTnRZOGpSd1ZwNUJiX0hFU2FZTnBvZXZnVzRlRTZmLUpiOFhnWlhrWjRFUUpBbmRxSFRnR0cwVERzY3RLckxLRV94eHR4QkRwMnlWWlZUYTByQ1BGb1VYcDJNOWlzeE54SkN0cld4SE94bkFKZDVBUmVMYTJSMVJnN0s2TEM0TFVCTFBkZHBETkxEdGRHX0ozVGliUVRzNQ?oc=5" target="_blank" rel="noopener noreferrer">群創法說會後挫逾半根停板 分析師揭關鍵：先別急著接</a><span>Yahoo股市</span></p>
         </article>
         
         <article class="card neutral">
@@ -310,13 +310,13 @@
             <div><dt>量能比</dt><dd>0.59x</dd></div>
             <div><dt>目標觀察價</dt><dd>643.00</dd></div>
             <div><dt>支撐觀察價</dt><dd>591.00</dd></div>
-            <div><dt>EPS / TTM</dt><dd>N/A / N/A</dd></div>
-            <div><dt>PER / PBR</dt><dd>N/A / N/A</dd></div>
+            <div><dt>EPS / TTM</dt><dd>4.80 / 13.92</dd></div>
+            <div><dt>PER / PBR</dt><dd>42.76 / 6.68</dd></div>
           </dl>
           <p class="kline"><b>K 線：</b>下影線轉強，站上月線；位於 20 日區間中段，等方向表態。</p>
           <p class="notes">站上 MA5、站上 MA20、RSI 位於健康區間、MACD 柱狀體偏弱、量能偏低，突破可信度不足</p>
-          <p class="target"><b>目標依據：</b>取近 20 日高點作為第一壓力/目標觀察價。<br><b>支撐依據：</b>MA20 月線支撐。<br><b>估值/EPS：</b>FinMind 暫無 EPS / PER / PBR 資料<br><b>基本面短評：</b>FinMind 目前沒有可用 EPS，先以量價、新聞與公告觀察。</p>
-          <p class="news">封測廠被大哥盯上！「這2檔」遭投信脫手5663張 日月光投控連挨6刀今又被出清3324張</p>
+          <p class="target"><b>目標依據：</b>取近 20 日高點作為第一壓力/目標觀察價。<br><b>支撐依據：</b>MA20 月線支撐。<br><b>估值/EPS：</b>EPS 4.80｜TTM 13.92｜PER 42.76｜PBR 6.68｜殖利率 1.11%<br><b>基本面短評：</b>最近一季 EPS 為正；PER 偏高，估值需留意</p>
+          <p class="news"><a href="https://news.google.com/rss/articles/CBMi1ANBVV95cUxOc2d0TWl0OWxpRzR4SnNRMC1YbFVGLXBCaC00OTNlWjh1UlRaWmFsYU05WlVKWmlRd2JnUVA2WVpFOXIwdUtWYTVnaUlZTm9wVTRmWGYyTk5MRmtDSzhQczcwRlYwUWxSOXFkWmpleHZULXVlYklTTHl2dU9vMV9weG9kR3hhRTNvNXpxTEp3T0toZklfd2FNR1I1OE42QTJ2XzR6R2NNVG9xUjNUZC1WdjNDaDk5ZEhvZXJ6TTJscUdTOTgwdXhGeE9HV3k0bUhtcUE2TkNpc1FiLXVSRXZoamFIV04xcndfX2hNSVY4VUFMWnViV3BFbUlvZWgxYVloTW1yUGV1RGlsNEJvX3lMcFB5bVZ1d2QyUzhkQ2pFWG1hMGtnMjBCVjd4eE13VHlCTGVKbnRXWDNubV9mUTNEMUhfNHk2QTEtUVBJYWRNUXpvVTZONlhtVmZTNXJ3YkEwb2xJbUVIczR0cmhVNHg1cXdJRFFtY0hMcGpkMHdYMTRlUUNTNGNaQlpnVU5nYWxpQzF0dzliTmdMdmpLMFBVSlRxdGh6bUNZWFFfbkxkUXVzajgzNUN1VkRocFpWa1h4THJUZG9EREhaNTVZZ1h4Z1ZNc3c?oc=5" target="_blank" rel="noopener noreferrer">封測廠被大哥盯上！「這2檔」遭投信脫手5663張 日月光投控連挨6刀今又被出清3324張</a><span>Yahoo股市</span></p>
         </article>
         
         <article class="card bull">
@@ -333,13 +333,13 @@
             <div><dt>量能比</dt><dd>0.94x</dd></div>
             <div><dt>目標觀察價</dt><dd>36.15</dd></div>
             <div><dt>支撐觀察價</dt><dd>30.70</dd></div>
-            <div><dt>EPS / TTM</dt><dd>N/A / N/A</dd></div>
-            <div><dt>PER / PBR</dt><dd>N/A / N/A</dd></div>
+            <div><dt>EPS / TTM</dt><dd>0.43 / 1.28</dd></div>
+            <div><dt>PER / PBR</dt><dd>27.25 / 1.72</dd></div>
           </dl>
           <p class="kline"><b>K 線：</b>十字線，短多排列；接近 20 日高檔，留意追價風險與突破量。</p>
           <p class="notes">站上 MA5、站上 MA20、站上 MA60、短均線優於月線、RSI 位於健康區間</p>
-          <p class="target"><b>目標依據：</b>取近 20 日高點作為第一壓力/目標觀察價。<br><b>支撐依據：</b>MA20 月線支撐。<br><b>估值/EPS：</b>FinMind 暫無 EPS / PER / PBR 資料<br><b>基本面短評：</b>FinMind 目前沒有可用 EPS，先以量價、新聞與公告觀察。</p>
-          <p class="news">【10:28 即時新聞】磐亞(4707)股價勁揚逾6%至35.1元，受電子與AI特殊化學品題材點火＋均線多頭與主力成本支撐偏多</p>
+          <p class="target"><b>目標依據：</b>取近 20 日高點作為第一壓力/目標觀察價。<br><b>支撐依據：</b>MA20 月線支撐。<br><b>估值/EPS：</b>EPS 0.43｜TTM 1.28｜PER 27.25｜PBR 1.72｜殖利率 1.42%<br><b>基本面短評：</b>最近一季 EPS 為正；PER 位於可觀察區間</p>
+          <p class="news"><a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxQYXJDdDlraEtkWFg3bGpWanJqeWVqakRPS3BRbTQ5MUNpRW1raC1XRlR4aE9xSlRMMkZYZ29DMEVNa29ZZ1hZY0xsRzFvMmZMQThKOWVYYTZkOXpId2JqWmVRY3lPYkZtekdqbWZUd3dGRHRCMm9MVFR3ZEJJdllpMTNPcTB4YlBCVWlfSEFB?oc=5" target="_blank" rel="noopener noreferrer">【10:28 即時新聞】磐亞(4707)股價勁揚逾6%至35.1元，受電子與AI特殊化學品題材點火＋均線多頭與主力成本支撐偏多</a><span>CMoney投資網誌</span></p>
         </article>
         
         <article class="card bull">
@@ -356,13 +356,13 @@
             <div><dt>量能比</dt><dd>0.61x</dd></div>
             <div><dt>目標觀察價</dt><dd>177.00</dd></div>
             <div><dt>支撐觀察價</dt><dd>156.50</dd></div>
-            <div><dt>EPS / TTM</dt><dd>N/A / N/A</dd></div>
-            <div><dt>PER / PBR</dt><dd>N/A / N/A</dd></div>
+            <div><dt>EPS / TTM</dt><dd>1.42 / 4.13</dd></div>
+            <div><dt>PER / PBR</dt><dd>38.11 / 4.01</dd></div>
           </dl>
           <p class="kline"><b>K 線：</b>十字線，站上月線；位於 20 日區間中段，等方向表態。</p>
           <p class="notes">站上 MA20、短均線優於月線、RSI 位於健康區間、MACD 柱狀體偏多</p>
-          <p class="target"><b>目標依據：</b>取近 20 日高點作為第一壓力/目標觀察價。<br><b>支撐依據：</b>前一交易日收盤附近支撐。<br><b>估值/EPS：</b>FinMind 暫無 EPS / PER / PBR 資料<br><b>基本面短評：</b>FinMind 目前沒有可用 EPS，先以量價、新聞與公告觀察。</p>
-          <p class="news">【08/21 產業即時新聞】電子上游-PCB-材料設備 族群震盪走跌，設備與部分材料股逆勢突圍</p>
+          <p class="target"><b>目標依據：</b>取近 20 日高點作為第一壓力/目標觀察價。<br><b>支撐依據：</b>前一交易日收盤附近支撐。<br><b>估值/EPS：</b>EPS 1.42｜TTM 4.13｜PER 38.11｜PBR 4.01｜殖利率 0.76%<br><b>基本面短評：</b>最近一季 EPS 為正；PER 偏高，估值需留意</p>
+          <p class="news"><a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxPVFlWWjFYak1hamNFS0hya0VYWlFXdmdQYUlrSloxc3E1dDVBWldJN3cxeV9OQmpnSm9GdmRhYXhMdl8yRjJtamU5VVpBX19CamJ4aDQxdDdmQTFZenRHQkhpdGRXVTFHS3ZTT0RIMkZQLWlrRTEzamNIZVpWNXEzb0NFTVhCS1M5WDVvbG13?oc=5" target="_blank" rel="noopener noreferrer">【08/21 產業即時新聞】電子上游-PCB-材料設備 族群震盪走跌，設備與部分材料股逆勢突圍（RSS 可能誤配，僅供參考）</a><span>CMoney投資網誌</span><em class="warn">RSS 可能誤配</em></p>
         </article>
         </div></section>
   <section id="hot" class="tab"><p class="hint">僅限你的自選股內排序，方便看持有/追蹤清單強弱。</p><div class="grid">
@@ -403,17 +403,7 @@
           <p class="quote-line">最新 2400.00｜今日 1.05%｜距目標 1.9%｜距支撐 1.1%</p>
           <p class="quick-inline">偏多延續｜量價結構偏強，可列優先觀察；避免一次追滿。</p>
           <p>新聞熱度 5 則、RSI 49.2 健康、站上 MA5、站上 MA20</p>
-          <p class="news"><a href="https://news.google.com/rss/articles/CBMiugRBVV95cUxPT3lkM0c2dzNYNG1BWTBpWm1BYXdYNzdFNG1tZFNoMkYtS3dST0xja0Foamx3LVNKaGFjcFkzN1RTWEsxYjZsRXRLTEpEWnFYNnNkLWI1czRGdzJMbjYxalNiN1lfTERyNVFsV0VzNExBX25BbGotMkdlaWF6TXR6V3NkLTdvRXRoSjFuMm9CWkgwQmg1emI4WkEtV1NEVUtLbmR2SF9LdlRncG12MG0yT3hUc2FLcFlzRWpxcHYtUWpsQUNwTktYWF9VZi1OU0U3R3ZjbWdNUTI4eHp2QV9wRWdpWWJMczEwNVotbTZEOEtYSFM4U2ZPQXozeFR3eXRtSTNzQ1N5empSVzU5Q01rUHhQMEVvZmdlcmJVamFORWwtZ04wTHB4OXBSU05rYllCQS14ZWJtaHlNZ2xxVFRtVDRmQVlaLVo2cklRVzZ5VE5HZEJ3NWNXUDRsdzFHcTd3MVA4YVYtOWY0SWx0NXl3eTBQT3BPVmJQWDEyUkJFYzZiMDRPNFVGcU1UV0lwU0FVMk93SnJReGZDT2lfc0RPVnMzMFJBMUtMVmdmV05nUHNGOENvU2pUUjJfWlNwQnNxNGc3NFNMazB4dzI3aDhZbE5EdGFqRm5WbnBpMUJoLUM0Y001amtWUE9VdFZ3eTVlZXMwb2RxbEdfb0pPelY3WS1iNV9Ka3NUaE9UU09rWmJzWGYxU2NKZFV6WGlIWEZaVUdDREQ2X3YxZE9RQ0VaX0MyaFgtTnJnREE?oc=5" target="_blank" rel="noopener noreferrer">【零股排行榜】盤中零股成交量TOP20｜0050 元大台灣50、00981A 主動統一台股增長、2330 台積電、2609 陽明、4958 臻鼎-KY (0821)｜豐雲學堂2026 年 08 月</a><span>sinotrade.com.tw</span></p>
-        </article>
-        
-        <article class="hot-card bull">
-          <div class="rank">自選熱度 113</div>
-          <h3>磐亞 <span>4707</span></h3>
-          <p class="big">97/100｜偏多</p>
-          <p class="quote-line">最新 35.15｜今日 -1.82%｜距目標 2.8%｜距支撐 14.5%</p>
-          <p class="quick-inline">偏多延續｜量價結構偏強，可列優先觀察；避免一次追滿。</p>
-          <p>新聞熱度 5 則、RSI 61.1 健康、站上 MA5、站上 MA20</p>
-          <p class="news"><a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxQYXJDdDlraEtkWFg3bGpWanJqeWVqakRPS3BRbTQ5MUNpRW1raC1XRlR4aE9xSlRMMkZYZ29DMEVNa29ZZ1hZY0xsRzFvMmZMQThKOWVYYTZkOXpId2JqWmVRY3lPYkZtekdqbWZUd3dGRHRCMm9MVFR3ZEJJdllpMTNPcTB4YlBCVWlfSEFB?oc=5" target="_blank" rel="noopener noreferrer">【10:28 即時新聞】磐亞(4707)股價勁揚逾6%至35.1元，受電子與AI特殊化學品題材點火＋均線多頭與主力成本支撐偏多</a><span>CMoney投資網誌</span></p>
+          <p class="news"><a href="https://news.google.com/rss/articles/CBMiUkFVX3lxTFBIc1U5YVNGTkFsS2Y3dEFRa3pGbFJCeVRnZUJUS2pqRlZYTDBTS085QmpFc3RCSC1RYkljUUxYMDhjSENQeS01QVAzLWpyaVBzaWfSAVdBVV95cUxNZDdDYlFPSFhGZUxmVWtPcWY3VGotaDRSMUpNWVVmemlpM2xVSndtQ2Jucklrc0NfS3BNbHhHVGFpZWw0NzZ5cUFLSm9ERVFCMzAwcFRyWjA?oc=5" target="_blank" rel="noopener noreferrer">台股4萬6震盪！杜金龍看好拉回打第二隻腳：台積電（2330）先獲利了結</a><span>UDN</span></p>
         </article>
         
         <article class="hot-card bull">
@@ -424,6 +414,16 @@
           <p class="quick-inline">偏多延續｜量價結構偏強，可列優先觀察；避免一次追滿。</p>
           <p>新聞熱度 5 則、量能 1.43x、站上 MA5、站上 MA20</p>
           <p class="news"><a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE51WTFZdlItVnpxY2hKZnZsdzF2Y29RbDJLVUthTzU4cTRMZG5WVlN2SDhpTlQ0MkJmR0tkMDRSeWhJLXF2Y0pyNGRqNHFHbkVkQzVteG5DRV84UdIBX0FVX3lxTE5TTFFDck8tdGY1Vm5PZTVrM2tpLW9YUXRLZThlWFlYc1FWcjhOY1ZGLTRkZGdTUXZtTkpTR2xyTVo4eFVWUDhYWjRqeTlDNlNGYU5uOGtBNzFzTmRQdTJ3?oc=5" target="_blank" rel="noopener noreferrer">百萬國民高股息 ETF 00919成分股調整名單出爐 18進18出</a><span>經濟日報</span></p>
+        </article>
+        
+        <article class="hot-card bull">
+          <div class="rank">自選熱度 105</div>
+          <h3>中信臺灣智慧50 <span>00912</span></h3>
+          <p class="big">97/100｜偏多</p>
+          <p class="quote-line">最新 34.09｜今日 1.04%｜距目標 3.0%｜距支撐 1.0%</p>
+          <p class="quick-inline">偏多延續｜量價結構偏強，可列優先觀察；避免一次追滿。</p>
+          <p>RSI 64.9 健康、站上 MA5、站上 MA20</p>
+          <p class="news"><a href="https://news.google.com/rss/articles/CBMiT0FVX3lxTE1Gcnk1Q08zTnNGV2Fucm05T3REOWFpWEstMjlPOFE2TVgtb2UySmR1UmUwWlJxUEsxYkxRMTg1eTJob1ZlcXJCcmF2WW5GaTg?oc=5" target="_blank" rel="noopener noreferrer">萬金股行情帶旺00912、00406A 重倉布局信驊、川湖</a><span>news.cnyes.com</span></p>
         </article>
         </div></section>
   <section id="market" class="tab"><p class="hint">排除自選股後，從 TWSE 全市場流動性/動能候選股掃描，再用 FinMind 歷史股價、技術分數、量能與新聞熱度排序；這是觀察清單，不是買賣建議。</p><div class="grid"><article class="risk-card"><h3>市場推薦暫停</h3><p>市場推薦改為獨立更新；本次部署先跳過掃描</p><p>自選股、EPS、新聞與目標價仍正常更新。</p></article></div></section>
@@ -442,8 +442,8 @@
             <td>61.00</td>
             <td>62.80</td>
             <td>60.50</td>
-            <td>N/A</td>
-            <td>N/A</td>
+            <td>ETF 不適用</td>
+            <td>ETF 不適用</td>
             <td>5</td>
           </tr>
         
@@ -461,8 +461,8 @@
             <td>51.63</td>
             <td>54.00</td>
             <td>52.30</td>
-            <td>N/A</td>
-            <td>N/A</td>
+            <td>ETF 不適用</td>
+            <td>ETF 不適用</td>
             <td>5</td>
           </tr>
         
@@ -480,8 +480,8 @@
             <td>33.31</td>
             <td>35.10</td>
             <td>33.75</td>
-            <td>N/A</td>
-            <td>N/A</td>
+            <td>ETF 不適用</td>
+            <td>ETF 不適用</td>
             <td>3</td>
           </tr>
         
@@ -499,8 +499,8 @@
             <td>29.91</td>
             <td>31.50</td>
             <td>30.65</td>
-            <td>N/A</td>
-            <td>N/A</td>
+            <td>ETF 不適用</td>
+            <td>ETF 不適用</td>
             <td>5</td>
           </tr>
         
@@ -518,8 +518,8 @@
             <td>12.37</td>
             <td>12.65</td>
             <td>12.45</td>
-            <td>N/A</td>
-            <td>N/A</td>
+            <td>ETF 不適用</td>
+            <td>ETF 不適用</td>
             <td>5</td>
           </tr>
         
@@ -537,8 +537,8 @@
             <td>23.00</td>
             <td>21.80</td>
             <td>21.40</td>
-            <td>N/A</td>
-            <td>N/A</td>
+            <td>ETF 不適用</td>
+            <td>ETF 不適用</td>
             <td>5</td>
           </tr>
         
@@ -556,8 +556,8 @@
             <td>10.99</td>
             <td>11.45</td>
             <td>10.20</td>
-            <td>N/A</td>
-            <td>N/A</td>
+            <td>0.29</td>
+            <td>18.05</td>
             <td>4</td>
           </tr>
         
@@ -575,8 +575,8 @@
             <td>2382.25</td>
             <td>2445.00</td>
             <td>2375.00</td>
-            <td>N/A</td>
-            <td>N/A</td>
+            <td>27.25</td>
+            <td>27.82</td>
             <td>5</td>
           </tr>
         
@@ -595,7 +595,7 @@
             <td>48.50</td>
             <td>45.40</td>
             <td>1.33</td>
-            <td>N/A</td>
+            <td>10.34</td>
             <td>5</td>
           </tr>
         
@@ -613,8 +613,8 @@
             <td>29.62</td>
             <td>31.95</td>
             <td>31.00</td>
-            <td>N/A</td>
-            <td>N/A</td>
+            <td>0.65</td>
+            <td>17.81</td>
             <td>5</td>
           </tr>
         
@@ -632,8 +632,8 @@
             <td>54.50</td>
             <td>47.60</td>
             <td>45.45</td>
-            <td>N/A</td>
-            <td>N/A</td>
+            <td>0.57</td>
+            <td>60.00</td>
             <td>5</td>
           </tr>
         
@@ -651,8 +651,8 @@
             <td>614.58</td>
             <td>643.00</td>
             <td>591.00</td>
-            <td>N/A</td>
-            <td>N/A</td>
+            <td>4.80</td>
+            <td>42.76</td>
             <td>5</td>
           </tr>
         
@@ -670,9 +670,9 @@
             <td>29.24</td>
             <td>36.15</td>
             <td>30.70</td>
-            <td>N/A</td>
-            <td>N/A</td>
-            <td>5</td>
+            <td>0.43</td>
+            <td>27.25</td>
+            <td>4</td>
           </tr>
         
           <tr>
@@ -689,8 +689,8 @@
             <td>176.49</td>
             <td>177.00</td>
             <td>156.50</td>
-            <td>N/A</td>
-            <td>N/A</td>
+            <td>1.42</td>
+            <td>38.11</td>
             <td>4</td>
           </tr>
         </tbody></table></div></section>
@@ -727,7 +727,7 @@
           <p class="news"><a href="https://news.google.com/rss/articles/CBMi1ANBVV95cUxOc2d0TWl0OWxpRzR4SnNRMC1YbFVGLXBCaC00OTNlWjh1UlRaWmFsYU05WlVKWmlRd2JnUVA2WVpFOXIwdUtWYTVnaUlZTm9wVTRmWGYyTk5MRmtDSzhQczcwRlYwUWxSOXFkWmpleHZULXVlYklTTHl2dU9vMV9weG9kR3hhRTNvNXpxTEp3T0toZklfd2FNR1I1OE42QTJ2XzR6R2NNVG9xUjNUZC1WdjNDaDk5ZEhvZXJ6TTJscUdTOTgwdXhGeE9HV3k0bUhtcUE2TkNpc1FiLXVSRXZoamFIV04xcndfX2hNSVY4VUFMWnViV3BFbUlvZWgxYVloTW1yUGV1RGlsNEJvX3lMcFB5bVZ1d2QyUzhkQ2pFWG1hMGtnMjBCVjd4eE13VHlCTGVKbnRXWDNubV9mUTNEMUhfNHk2QTEtUVBJYWRNUXpvVTZONlhtVmZTNXJ3YkEwb2xJbUVIczR0cmhVNHg1cXdJRFFtY0hMcGpkMHdYMTRlUUNTNGNaQlpnVU5nYWxpQzF0dzliTmdMdmpLMFBVSlRxdGh6bUNZWFFfbkxkUXVzajgzNUN1VkRocFpWa1h4THJUZG9EREhaNTVZZ1h4Z1ZNc3c?oc=5" target="_blank" rel="noopener noreferrer">封測廠被大哥盯上！「這2檔」遭投信脫手5663張 日月光投控連挨6刀今又被出清3324張</a><span>Yahoo股市</span></p>
         </article>
         </div></section>
-  <section id="news" class="tab"><ol class="news-list"><li><b>富邦科技 0052</b>｜<a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE9Na1FLVDJrM1gzTHN3RnV6OTV5ZXRHcmtwMnBXQlhJcklESG1aYTQxbnpMTGZzaDBETnFKcXB2WEF5ekdrdmQ5RFI2ZE81VTdjc2F6Qy05UUVEQdIBX0FVX3lxTFBGZ1ViVmtfWE91VlU1R1RWd0VCMGpEUC10bk5pOHduZzg4eURVSlF2WFRlbFFuNTE1WjVHTHRHdnlzR1FpVzQzbDl2bmFQQ0czcjZ2TWJYTC1ud2pjbnJF?oc=5" target="_blank" rel="noopener noreferrer">高含「積」ETF 長線俏 0052、0050、006208等掌握成長契機</a><span>經濟日報</span></li><li><b>富邦科技 0052</b>｜<a href="https://news.google.com/rss/articles/CBMiU0FVX3lxTE04cjNnZVhpZWhiVVRZWUNld3NOZXhVaGIzazVYRXlwLVpqaGdkV3YyU0twcERJNi1FSURwblk4NS13NUdmTWdRS2NWLVFMaTl5RG5J?oc=5" target="_blank" rel="noopener noreferrer">富邦科技(0052) 個股概覽 | 個股 - 股市</a><span>CMoney</span></li><li><b>元大高股息 0056</b>｜<a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE9jZkpMODlCX2ZtRmMyRm80MTRQSE1JNW8yclNZaWt6LUtmLTIzNDBkN0QwQlJnSUZjd1RPVW5lOWhfS2lKT0EtRFVVYThMSnR1QmtsalNfeXJnUdIBX0FVX3lxTFBTMkhUeEg1bUlwVk1JU0xmRkJLbm5MT0dKNW9pSTRmNmlTQnNQY1hIenJwRWM2SGxNby1CbDIydWlRWnZkajJzbWViczVZRkFmaTYzOUlqNzZpT3B6eDVr?oc=5" target="_blank" rel="noopener noreferrer">高股息接棒漲 0056規模衝破6,000億元關卡</a><span>經濟日報</span></li><li><b>元大高股息 0056</b>｜<a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxQd2dOa3dLYXI3WW9mU2xEdmN2bGt6SnNWOTBFZVJnQ01CWkdyZGxsbmVLVmNHbUtkanNEb3ZuTDViczFHMjVtcDEtemJYSzZCUzRIYk9taTl0M1dkSDdsQmY5TFFPTXJrWTQzZVdxeURnVFJ0U19uemh2WjNMVUI0SFpQVFhreHdwcFBlOVB3RTc3NnJoRWxvaUVIWHR6N2ZVZFZrN05lbTNDOVQ1MjdpYjN3?oc=5" target="_blank" rel="noopener noreferrer">0056、00878、00919「高息三強」大PK！達人曝1檔報酬衝162% 「這檔」殖利率6.94%</a><span>Yahoo股市</span></li><li><b>中信臺灣智慧50 00912</b>｜<a href="https://news.google.com/rss/articles/CBMiT0FVX3lxTE1Gcnk1Q08zTnNGV2Fucm05T3REOWFpWEstMjlPOFE2TVgtb2UySmR1UmUwWlJxUEsxYkxRMTg1eTJob1ZlcXJCcmF2WW5GaTg?oc=5" target="_blank" rel="noopener noreferrer">萬金股行情帶旺00912、00406A 重倉布局信驊、川湖</a><span>news.cnyes.com</span></li><li><b>中信臺灣智慧50 00912</b>｜<a href="https://news.google.com/rss/articles/CBMid0FVX3lxTE1rQ1NwOFhMeTFHRXdrVU44LWlXVVFIS05Oc1pZcXdPWXNEdG5YbTl1QTRxSjhoQ3NDMHBSOGRtcGVlWHpNWGk2TkNWZ0thS1M4aGY2SkJRaGFMcVByS3YzN0pHRmpKcE5BUlhUUkpMYjZSWk96Y19v?oc=5" target="_blank" rel="noopener noreferrer">買不起信驊川湖？00912、00406A含金量高…小資免百萬跟上股王股后| 存股族愛ETF | 股市</a><span>UDN</span></li><li><b>群益台灣精選高息 00919</b>｜<a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE51WTFZdlItVnpxY2hKZnZsdzF2Y29RbDJLVUthTzU4cTRMZG5WVlN2SDhpTlQ0MkJmR0tkMDRSeWhJLXF2Y0pyNGRqNHFHbkVkQzVteG5DRV84UdIBX0FVX3lxTE5TTFFDck8tdGY1Vm5PZTVrM2tpLW9YUXRLZThlWFlYc1FWcjhOY1ZGLTRkZGdTUXZtTkpTR2xyTVo4eFVWUDhYWjRqeTlDNlNGYU5uOGtBNzFzTmRQdTJ3?oc=5" target="_blank" rel="noopener noreferrer">百萬國民高股息 ETF 00919成分股調整名單出爐 18進18出</a><span>經濟日報</span></li><li><b>群益台灣精選高息 00919</b>｜<a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxQd2dOa3dLYXI3WW9mU2xEdmN2bGt6SnNWOTBFZVJnQ01CWkdyZGxsbmVLVmNHbUtkanNEb3ZuTDViczFHMjVtcDEtemJYSzZCUzRIYk9taTl0M1dkSDdsQmY5TFFPTXJrWTQzZVdxeURnVFJ0U19uemh2WjNMVUI0SFpQVFhreHdwcFBlOVB3RTc3NnJoRWxvaUVIWHR6N2ZVZFZrN05lbTNDOVQ1MjdpYjN3?oc=5" target="_blank" rel="noopener noreferrer">0056、00878、00919「高息三強」大PK！達人曝1檔報酬衝162% 「這檔」殖利率6.94%</a><span>Yahoo股市</span></li><li><b>元大台灣價值高息 00940</b>｜<a href="https://news.google.com/rss/articles/CBMiS0FVX3lxTE5mN0puY3pTWjdOU0lHS2VPTU1GVVhEMXRnWVBqU0ZERnFMRmR5Z2lDazBqSlBSLVdTMzRWWHFLQTJnN1VpVGVtZ0daUQ?oc=5" target="_blank" rel="noopener noreferrer">32萬股東注意！00940月配息調高至0.055元 創掛牌新高</a><span>鉅亨網</span></li><li><b>元大台灣價值高息 00940</b>｜<a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTE9McURvcnQwQmstcmFKWTNxdWRHUVVMb1hzb0dCUmY5OFVRLXVucXZSMnJfY2dFMFdsUFZodXFDQkNlbWVtcEplQlZqQURfVG9GZVBnckFlaG0?oc=5" target="_blank" rel="noopener noreferrer">快訊／32萬人等到！00940配0.055元刷新高 年化配息率5.3％</a><span>CMoney</span></li><li><b>主動群益台灣強棒 00982A</b>｜<a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTFB6X0pJNFpVdGN0RHY2ZFNJUmo1bENiUENZOFNpaDYyUzNDLWJtTENZQTJTMmRUcURKdWNQNlltTFZvX2ZmTU1uUkhGQWZYT3U5U1UtR3EzWmI?oc=5" target="_blank" rel="noopener noreferrer">00982A 主動群益台灣強棒- 指數漲你卻賠?主動 ETF 821 換股筆記買金融出電子? - 股市爆料同學會</a><span>CMoney</span></li><li><b>主動群益台灣強棒 00982A</b>｜<a href="https://news.google.com/rss/articles/CBMisARBVV95cUxOM1hjcFBwSGN4b1NxcUZyT3hvYWJFQXNreEhHaWRrOHFKSC1JMTZpTnhmUU5maUhkUVJ3TEQxdVhaaXZYSDczUjlHV1N3dzNHeE9UajFaNF92QmVlZXVOUnUzdjQ2TVpIRjVtOWFySTRkdnZpRTljT0ZzWnFmdnllR2xPMUlXUmJSRHpLRXQ3d0IzTFBVT0hSTzlma0FSWjZ5cWpCQUFxckRzR3pnRDdyVFEyVVBJaTMtYWh5QTRmMGFzUUJqcmc4ajAxWGtYUlZfV3hzdVZsYmZWVDVxR2o0a1NlNXFyZkhWUGlrZnhTUHdnWE1oR0hVSFFwOTJ6bVM5WnJjc1FxZmtPQk13LVBuNW9yTFF2Z0ZJVEcwdWhhOWc2YjE3WVQtYWRVa1dUMGdCbWJPTm9fb1hjX2hNQ3FZOXNzMHZhWVlCZlBqLVhvRTdPblFNbkI5YWtja21DZ2NwUGFFX3dLdVRnSFowMmRQWDNTanBXSDE1Mm8wb0Q2eTItVlY1RklSYXNIeDJmOEl4LTVmVHI5V0hBNlRtR0oxdVZ5OWloM00zNUF4UUhGOXVkYTY3c2dGM2RNSXJVLXBiYlVybVNjdnZpYmpYSU54WmVzaW5TVE9BQ2pyc2dEYWk1OUFpdlNNOWl5Q1ozQllDOTA3MTlxNDh4YzZxY3NFX3BndHFOZC1XSWNCcHNHZ1BaQkNkU3V6aFRzN0ZMbXgwSjBoNnlVcjNPVE5Hb3dmTQ?oc=5" target="_blank" rel="noopener noreferrer">2026年8月台股ETF配息排行：00881配息4.6元單次配息率衝8.6%奪冠，00878首破1元！最新配息排行與投資攻略！</a><span>sinotrade.com.tw</span></li><li><b>中纖 1718</b>｜<a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTFBjenZJY1JrQ1ZJZzdlOVFPUjZGQzdXQlJnaV9BNnY3OVVJMDRFc3VkNElyd0dmTi1nNmo1bHNreGlMVWZqMzRkdVVkZUlmTHFOWUR0TldodWc?oc=5" target="_blank" rel="noopener noreferrer">1714 和桐- 低價成長股和桐，今日順利填息- 股市爆料同學會</a><span>CMoney</span></li><li><b>中纖 1718</b>｜<a href="https://news.google.com/rss/articles/CBMiS0FVX3lxTE13Y3F1Und3a213eDg1WWV2ZUlRb3ozSWhuYy12d2JHbHhKTHhEcG16ZWptY2tELVZZSUFEd3ZrMEpNS0pub3c0eFJqNA?oc=5" target="_blank" rel="noopener noreferrer">Google TPU搶單大戰開打！「IC設計一哥」失守3800元 空軍連襲5日淪弱勢股王</a><span>FTNN 新聞網</span></li><li><b>台積電 2330</b>｜<a href="https://news.google.com/rss/articles/CBMiugRBVV95cUxPT3lkM0c2dzNYNG1BWTBpWm1BYXdYNzdFNG1tZFNoMkYtS3dST0xja0Foamx3LVNKaGFjcFkzN1RTWEsxYjZsRXRLTEpEWnFYNnNkLWI1czRGdzJMbjYxalNiN1lfTERyNVFsV0VzNExBX25BbGotMkdlaWF6TXR6V3NkLTdvRXRoSjFuMm9CWkgwQmg1emI4WkEtV1NEVUtLbmR2SF9LdlRncG12MG0yT3hUc2FLcFlzRWpxcHYtUWpsQUNwTktYWF9VZi1OU0U3R3ZjbWdNUTI4eHp2QV9wRWdpWWJMczEwNVotbTZEOEtYSFM4U2ZPQXozeFR3eXRtSTNzQ1N5empSVzU5Q01rUHhQMEVvZmdlcmJVamFORWwtZ04wTHB4OXBSU05rYllCQS14ZWJtaHlNZ2xxVFRtVDRmQVlaLVo2cklRVzZ5VE5HZEJ3NWNXUDRsdzFHcTd3MVA4YVYtOWY0SWx0NXl3eTBQT3BPVmJQWDEyUkJFYzZiMDRPNFVGcU1UV0lwU0FVMk93SnJReGZDT2lfc0RPVnMzMFJBMUtMVmdmV05nUHNGOENvU2pUUjJfWlNwQnNxNGc3NFNMazB4dzI3aDhZbE5EdGFqRm5WbnBpMUJoLUM0Y001amtWUE9VdFZ3eTVlZXMwb2RxbEdfb0pPelY3WS1iNV9Ka3NUaE9UU09rWmJzWGYxU2NKZFV6WGlIWEZaVUdDREQ2X3YxZE9RQ0VaX0MyaFgtTnJnREE?oc=5" target="_blank" rel="noopener noreferrer">【零股排行榜】盤中零股成交量TOP20｜0050 元大台灣50、00981A 主動統一台股增長、2330 台積電、2609 陽明、4958 臻鼎-KY (0821)｜豐雲學堂2026 年 08 月</a><span>sinotrade.com.tw</span></li><li><b>台積電 2330</b>｜<a href="https://news.google.com/rss/articles/CBMiUkFVX3lxTFBIc1U5YVNGTkFsS2Y3dEFRa3pGbFJCeVRnZUJUS2pqRlZYTDBTS085QmpFc3RCSC1RYkljUUxYMDhjSENQeS01QVAzLWpyaVBzaWfSAVdBVV95cUxNZDdDYlFPSFhGZUxmVWtPcWY3VGotaDRSMUpNWVVmemlpM2xVSndtQ2Jucklrc0NfS3BNbHhHVGFpZWw0NzZ5cUFLSm9ERVFCMzAwcFRyWjA?oc=5" target="_blank" rel="noopener noreferrer">台股4萬6震盪！杜金龍看好拉回打第二隻腳：台積電（2330）先獲利了結</a><span>UDN</span></li><li><b>統一證 2855</b>｜<a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTE96V0Zaa25EQzVXc1BfS0kwRDlMOVRKOElXdDhtUkpEQURsTE92NFhwWldmd0lOeEthQS11V0haOHhnelRSRXROdm41VFkxdnlwczhCU1E0N3U?oc=5" target="_blank" rel="noopener noreferrer">統一證 代子公司統一證券投資顧問(股)公司公告向統一綜合證券(股)公司取得使用權資產</a><span>CMoney</span></li><li><b>統一證 2855</b>｜<a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE05UXFpNHFUZzEwV19udmsxTTJRU2xhckpMOXZ2QkRZazVKNi1fLXVkX1l6R2VDaHBYU1dzbDBvQTZWVnE4YkFXaU81c3BDVkdHcVB3dEw1LUk5LVhOZVFr?oc=5" target="_blank" rel="noopener noreferrer">台股收復4萬5！投信獨寵「這檔」爆買逾萬張 前10大買超1次看</a><span>自由財經</span></li><li><b>凱基金 2883</b>｜<a href="https://news.google.com/rss/articles/CBMiU0FVX3lxTE5razMwcGM0azNqYW5MRDVOWVRHSnI0ZlhJNnFDekNVcURPdXZURGMzQUlPQ2h4dHhTTjczdGl3RDlqYk5KbDJWQTdYdnJYWU9OMkZv?oc=5" target="_blank" rel="noopener noreferrer">凱基金(2883) 個股概覽 | 個股 - 股市</a><span>CMoney</span></li><li><b>凱基金 2883</b>｜<a href="https://news.google.com/rss/articles/CBMigwFBVV95cUxNdE9ITFU3TlVwZTF4dU1KM21nMGt4SVhUczduTHpkMDFZOXhYZERVaENPNll2T0lSTnlDNlk3dWtkanpJRnlBRjJCRGM5NWZYbXpoZzNSRjBacE44cXF0aHd0SFRxNWNjTjh2Rml5TzRCUW5uUnJ6alFuMkZtLU1QaGlxZw?oc=5" target="_blank" rel="noopener noreferrer">凱基金(2883)擴資本衝上541億元，7月後獲利撐得起30元嗎？-Momentum 動能沈沈</a><span>CMoney投資網誌</span></li><li><b>群創 3481</b>｜<a href="https://news.google.com/rss/articles/CBMi_AJBVV95cUxNYkJPeE1XbDNDampyOTNLdDhiNENrVFlwSk4ydl9FZllqLVlwX3NzVmVPUWgtcndkUFBQRXVTODNhUTliR2VNSmFhOTBsbjdnbFFzTnRhV2dXcllqUXdUdWF5LXhGMFlJNmh6MmF0aTN5b2ZYNElRaUJocWpLNVBKSXlPSWVvZXZ2bFFyQmI0Qzk0dG5QUXVnSFMyLXVod2NUak9nV3ZxM1ZIX211ZnVjY2tXTjhYb3FPSDM1NkkzSmd6cVNNUG1WemhKSVdSNi10c0lTVmhncGZZQlJMZmlhMXl4dmdDTnRZOGpSd1ZwNUJiX0hFU2FZTnBvZXZnVzRlRTZmLUpiOFhnWlhrWjRFUUpBbmRxSFRnR0cwVERzY3RLckxLRV94eHR4QkRwMnlWWlZUYTByQ1BGb1VYcDJNOWlzeE54SkN0cld4SE94bkFKZDVBUmVMYTJSMVJnN0s2TEM0TFVCTFBkZHBETkxEdGRHX0ozVGliUVRzNQ?oc=5" target="_blank" rel="noopener noreferrer">群創法說會後挫逾半根停板 分析師揭關鍵：先別急著接</a><span>Yahoo股市</span></li><li><b>群創 3481</b>｜<a href="https://news.google.com/rss/articles/CBMiU0FVX3lxTE8wN2tIZDh6aWN0ZFBkZnNERTJvZ1IzNmRZcGdDLTd0TjZhdUxhS0dwSEVLT0FZSFA5SzRFTmlmdllJY3pkdnc3VjVkcllibVhmSmJv?oc=5" target="_blank" rel="noopener noreferrer">群創(3481) 個股概覽 | 個股 - 股市</a><span>CMoney</span></li><li><b>日月光投控 3711</b>｜<a href="https://news.google.com/rss/articles/CBMi1ANBVV95cUxOc2d0TWl0OWxpRzR4SnNRMC1YbFVGLXBCaC00OTNlWjh1UlRaWmFsYU05WlVKWmlRd2JnUVA2WVpFOXIwdUtWYTVnaUlZTm9wVTRmWGYyTk5MRmtDSzhQczcwRlYwUWxSOXFkWmpleHZULXVlYklTTHl2dU9vMV9weG9kR3hhRTNvNXpxTEp3T0toZklfd2FNR1I1OE42QTJ2XzR6R2NNVG9xUjNUZC1WdjNDaDk5ZEhvZXJ6TTJscUdTOTgwdXhGeE9HV3k0bUhtcUE2TkNpc1FiLXVSRXZoamFIV04xcndfX2hNSVY4VUFMWnViV3BFbUlvZWgxYVloTW1yUGV1RGlsNEJvX3lMcFB5bVZ1d2QyUzhkQ2pFWG1hMGtnMjBCVjd4eE13VHlCTGVKbnRXWDNubV9mUTNEMUhfNHk2QTEtUVBJYWRNUXpvVTZONlhtVmZTNXJ3YkEwb2xJbUVIczR0cmhVNHg1cXdJRFFtY0hMcGpkMHdYMTRlUUNTNGNaQlpnVU5nYWxpQzF0dzliTmdMdmpLMFBVSlRxdGh6bUNZWFFfbkxkUXVzajgzNUN1VkRocFpWa1h4THJUZG9EREhaNTVZZ1h4Z1ZNc3c?oc=5" target="_blank" rel="noopener noreferrer">封測廠被大哥盯上！「這2檔」遭投信脫手5663張 日月光投控連挨6刀今又被出清3324張</a><span>Yahoo股市</span></li><li><b>日月光投控 3711</b>｜<a href="https://news.google.com/rss/articles/CBMiygNBVV95cUxOb3ZWN0hJZ2M2OEZQajFkbFQxdndES0QzMVZwQmd5OHI0Nl9rS2VfeVhWU3EtS1VPcWhFZ2NqYnZId000bUJDQWZsOU05NlZyZG05WjRsYklidzFMcXBsYkxvR01IbklBMWF4RFI2ZDNib1N4UU1EVDFLcnQzQjhUbV9CTHlMdjNseWVLd3FVZTRuNjlhQmdqVjBhZUNTMEJwd0wtX2cybXB4bkNWdmdOQmNzZGJWNHplRmFWSkI2WXBxa2dmZDczUW9sTkYycUJwcjZzbGV1REkwcENVUm13MExjUVotR1pObWFNbXYxRjJOT2Rfc3M4SkZxMGRHelFsOWFqWUh2aHY4T2RqM1I1N2cybm9HMjlzZ0Z5TlpGNjVCTnhFZWR6STQ2Q0M2b3h0VmhjRExqSjI2Wm9GY0RTU1otd0NnSG9uOUhGbllCckoyUURVNHd0VE5ldjRhWUpGakVjZ2c4bzE3XzlJTEdFYlQ0V1Y1blRhWkRla2NhWVV1R3hfWGw5enNIWGstMk5WYlNreTVQdzlsbzhjSkZ1Um1xSVBnX3FfNVR6LWZqcWJkcWtDWmVVY1JncUdmamhSZFRwRFgzY0VhZw?oc=5" target="_blank" rel="noopener noreferrer">日月光投控法說／Q2 EPS衝上4.80元、資本支出全年上調至105億美元｜股市話題｜豐雲學堂2026 年 08 月</a><span>sinotrade.com.tw</span></li><li><b>磐亞 4707</b>｜<a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxQYXJDdDlraEtkWFg3bGpWanJqeWVqakRPS3BRbTQ5MUNpRW1raC1XRlR4aE9xSlRMMkZYZ29DMEVNa29ZZ1hZY0xsRzFvMmZMQThKOWVYYTZkOXpId2JqWmVRY3lPYkZtekdqbWZUd3dGRHRCMm9MVFR3ZEJJdllpMTNPcTB4YlBCVWlfSEFB?oc=5" target="_blank" rel="noopener noreferrer">【10:28 即時新聞】磐亞(4707)股價勁揚逾6%至35.1元，受電子與AI特殊化學品題材點火＋均線多頭與主力成本支撐偏多</a><span>CMoney投資網誌</span></li><li><b>磐亞 4707</b>｜<a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE5ueGEweVlBZi1Vdl9HaFJCbE12Wnk0SDdCV2J0blFSbG1pVkVtdDFEQ29xS1ZsMnYyLWtneHlnRFhCMDU5YzZTaXl5MWxPVkZGLXd3dzZkMHZ6d3MtdXZV?oc=5" target="_blank" rel="noopener noreferrer">台股開高走低重挫461點 「這兩族群」逆勢突圍- 證券</a><span>工商時報</span></li><li><b>聯策 6658</b>｜<a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxPVFlWWjFYak1hamNFS0hya0VYWlFXdmdQYUlrSloxc3E1dDVBWldJN3cxeV9OQmpnSm9GdmRhYXhMdl8yRjJtamU5VVpBX19CamJ4aDQxdDdmQTFZenRHQkhpdGRXVTFHS3ZTT0RIMkZQLWlrRTEzamNIZVpWNXEzb0NFTVhCS1M5WDVvbG13?oc=5" target="_blank" rel="noopener noreferrer">【08/21 產業即時新聞】電子上游-PCB-材料設備 族群震盪走跌，設備與部分材料股逆勢突圍</a><span>CMoney投資網誌</span></li><li><b>聯策 6658</b>｜<a href="https://news.google.com/rss/articles/CBMiS0FVX3lxTE95T3VZRER4U0xOOWp5UEpISUQzWDl4ckFPUWNRWkIxU0tmYkZQV2tpOXJCQWdYUjRhbE42TENWUXFOOFNXRDc3anBIbw?oc=5" target="_blank" rel="noopener noreferrer">機器人走勢兩極！大立光逆風上揚收5550元、陽程逼近漲停「這檔」產能滿載至明年Q1也跌0.27%、所羅門慘崩9.3%</a><span>FTNN 新聞網</span></li></ol></section>
+  <section id="news" class="tab"><ol class="news-list"><li><b>富邦科技 0052</b>｜<a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE9Na1FLVDJrM1gzTHN3RnV6OTV5ZXRHcmtwMnBXQlhJcklESG1aYTQxbnpMTGZzaDBETnFKcXB2WEF5ekdrdmQ5RFI2ZE81VTdjc2F6Qy05UUVEQdIBX0FVX3lxTFBGZ1ViVmtfWE91VlU1R1RWd0VCMGpEUC10bk5pOHduZzg4eURVSlF2WFRlbFFuNTE1WjVHTHRHdnlzR1FpVzQzbDl2bmFQQ0czcjZ2TWJYTC1ud2pjbnJF?oc=5" target="_blank" rel="noopener noreferrer">高含「積」ETF 長線俏 0052、0050、006208等掌握成長契機</a><span>經濟日報</span></li><li><b>富邦科技 0052</b>｜<a href="https://news.google.com/rss/articles/CBMiU0FVX3lxTE04cjNnZVhpZWhiVVRZWUNld3NOZXhVaGIzazVYRXlwLVpqaGdkV3YyU0twcERJNi1FSURwblk4NS13NUdmTWdRS2NWLVFMaTl5RG5J?oc=5" target="_blank" rel="noopener noreferrer">富邦科技(0052) 個股概覽 | 個股 - 股市</a><span>CMoney</span></li><li><b>元大高股息 0056</b>｜<a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE9jZkpMODlCX2ZtRmMyRm80MTRQSE1JNW8yclNZaWt6LUtmLTIzNDBkN0QwQlJnSUZjd1RPVW5lOWhfS2lKT0EtRFVVYThMSnR1QmtsalNfeXJnUdIBX0FVX3lxTFBTMkhUeEg1bUlwVk1JU0xmRkJLbm5MT0dKNW9pSTRmNmlTQnNQY1hIenJwRWM2SGxNby1CbDIydWlRWnZkajJzbWViczVZRkFmaTYzOUlqNzZpT3B6eDVr?oc=5" target="_blank" rel="noopener noreferrer">高股息接棒漲 0056規模衝破6,000億元關卡</a><span>經濟日報</span></li><li><b>元大高股息 0056</b>｜<a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxQd2dOa3dLYXI3WW9mU2xEdmN2bGt6SnNWOTBFZVJnQ01CWkdyZGxsbmVLVmNHbUtkanNEb3ZuTDViczFHMjVtcDEtemJYSzZCUzRIYk9taTl0M1dkSDdsQmY5TFFPTXJrWTQzZVdxeURnVFJ0U19uemh2WjNMVUI0SFpQVFhreHdwcFBlOVB3RTc3NnJoRWxvaUVIWHR6N2ZVZFZrN05lbTNDOVQ1MjdpYjN3?oc=5" target="_blank" rel="noopener noreferrer">0056、00878、00919「高息三強」大PK！達人曝1檔報酬衝162% 「這檔」殖利率6.94%</a><span>Yahoo股市</span></li><li><b>中信臺灣智慧50 00912</b>｜<a href="https://news.google.com/rss/articles/CBMiT0FVX3lxTE1Gcnk1Q08zTnNGV2Fucm05T3REOWFpWEstMjlPOFE2TVgtb2UySmR1UmUwWlJxUEsxYkxRMTg1eTJob1ZlcXJCcmF2WW5GaTg?oc=5" target="_blank" rel="noopener noreferrer">萬金股行情帶旺00912、00406A 重倉布局信驊、川湖</a><span>news.cnyes.com</span></li><li><b>中信臺灣智慧50 00912</b>｜<a href="https://news.google.com/rss/articles/CBMid0FVX3lxTE1rQ1NwOFhMeTFHRXdrVU44LWlXVVFIS05Oc1pZcXdPWXNEdG5YbTl1QTRxSjhoQ3NDMHBSOGRtcGVlWHpNWGk2TkNWZ0thS1M4aGY2SkJRaGFMcVByS3YzN0pHRmpKcE5BUlhUUkpMYjZSWk96Y19v?oc=5" target="_blank" rel="noopener noreferrer">買不起信驊川湖？00912、00406A含金量高…小資免百萬跟上股王股后| 存股族愛ETF | 股市</a><span>UDN</span></li><li><b>群益台灣精選高息 00919</b>｜<a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE51WTFZdlItVnpxY2hKZnZsdzF2Y29RbDJLVUthTzU4cTRMZG5WVlN2SDhpTlQ0MkJmR0tkMDRSeWhJLXF2Y0pyNGRqNHFHbkVkQzVteG5DRV84UdIBX0FVX3lxTE5TTFFDck8tdGY1Vm5PZTVrM2tpLW9YUXRLZThlWFlYc1FWcjhOY1ZGLTRkZGdTUXZtTkpTR2xyTVo4eFVWUDhYWjRqeTlDNlNGYU5uOGtBNzFzTmRQdTJ3?oc=5" target="_blank" rel="noopener noreferrer">百萬國民高股息 ETF 00919成分股調整名單出爐 18進18出</a><span>經濟日報</span></li><li><b>群益台灣精選高息 00919</b>｜<a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxQd2dOa3dLYXI3WW9mU2xEdmN2bGt6SnNWOTBFZVJnQ01CWkdyZGxsbmVLVmNHbUtkanNEb3ZuTDViczFHMjVtcDEtemJYSzZCUzRIYk9taTl0M1dkSDdsQmY5TFFPTXJrWTQzZVdxeURnVFJ0U19uemh2WjNMVUI0SFpQVFhreHdwcFBlOVB3RTc3NnJoRWxvaUVIWHR6N2ZVZFZrN05lbTNDOVQ1MjdpYjN3?oc=5" target="_blank" rel="noopener noreferrer">0056、00878、00919「高息三強」大PK！達人曝1檔報酬衝162% 「這檔」殖利率6.94%</a><span>Yahoo股市</span></li><li><b>元大台灣價值高息 00940</b>｜<a href="https://news.google.com/rss/articles/CBMiS0FVX3lxTE5mN0puY3pTWjdOU0lHS2VPTU1GVVhEMXRnWVBqU0ZERnFMRmR5Z2lDazBqSlBSLVdTMzRWWHFLQTJnN1VpVGVtZ0daUQ?oc=5" target="_blank" rel="noopener noreferrer">32萬股東注意！00940月配息調高至0.055元 創掛牌新高</a><span>鉅亨網</span></li><li><b>元大台灣價值高息 00940</b>｜<a href="https://news.google.com/rss/articles/CBMiqgJBVV95cUxPbEEwZVBSb0g3Z1J6eFZXeUJsdGxoZ1dEMUZ3ZHlNWkFZbTIyR3pVZHBWNkJETVFOakZ6TFJyaXktQ0xOYUU3c0VJUWNNNWZkUEdEWnhiaGtLdVFRSFRqSm55amRHMkFSNGNJTFJJT3QyOEN0bEQ1elRUSEZTOXFKME5mZk1nblVkaGFON3BFc084S200UlVFT0RWVFZBb2RGMklZYnRnSUstMllMRG93WWd0Q3ltLUQxRkl6bFpINTUtd0RRbVV3Tk0xWWpYTmhPbGNEdmRyRFBYUllOMVctcUxEUEFjQzJWLWNiTGtnNjBwU3RtQndYajNkM1JoV3FKRFh1MVVTUm5HTElzOE1CS3ZTZU5QV2g3ZWZJNjNrUzlQQkI3V0dPVnl3?oc=5" target="_blank" rel="noopener noreferrer">息收＋價差雙賺、年配率衝5.3% 00940成高股息亮點！除息日在這天</a><span>Yahoo股市</span></li><li><b>主動群益台灣強棒 00982A</b>｜<a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTFB6X0pJNFpVdGN0RHY2ZFNJUmo1bENiUENZOFNpaDYyUzNDLWJtTENZQTJTMmRUcURKdWNQNlltTFZvX2ZmTU1uUkhGQWZYT3U5U1UtR3EzWmI?oc=5" target="_blank" rel="noopener noreferrer">00982A 主動群益台灣強棒- 指數漲你卻賠?主動 ETF 821 換股筆記買金融出電子? - 股市爆料同學會</a><span>CMoney</span></li><li><b>主動群益台灣強棒 00982A</b>｜<a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE16QjJrVGdJTlJSaUttcXJ4a3FKeElfY3RtTXU5aWJBcHFHejdNOW1Wcm5IbEJoVkh1TUJUNnpSd2JNQ3V3SFk1aVdiVktfUmJ1MTd2aUl4QkpOZ9IBX0FVX3lxTE1XU25RX1BydS1SaVZ5YzZ4cTNRLXpDODBYZ2FCUkc1TVYxSlBfSmxMdWozem0yaG9kWTdNZGxBdzc2RW0zNDJBR0VZRzJXdkZFMVpQWHc4amVmc0NsS2xn?oc=5" target="_blank" rel="noopener noreferrer">8月30檔 ETF 除息！00923、00982A 等14檔年化配息率逾10%</a><span>經濟日報</span></li><li><b>中纖 1718</b>｜<a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTFBjenZJY1JrQ1ZJZzdlOVFPUjZGQzdXQlJnaV9BNnY3OVVJMDRFc3VkNElyd0dmTi1nNmo1bHNreGlMVWZqMzRkdVVkZUlmTHFOWUR0TldodWc?oc=5" target="_blank" rel="noopener noreferrer">1714 和桐- 低價成長股和桐，今日順利填息- 股市爆料同學會（RSS 可能誤配，僅供參考）</a><span>CMoney</span><em class="warn">RSS 可能誤配</em></li><li><b>中纖 1718</b>｜<a href="https://news.google.com/rss/articles/CBMiS0FVX3lxTE13Y3F1Und3a213eDg1WWV2ZUlRb3ozSWhuYy12d2JHbHhKTHhEcG16ZWptY2tELVZZSUFEd3ZrMEpNS0pub3c0eFJqNA?oc=5" target="_blank" rel="noopener noreferrer">Google TPU搶單大戰開打！「IC設計一哥」失守3800元 空軍連襲5日淪弱勢股王（RSS 可能誤配，僅供參考）</a><span>FTNN 新聞網</span><em class="warn">RSS 可能誤配</em></li><li><b>台積電 2330</b>｜<a href="https://news.google.com/rss/articles/CBMiUkFVX3lxTFBIc1U5YVNGTkFsS2Y3dEFRa3pGbFJCeVRnZUJUS2pqRlZYTDBTS085QmpFc3RCSC1RYkljUUxYMDhjSENQeS01QVAzLWpyaVBzaWfSAVdBVV95cUxNZDdDYlFPSFhGZUxmVWtPcWY3VGotaDRSMUpNWVVmemlpM2xVSndtQ2Jucklrc0NfS3BNbHhHVGFpZWw0NzZ5cUFLSm9ERVFCMzAwcFRyWjA?oc=5" target="_blank" rel="noopener noreferrer">台股4萬6震盪！杜金龍看好拉回打第二隻腳：台積電（2330）先獲利了結</a><span>UDN</span></li><li><b>台積電 2330</b>｜<a href="https://news.google.com/rss/articles/CBMiugRBVV95cUxPT3lkM0c2dzNYNG1BWTBpWm1BYXdYNzdFNG1tZFNoMkYtS3dST0xja0Foamx3LVNKaGFjcFkzN1RTWEsxYjZsRXRLTEpEWnFYNnNkLWI1czRGdzJMbjYxalNiN1lfTERyNVFsV0VzNExBX25BbGotMkdlaWF6TXR6V3NkLTdvRXRoSjFuMm9CWkgwQmg1emI4WkEtV1NEVUtLbmR2SF9LdlRncG12MG0yT3hUc2FLcFlzRWpxcHYtUWpsQUNwTktYWF9VZi1OU0U3R3ZjbWdNUTI4eHp2QV9wRWdpWWJMczEwNVotbTZEOEtYSFM4U2ZPQXozeFR3eXRtSTNzQ1N5empSVzU5Q01rUHhQMEVvZmdlcmJVamFORWwtZ04wTHB4OXBSU05rYllCQS14ZWJtaHlNZ2xxVFRtVDRmQVlaLVo2cklRVzZ5VE5HZEJ3NWNXUDRsdzFHcTd3MVA4YVYtOWY0SWx0NXl3eTBQT3BPVmJQWDEyUkJFYzZiMDRPNFVGcU1UV0lwU0FVMk93SnJReGZDT2lfc0RPVnMzMFJBMUtMVmdmV05nUHNGOENvU2pUUjJfWlNwQnNxNGc3NFNMazB4dzI3aDhZbE5EdGFqRm5WbnBpMUJoLUM0Y001amtWUE9VdFZ3eTVlZXMwb2RxbEdfb0pPelY3WS1iNV9Ka3NUaE9UU09rWmJzWGYxU2NKZFV6WGlIWEZaVUdDREQ2X3YxZE9RQ0VaX0MyaFgtTnJnREE?oc=5" target="_blank" rel="noopener noreferrer">【零股排行榜】盤中零股成交量TOP20｜0050 元大台灣50、00981A 主動統一台股增長、2330 台積電、2609 陽明、4958 臻鼎-KY (0821)｜豐雲學堂2026 年 08 月</a><span>sinotrade.com.tw</span></li><li><b>統一證 2855</b>｜<a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTE96V0Zaa25EQzVXc1BfS0kwRDlMOVRKOElXdDhtUkpEQURsTE92NFhwWldmd0lOeEthQS11V0haOHhnelRSRXROdm41VFkxdnlwczhCU1E0N3U?oc=5" target="_blank" rel="noopener noreferrer">統一證 代子公司統一證券投資顧問(股)公司公告向統一綜合證券(股)公司取得使用權資產</a><span>CMoney</span></li><li><b>統一證 2855</b>｜<a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE05UXFpNHFUZzEwV19udmsxTTJRU2xhckpMOXZ2QkRZazVKNi1fLXVkX1l6R2VDaHBYU1dzbDBvQTZWVnE4YkFXaU81c3BDVkdHcVB3dEw1LUk5LVhOZVFr?oc=5" target="_blank" rel="noopener noreferrer">台股收復4萬5！投信獨寵「這檔」爆買逾萬張 前10大買超1次看（RSS 可能誤配，僅供參考）</a><span>自由財經</span><em class="warn">RSS 可能誤配</em></li><li><b>凱基金 2883</b>｜<a href="https://news.google.com/rss/articles/CBMiU0FVX3lxTE5razMwcGM0azNqYW5MRDVOWVRHSnI0ZlhJNnFDekNVcURPdXZURGMzQUlPQ2h4dHhTTjczdGl3RDlqYk5KbDJWQTdYdnJYWU9OMkZv?oc=5" target="_blank" rel="noopener noreferrer">凱基金(2883) 個股概覽 | 個股 - 股市</a><span>CMoney</span></li><li><b>凱基金 2883</b>｜<a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTFBMYXlZNUdDb3Vhb1FQdGJ4bzYweWYwd2VhbmUtc2toaUpCYUpOeXd0UE4tWGVzSjlyd0tzb2hZNGlBdlV3Q3AyZm1JeGhkZzA2WEZjSzNwaUx0d9IBX0FVX3lxTE84Q01wNjJrWXNsRU9GVWFjRzQ2V2d3SXUxQW5kcllFYXpfN0IxQVFIUXM2RFM0UllqaGc4WGE1N2ZneXI2cUZ5eHlsUGpZdFZUUUtZb2RSMUQxN2o1RHdv?oc=5" target="_blank" rel="noopener noreferrer">00919換股納入凱基金 股價昨日飆漲停、今盤中續飆逾9%</a><span>經濟日報</span></li><li><b>群創 3481</b>｜<a href="https://news.google.com/rss/articles/CBMi_AJBVV95cUxNYkJPeE1XbDNDampyOTNLdDhiNENrVFlwSk4ydl9FZllqLVlwX3NzVmVPUWgtcndkUFBQRXVTODNhUTliR2VNSmFhOTBsbjdnbFFzTnRhV2dXcllqUXdUdWF5LXhGMFlJNmh6MmF0aTN5b2ZYNElRaUJocWpLNVBKSXlPSWVvZXZ2bFFyQmI0Qzk0dG5QUXVnSFMyLXVod2NUak9nV3ZxM1ZIX211ZnVjY2tXTjhYb3FPSDM1NkkzSmd6cVNNUG1WemhKSVdSNi10c0lTVmhncGZZQlJMZmlhMXl4dmdDTnRZOGpSd1ZwNUJiX0hFU2FZTnBvZXZnVzRlRTZmLUpiOFhnWlhrWjRFUUpBbmRxSFRnR0cwVERzY3RLckxLRV94eHR4QkRwMnlWWlZUYTByQ1BGb1VYcDJNOWlzeE54SkN0cld4SE94bkFKZDVBUmVMYTJSMVJnN0s2TEM0TFVCTFBkZHBETkxEdGRHX0ozVGliUVRzNQ?oc=5" target="_blank" rel="noopener noreferrer">群創法說會後挫逾半根停板 分析師揭關鍵：先別急著接</a><span>Yahoo股市</span></li><li><b>群創 3481</b>｜<a href="https://news.google.com/rss/articles/CBMiU0FVX3lxTE8wN2tIZDh6aWN0ZFBkZnNERTJvZ1IzNmRZcGdDLTd0TjZhdUxhS0dwSEVLT0FZSFA5SzRFTmlmdllJY3pkdnc3VjVkcllibVhmSmJv?oc=5" target="_blank" rel="noopener noreferrer">群創(3481) 個股概覽 | 個股 - 股市</a><span>CMoney</span></li><li><b>日月光投控 3711</b>｜<a href="https://news.google.com/rss/articles/CBMi1ANBVV95cUxOc2d0TWl0OWxpRzR4SnNRMC1YbFVGLXBCaC00OTNlWjh1UlRaWmFsYU05WlVKWmlRd2JnUVA2WVpFOXIwdUtWYTVnaUlZTm9wVTRmWGYyTk5MRmtDSzhQczcwRlYwUWxSOXFkWmpleHZULXVlYklTTHl2dU9vMV9weG9kR3hhRTNvNXpxTEp3T0toZklfd2FNR1I1OE42QTJ2XzR6R2NNVG9xUjNUZC1WdjNDaDk5ZEhvZXJ6TTJscUdTOTgwdXhGeE9HV3k0bUhtcUE2TkNpc1FiLXVSRXZoamFIV04xcndfX2hNSVY4VUFMWnViV3BFbUlvZWgxYVloTW1yUGV1RGlsNEJvX3lMcFB5bVZ1d2QyUzhkQ2pFWG1hMGtnMjBCVjd4eE13VHlCTGVKbnRXWDNubV9mUTNEMUhfNHk2QTEtUVBJYWRNUXpvVTZONlhtVmZTNXJ3YkEwb2xJbUVIczR0cmhVNHg1cXdJRFFtY0hMcGpkMHdYMTRlUUNTNGNaQlpnVU5nYWxpQzF0dzliTmdMdmpLMFBVSlRxdGh6bUNZWFFfbkxkUXVzajgzNUN1VkRocFpWa1h4THJUZG9EREhaNTVZZ1h4Z1ZNc3c?oc=5" target="_blank" rel="noopener noreferrer">封測廠被大哥盯上！「這2檔」遭投信脫手5663張 日月光投控連挨6刀今又被出清3324張</a><span>Yahoo股市</span></li><li><b>日月光投控 3711</b>｜<a href="https://news.google.com/rss/articles/CBMiU0FVX3lxTFBSdEl5ZzRfRlFXd0w4Zks2MmRNX0U5bEVQWEZycWhVLUc4VWRGOU1mX196ODh1Xy1HN2w3aFFxRWR4RjNNa2V2dzJyLTRhRnVMOFZz?oc=5" target="_blank" rel="noopener noreferrer">日月光投控(3711) 個股概覽 | 個股 - 股市</a><span>CMoney</span></li><li><b>磐亞 4707</b>｜<a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxQYXJDdDlraEtkWFg3bGpWanJqeWVqakRPS3BRbTQ5MUNpRW1raC1XRlR4aE9xSlRMMkZYZ29DMEVNa29ZZ1hZY0xsRzFvMmZMQThKOWVYYTZkOXpId2JqWmVRY3lPYkZtekdqbWZUd3dGRHRCMm9MVFR3ZEJJdllpMTNPcTB4YlBCVWlfSEFB?oc=5" target="_blank" rel="noopener noreferrer">【10:28 即時新聞】磐亞(4707)股價勁揚逾6%至35.1元，受電子與AI特殊化學品題材點火＋均線多頭與主力成本支撐偏多</a><span>CMoney投資網誌</span></li><li><b>磐亞 4707</b>｜<a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE5ueGEweVlBZi1Vdl9HaFJCbE12Wnk0SDdCV2J0blFSbG1pVkVtdDFEQ29xS1ZsMnYyLWtneHlnRFhCMDU5YzZTaXl5MWxPVkZGLXd3dzZkMHZ6d3MtdXZV?oc=5" target="_blank" rel="noopener noreferrer">台股開高走低重挫461點 「這兩族群」逆勢突圍- 證券（RSS 可能誤配，僅供參考）</a><span>工商時報</span><em class="warn">RSS 可能誤配</em></li><li><b>聯策 6658</b>｜<a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxPVFlWWjFYak1hamNFS0hya0VYWlFXdmdQYUlrSloxc3E1dDVBWldJN3cxeV9OQmpnSm9GdmRhYXhMdl8yRjJtamU5VVpBX19CamJ4aDQxdDdmQTFZenRHQkhpdGRXVTFHS3ZTT0RIMkZQLWlrRTEzamNIZVpWNXEzb0NFTVhCS1M5WDVvbG13?oc=5" target="_blank" rel="noopener noreferrer">【08/21 產業即時新聞】電子上游-PCB-材料設備 族群震盪走跌，設備與部分材料股逆勢突圍（RSS 可能誤配，僅供參考）</a><span>CMoney投資網誌</span><em class="warn">RSS 可能誤配</em></li><li><b>聯策 6658</b>｜<a href="https://news.google.com/rss/articles/CBMiS0FVX3lxTE95T3VZRER4U0xOOWp5UEpISUQzWDl4ckFPUWNRWkIxU0tmYkZQV2tpOXJCQWdYUjRhbE42TENWUXFOOFNXRDc3anBIbw?oc=5" target="_blank" rel="noopener noreferrer">機器人走勢兩極！大立光逆風上揚收5550元、陽程逼近漲停「這檔」產能滿載至明年Q1也跌0.27%、所羅門慘崩9.3%（RSS 可能誤配，僅供參考）</a><span>FTNN 新聞網</span><em class="warn">RSS 可能誤配</em></li></ol></section>
   <section id="sources" class="tab"><div class="source-grid"><article><h3>已串接</h3><ul><li>TWSE：上市股日 K / 月資料</li><li>FinMind：歷史股價 fallback，補上櫃與 ETF</li><li>Yahoo Finance：盤中 best-effort 報價</li><li>Google News RSS：近 7 日新聞熱度</li></ul></article><article><h3>下一步建議</h3><ul><li>TPEx：補上櫃官方行情與籌碼</li><li>FinMind：三大法人、融資融券、股權分散</li><li>MOPS：重大訊息、月營收、財報、股利</li><li>鉅亨 / Yahoo / 自由財經 RSS：新聞交叉驗證</li></ul></article></div></section>
 </main>
 <footer>免責聲明：本內容僅供資訊整理與研究學習，不構成任何投資建議或買賣依據。</footer>
