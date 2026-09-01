@@ -1,199 +1,309 @@
 # 台股 AI 情報官｜每日晨報 MVP
 
-產生時間：2026-08-27 07:16
-自選股數：14｜新聞數：47
+產生時間：2026-09-01 15:21
+自選股數：14｜新聞數：48
 
 ## 今日 3 個觀察重點
-- 富邦科技（0052）：97/100，偏多，站上 MA5; 站上 MA20
-- 元大台灣價值高息（00940）：97/100，偏多，站上 MA5; 站上 MA20
-- 台積電（2330）：97/100，偏多，站上 MA5; 站上 MA20
+- 台積電（2330）：交叉分數 112；技術 97/100（偏多）; 消息 5 則; EPS 為正
+- 聯策（6658）：交叉分數 112；技術 97/100（偏多）; 量能 3.01x; 消息 4 則
+- 凱基金（2883）：交叉分數 111；技術 92/100（偏多）; 量能 1.26x; 消息 5 則
+
+## 五面向 Agent 交叉驗證
+
+> 分數只採用目前已接資料：技術面、基本面、消息面。籌碼面與期權籌碼先明確標示為待接資料，避免假裝有訊號。
+
+### 台積電（2330）｜交叉分數 112
+- 技術面 Agent：偏多｜站上 MA5、站上 MA20、站上 MA60
+- 基本面 Agent：可參考｜最近一季 EPS 為正；TTM EPS 為正；PER 位於可觀察區間
+- 籌碼面 Agent：待接資料｜尚未串三大法人、融資券、借券與集保股權分散；目前只列為下一階段，不納入分數。
+- 消息面 Agent：高熱度｜5 則｜CMoney, Yahoo股市, cmnews.com.tw｜最新：【零股排行榜】盤中零股成交量TOP 20｜0050 元大台灣50、1303 南亞、2330 台積電、2609 陽明、00981A 主動統一台股增長(0826)｜豐雲學堂2026 年 08 月
+- 期權籌碼 Agent：待接資料｜尚未串期交所 OI、P/C Ratio、Max Pain、IV；目前不作方向判斷。
+- 綜合判讀：技術 97/100（偏多）; 消息 5 則; EPS 為正
+
+### 聯策（6658）｜交叉分數 112
+- 技術面 Agent：偏多｜站上 MA5、站上 MA20、站上 MA60、量能放大 3.01x
+- 基本面 Agent：可參考｜最近一季 EPS 為正；TTM EPS 為正；PER 偏高，估值需保守
+- 籌碼面 Agent：待接資料｜尚未串三大法人、融資券、借券與集保股權分散；目前只列為下一階段，不納入分數。
+- 消息面 Agent：有訊號｜4 則｜CMoney投資網誌, sinotrade.com.tw, ww2.money-link.com.tw｜最新：家登創投參與 AOI 廠聯策私募 累計持股2,137張比率達5.57%｜新聞快訊｜豐雲學堂
+- 期權籌碼 Agent：待接資料｜尚未串期交所 OI、P/C Ratio、Max Pain、IV；目前不作方向判斷。
+- 綜合判讀：技術 97/100（偏多）; 量能 3.01x; 消息 4 則; EPS 為正; 估值偏高需保守
+
+### 凱基金（2883）｜交叉分數 111
+- 技術面 Agent：偏多｜站上 MA5、站上 MA20、站上 MA60
+- 基本面 Agent：可參考｜最近一季 EPS 為正；TTM EPS 為正；PER 相對低，需查是否循環或一次性因素
+- 籌碼面 Agent：待接資料｜尚未串三大法人、融資券、借券與集保股權分散；目前只列為下一階段，不納入分數。
+- 消息面 Agent：高熱度｜5 則｜CMoney, Yahoo股市, news.cnyes.com｜最新：凱基金(2883) 個股概覽 | 個股 - 股市
+- 期權籌碼 Agent：待接資料｜尚未串期交所 OI、P/C Ratio、Max Pain、IV；目前不作方向判斷。
+- 綜合判讀：技術 92/100（偏多）; 量能 1.26x; 消息 5 則; EPS 為正
+
+### 富邦科技（0052）｜交叉分數 109
+- 技術面 Agent：偏多｜站上 MA5、站上 MA20、站上 MA60
+- 基本面 Agent：資料不足｜ETF 需改看成分股、折溢價、配息與追蹤誤差；目前不納入估值分數。
+- 籌碼面 Agent：待接資料｜尚未串三大法人、融資券、借券與集保股權分散；目前只列為下一階段，不納入分數。
+- 消息面 Agent：有訊號｜4 則｜CMoney, FTNN 新聞網, 經濟日報｜最新：高含「積」ETF 長線俏 0052、0050、006208等掌握成長契機
+- 期權籌碼 Agent：不適用｜個股/ETF 報告暫不做期權解讀；台指選擇權可作大盤溫度計。
+- 綜合判讀：技術 97/100（偏多）; 量能 1.39x; 消息 4 則
+
+### 主動群益台灣強棒（00982A）｜交叉分數 109
+- 技術面 Agent：偏多｜站上 MA5、站上 MA20、站上 MA60、量能放大 1.99x
+- 基本面 Agent：資料不足｜ETF 需改看成分股、折溢價、配息與追蹤誤差；目前不納入估值分數。
+- 籌碼面 Agent：待接資料｜尚未串三大法人、融資券、借券與集保股權分散；目前只列為下一階段，不納入分數。
+- 消息面 Agent：有訊號｜3 則｜CMoney, FTNN 新聞網, 今周刊｜最新：8/28 00982A 台半堆到 6484 張
+- 期權籌碼 Agent：不適用｜個股/ETF 報告暫不做期權解讀；台指選擇權可作大盤溫度計。
+- 綜合判讀：技術 97/100（偏多）; 量能 1.99x; 消息 3 則
+
+## Agent 建置順序
+1. 籌碼面：先接三大法人、融資券、借券、集保大戶持股，做每日異常警示。
+2. 技術面：沿用現有均線、RSI、MACD、量價結構，強化支撐/壓力與訊號分級。
+3. 消息面：保留原始連結，加入重大性分級與假消息交叉查證。
+4. 基本面：從個股 EPS/PER/PBR 擴充到同業比較；ETF 改接成分股、折溢價與配息品質。
+5. 期權籌碼：接台指選擇權 OI、P/C Ratio、Max Pain、IV，作為大盤溫度計，不當單一進出場訊號。
+
 
 ## 個股追蹤
 
 ### 富邦科技（0052）｜科技 ETF
 - 技術分數：97/100（偏多）
-- 收盤：61.90，日變動：-0.08%
-- 均線：MA5 61.25 / MA20 60.81 / MA60 60.98
-- RSI14：62.32；MACD hist：0.13；量能比：0.66x
-- 目標觀察價：62.80；支撐觀察價：60.80
-- 目標依據：取近 20 日高點作為第一壓力/目標觀察價。
-- K 線：長黑偏弱，短多排列；接近 20 日高檔，留意追價風險與突破量。
+- 收盤：63.05，日變動：1.94%
+- 均線：MA5 62.22 / MA20 61.30 / MA60 60.99
+- RSI14：60.00；MACD hist：0.20；量能比：1.39x
+- 目標觀察價：66.00；支撐觀察價：61.80
+- 目標依據：已接近短壓，改看近 60 日高點壓力。
+- K 線：長紅偏強，短多排列；接近 20 日高檔，留意追價風險與突破量。
 - 基本面：ETF：EPS / PER / PBR 不適用；殖利率 資料源暫無
+- Agent 快讀：技術面 偏多｜基本面 資料不足｜消息面 有訊號
+  - 技術：站上 MA5、站上 MA20、站上 MA60
+  - 基本：ETF 需改看成分股、折溢價、配息與追蹤誤差；目前不納入估值分數。
+  - 消息：4 則｜CMoney, FTNN 新聞網, 經濟日報｜最新：高含「積」ETF 長線俏 0052、0050、006208等掌握成長契機
 - 訊號：站上 MA5、站上 MA20、站上 MA60、短均線優於月線、RSI 位於健康區間
 - 近 7 日新聞：
   - [高含「積」ETF 長線俏 0052、0050、006208等掌握成長契機](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9Na1FLVDJrM1gzTHN3RnV6OTV5ZXRHcmtwMnBXQlhJcklESG1aYTQxbnpMTGZzaDBETnFKcXB2WEF5ekdrdmQ5RFI2ZE81VTdjc2F6Qy05UUVEQdIBX0FVX3lxTFBGZ1ViVmtfWE91VlU1R1RWd0VCMGpEUC10bk5pOHduZzg4eURVSlF2WFRlbFFuNTE1WjVHTHRHdnlzR1FpVzQzbDl2bmFQQ0czcjZ2TWJYTC1ud2pjbnJF?oc=5)（經濟日報）
   - [富邦科技(0052) 個股概覽 | 個股 - 股市](https://news.google.com/rss/articles/CBMiU0FVX3lxTE04cjNnZVhpZWhiVVRZWUNld3NOZXhVaGIzazVYRXlwLVpqaGdkV3YyU0twcERJNi1FSURwblk4NS13NUdmTWdRS2NWLVFMaTl5RG5J?oc=5)（CMoney）
-  - [0050、0052等五檔重量級 ETF 換股今生效](https://news.google.com/rss/articles/CBMigAFBVV95cUxNTWZiaHVad0dDN3JHNGlNU3hxYnVjWnVDb09iTGVPb21EUVZJVTFPRUhBdk81RG9NU09hVjg5QmFJbXNBTW56d09IbjJCbkZYcF9DYlZtSnFacjBEZVlGbWRuYU9oWkVrd2k5YjNVcy1zVndEV0VMd0hVRmdobkpZa9IBX0FVX3lxTE9nQUw5dnEyRzAwWThNQjZDcjFTM3hQNVR0X295QXJUNTdTVlRhdVVmeS0yX1ZjS0Z6Wkc0VWV1TFdZMHZ1ZmtYaWdiclR4TnJMeS1vVWZWVkxWNTRLcEZZ?oc=5)（經濟日報）
+  - [0050、0052準備換股! 散戶搶搭便車聚焦這五檔個股](https://news.google.com/rss/articles/CBMiX0FVX3lxTE1HaEc5N2VDeFBZbUZrcWZhQzloMjhNRnNocEJqT3Axa3JjRFZkU0oyem1GdXFNQTJoblpTdDdLNVllSG12R2NPRGltZEhIWXkwcDNnNFdWOTl4WWgwaElr?oc=5)（自由財經）
 ### 元大高股息（0056）｜高股息 ETF
 - 技術分數：92/100（偏多）
-- 收盤：53.60，日變動：0.66%
-- 均線：MA5 52.82 / MA20 52.07 / MA60 51.67
-- RSI14：71.79；MACD hist：0.12；量能比：1.05x
-- 目標觀察價：54.10；支撐觀察價：53.20
+- 收盤：54.85，日變動：0.46%
+- 均線：MA5 54.03 / MA20 52.74 / MA60 51.75
+- RSI14：70.87；MACD hist：0.22；量能比：0.88x
+- 目標觀察價：55.20；支撐觀察價：54.60
 - 目標依據：取近 20 日高點作為第一壓力/目標觀察價。
 - K 線：十字線，短多排列；接近 20 日高檔，留意追價風險與突破量。
 - 基本面：ETF：EPS / PER / PBR 不適用；殖利率 資料源暫無
+- Agent 快讀：技術面 偏多｜基本面 資料不足｜消息面 有訊號
+  - 技術：站上 MA5、站上 MA20、站上 MA60
+  - 基本：ETF 需改看成分股、折溢價、配息與追蹤誤差；目前不納入估值分數。
+  - 消息：4 則｜CMoney, Yahoo股市, cmnews.com.tw｜最新：高股息接棒漲 0056規模衝破6,000億元關卡
 - 訊號：站上 MA5、站上 MA20、站上 MA60、短均線優於月線、MACD 柱狀體偏多
 - 近 7 日新聞：
-  - [0056、00878、00919「高息三強」大PK！達人曝1檔報酬衝162% 「這檔」殖利率6.94%](https://news.google.com/rss/articles/CBMisgFBVV95cUxQd2dOa3dLYXI3WW9mU2xEdmN2bGt6SnNWOTBFZVJnQ01CWkdyZGxsbmVLVmNHbUtkanNEb3ZuTDViczFHMjVtcDEtemJYSzZCUzRIYk9taTl0M1dkSDdsQmY5TFFPTXJrWTQzZVdxeURnVFJ0U19uemh2WjNMVUI0SFpQVFhreHdwcFBlOVB3RTc3NnJoRWxvaUVIWHR6N2ZVZFZrN05lbTNDOVQ1MjdpYjN3?oc=5)（Yahoo股市）
-  - [台股高息 ETF 績效猛 0056、00878、00929等同步攀新高價](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5vZ0JrdVMxc0JoYTJRRXFVZFZpWHkxQnpHempWMG5DRWVHNzAxMkxiX0NpaDIzTThONHpIOEdpd1htMXBIZjJ2Q002bzhMQjVCSjRlOV9CaFpud9IBX0FVX3lxTFBPQTlXd1BEczl4TTgxV2JQS1VRUUZFSG10QUJZUTVhdXQtNXp2OFEzT2JxRVFGM3YwZHB0alpPeE1fQ2VkT2ZjRE9kc3l3MlRTdkVyb2pKd2hLY0ViTkJ3?oc=5)（經濟日報）
-  - [0056 元大高股息- 小兔中場報告~台股飆到4萬6🚀小兔也忍不住踩油門啦🏎️ - 股市爆料同學會](https://news.google.com/rss/articles/CBMiWEFVX3lxTE1lQ2lRTlVrU3NFSTRBX0lEQVc2MkphbXRhaG1qYlZvZ2VyeVJCZkZkQTVsRXNjaUVFQzF3bnZpMDVTS3pySkFNRkdYdEw4YkE0MTRkY2loazY?oc=5)（CMoney）
+  - [高股息接棒漲 0056規模衝破6,000億元關卡](https://news.google.com/rss/articles/CBMiWkFVX3lxTE9jZkpMODlCX2ZtRmMyRm80MTRQSE1JNW8yclNZaWt6LUtmLTIzNDBkN0QwQlJnSUZjd1RPVW5lOWhfS2lKT0EtRFVVYThMSnR1QmtsalNfeXJnUdIBX0FVX3lxTFBTMkhUeEg1bUlwVk1JU0xmRkJLbm5MT0dKNW9pSTRmNmlTQnNQY1hIenJwRWM2SGxNby1CbDIydWlRWnZkajJzbWViczVZRkFmaTYzOUlqNzZpT3B6eDVr?oc=5)（經濟日報）
+  - [0056 元大高股息- 今日最夯ETF／台股震盪收黑0056突圍創新高- 股市爆料同學會](https://news.google.com/rss/articles/CBMiWEFVX3lxTE90ZmQ4TjJrVS04dUhCTVFFT0c3YWl5V0llbFNRVzNNRXQ0bmZ2aU5mUF9fYm1EOGRqU3pxQ1BLQ3M4eTduUXNzSTJXeEdaTWt2UGtsOExPejc?oc=5)（CMoney）
+  - [【台股ETF五天王】一表看0050、00878、0056 等最愛買什麼？全撞「這2檔」！](https://news.google.com/rss/articles/CBMiqwNBVV95cUxOc3QtMVFfQ2FYcEpwcXdiWktncnRQU2hEdmhpSnNJUWZYbzMwTjdfTnFUV2k3RU52NEk0Z2haMFRndk1QVXFmWWFNeFVXemkxOXdjY2R6VUtsOS0xQVZQdkstZG1IOVlqOERwTEp0N280R2t3VVZWbXFDU29mRnNMQzZxN3VPX1FhUXc4MldWVzdUUS1zUlpJMG05b3Uwb0x3d3R5V01zVVlYb3YzbGtkeDRuNVZBbUlFNFh1QmFzLW5uOTJEdk9SRzlpYmM5WlIzMl92ZGo1V2JCM3l0RHh5RFBNZDQySzdPOE5TN2F3bG9sZkNfY0FBN2IzcEo0Q01HVFpCV0c4S1A3VGwydHZsR0Z2bGdDVFpEZkZEX1R6U09NbnRySUVTcTVyUnNPaDZtdHlpNExRejdsdXJzT1VNcmFaWmhWV3dRVml4TFRiSVBWTGpmOHRXclpNLW52M2dXTXMxWnNoTEhUMU11Qkp1WV85VXNud1FqbXJtM2pZTC05dm9PV3F1YjlDRnE4M01FelJkUVhsbE8yd0ZQdDVKZnVpZDB1N0o2aU4w?oc=5)（Yahoo股市）
 ### 中信臺灣智慧50（00912）｜智慧型 ETF
-- 技術分數：92/100（偏多）
-- 收盤：34.42，日變動：0.12%
-- 均線：MA5 34.12 / MA20 33.65 / MA60 33.36
-- RSI14：66.26；MACD hist：0.06；量能比：0.31x
-- 目標觀察價：35.10；支撐觀察價：34.40
-- 目標依據：取近 20 日高點作為第一壓力/目標觀察價。
-- K 線：上影線壓力，短多排列；接近 20 日高檔，留意追價風險與突破量。
+- 技術分數：97/100（偏多）
+- 收盤：35.24，日變動：1.56%
+- 均線：MA5 34.70 / MA20 34.08 / MA60 33.43
+- RSI14：64.34；MACD hist：0.09；量能比：1.30x
+- 目標觀察價：36.20；支撐觀察價：34.70
+- 目標依據：已接近短壓，改看近 60 日高點壓力。
+- K 線：長紅偏強，短多排列；接近 20 日高檔，留意追價風險與突破量。
 - 基本面：ETF：EPS / PER / PBR 不適用；殖利率 資料源暫無
-- 訊號：站上 MA5、站上 MA20、站上 MA60、短均線優於月線、MACD 柱狀體偏多
+- Agent 快讀：技術面 偏多｜基本面 資料不足｜消息面 有訊號
+  - 技術：站上 MA5、站上 MA20、站上 MA60
+  - 基本：ETF 需改看成分股、折溢價、配息與追蹤誤差；目前不納入估值分數。
+  - 消息：1 則｜news.cnyes.com｜最新：萬金股行情帶旺00912、00406A 重倉布局信驊、川湖
+- 訊號：站上 MA5、站上 MA20、站上 MA60、短均線優於月線、RSI 位於健康區間
 - 近 7 日新聞：
-  - [萬金股行情帶旺00912、00406A 重倉布局信驊、川湖](https://news.google.com/rss/articles/CBMiT0FVX3lxTE1Gcnk1Q08zTnNGV2Fucm05T3REOWFpWEstMjlPOFE2TVgtb2UySmR1UmUwWlJxUEsxYkxRMTg1eTJob1ZlcXJCcmF2WW5GaTg?oc=5)（news.cnyes.com）
-  - [買不起信驊川湖？00912、00406A含金量高…小資免百萬跟上股王股后| 存股族愛ETF | 股市](https://news.google.com/rss/articles/CBMid0FVX3lxTE1rQ1NwOFhMeTFHRXdrVU44LWlXVVFIS05Oc1pZcXdPWXNEdG5YbTl1QTRxSjhoQ3NDMHBSOGRtcGVlWHpNWGk2TkNWZ0thS1M4aGY2SkJRaGFMcVByS3YzN0pHRmpKcE5BUlhUUkpMYjZSWk96Y19v?oc=5)（UDN）
+  - [萬金股行情帶旺00912、00406A 重倉布局信驊、川湖](https://news.google.com/rss/articles/CBMiU0FVX3lxTFBCUkdPTGNEbUF1SURSN2dMdXRJWF9taDJIaW9qU3A2eGEzQnNxWVh5RjZ1Wm1jLUUtS1oxNkx4NDdoVkJhYnEzRlJfcW1MU0tmcENF?oc=5)（news.cnyes.com）
 ### 群益台灣精選高息（00919）｜高股息 ETF
 - 技術分數：84/100（偏多）
-- 收盤：31.31，日變動：0.32%
-- 均線：MA5 31.01 / MA20 30.28 / MA60 29.94
-- RSI14：81.53；MACD hist：0.10；量能比：1.04x
-- 目標觀察價：31.50；支撐觀察價：31.20
-- 目標依據：取近 20 日高點作為第一壓力/目標觀察價。
-- K 線：一般 K 線，短多排列；接近 20 日高檔，留意追價風險與突破量。
+- 收盤：32.31，日變動：1.10%
+- 均線：MA5 31.65 / MA20 30.64 / MA60 30.00
+- RSI14：84.87；MACD hist：0.16；量能比：2.10x
+- 目標觀察價：32.75；支撐觀察價：31.95
+- 目標依據：已在近期高檔，改用 ATR 波動推估下一段觀察價。
+- K 線：長紅偏強，短多排列；接近 20 日高檔，留意追價風險與突破量。
 - 基本面：ETF：EPS / PER / PBR 不適用；殖利率 資料源暫無
+- Agent 快讀：技術面 偏多｜基本面 資料不足｜消息面 高熱度
+  - 技術：站上 MA5、站上 MA20、站上 MA60、RSI 偏熱，避免追價、量能放大 2.10x
+  - 基本：ETF 需改看成分股、折溢價、配息與追蹤誤差；目前不納入估值分數。
+  - 消息：5 則｜CMoney, ETtoday財經雲, 數位時代｜最新：百萬國民高股息 ETF 00919成分股調整名單出爐 18進18出
 - 訊號：站上 MA5、站上 MA20、站上 MA60、短均線優於月線、RSI 偏熱，追價風險升高
 - 近 7 日新聞：
-  - [6檔台股 ETF 逆勢收紅！00919息利雙收可期 最後買進日在「這天」](https://news.google.com/rss/articles/CBMiWkFVX3lxTFA2ZkhYbEltQ0dscGUwWklkQng2UHZBMUtzOUlrY2hlbXJ1MzU1c1N1eU9BREIxSV85S2lhSkVCY1A2Z2VSY0E2SGo0bzZ0N1YxMTVjLW9CdTU0d9IBX0FVX3lxTE9pUXdfWk9DRTR1WklLYWcySldaU1ZfcUJ6UHpXLXpBSDRidEhoenJPLW1XcnI4emZ5MlI2SFZnbGJTbWtCWXI4TkhxSEY5eFdZa3NaWFlaWFJDLXdoRm1v?oc=5)（經濟日報）
-  - [0056、00878、00919「高息三強」大PK！達人曝1檔報酬衝162% 「這檔」殖利率6.94%](https://news.google.com/rss/articles/CBMisgFBVV95cUxQd2dOa3dLYXI3WW9mU2xEdmN2bGt6SnNWOTBFZVJnQ01CWkdyZGxsbmVLVmNHbUtkanNEb3ZuTDViczFHMjVtcDEtemJYSzZCUzRIYk9taTl0M1dkSDdsQmY5TFFPTXJrWTQzZVdxeURnVFJ0U19uemh2WjNMVUI0SFpQVFhreHdwcFBlOVB3RTc3NnJoRWxvaUVIWHR6N2ZVZFZrN05lbTNDOVQ1MjdpYjN3?oc=5)（Yahoo股市）
-  - [00919連2日創新高衝31.42元！下週配息開獎 股民引頸期盼](https://news.google.com/rss/articles/CBMiWEFVX3lxTE1Rb1M3TGh4MWhaakU3VzZuWHJJSU1CSC1qZGNFcUJWRzJSODNYQm43NThWSTBEbVFuTzdGRmlSRUR0WDlwd0twdnRUUVd1UGhhVUdlSExkQW8?oc=5)（CMoney）
+  - [百萬國民高股息 ETF 00919成分股調整名單出爐 18進18出](https://news.google.com/rss/articles/CBMiWkFVX3lxTE51WTFZdlItVnpxY2hKZnZsdzF2Y29RbDJLVUthTzU4cTRMZG5WVlN2SDhpTlQ0MkJmR0tkMDRSeWhJLXF2Y0pyNGRqNHFHbkVkQzVteG5DRV84UdIBX0FVX3lxTE5TTFFDck8tdGY1Vm5PZTVrM2tpLW9YUXRLZThlWFlYc1FWcjhOY1ZGLTRkZGdTUXZtTkpTR2xyTVo4eFVWUDhYWjRqeTlDNlNGYU5uOGtBNzFzTmRQdTJ3?oc=5)（經濟日報）
+  - [00919 群益台灣精選高息- 台股ETF 發股息新一波聚焦八檔公告第一階段金額檔檔飆高- 股市爆料同學會](https://news.google.com/rss/articles/CBMiWEFVX3lxTE1tSkFabXNtLWdYSnJCY3dYTUp2QTRjSkFUQTRRYWhJUlM1X1hWVTYzRUVLX095QXAyR292TU9TYXVJeUdNN1k5Mll1Y3NlVEU5cVNYMEo2Mlk?oc=5)（CMoney）
+  - [137萬投資人注意！00919配息1.1元連3季創新高 年化配息率近14%](https://news.google.com/rss/articles/CBMiS0FVX3lxTE1mbGw3eVV6dWxsczVEWmZuWTh4bXU2Q0pOYzVWNEE3WWdnbEpCanpxdEF0YUpfVnRNUjBTMGNoWlFza0MwSjJxNUlwQQ?oc=5)（鉅亨網）
 ### 元大台灣價值高息（00940）｜高股息 ETF
-- 技術分數：97/100（偏多）
-- 收盤：12.67，日變動：0.16%
-- 均線：MA5 12.56 / MA20 12.42 / MA60 12.37
-- RSI14：64.84；MACD hist：0.03；量能比：0.82x
-- 目標觀察價：12.75；支撐觀察價：12.65
-- 目標依據：取近 20 日高點作為第一壓力/目標觀察價。
-- K 線：上影線壓力，短多排列；接近 20 日高檔，留意追價風險與突破量。
-- 基本面：ETF：EPS / PER / PBR 不適用；殖利率 資料源暫無
-- 訊號：站上 MA5、站上 MA20、站上 MA60、短均線優於月線、RSI 位於健康區間
-- 近 7 日新聞：
-  - [32萬股東注意！00940月配息調高至0.055元 創掛牌新高](https://news.google.com/rss/articles/CBMiS0FVX3lxTE5mN0puY3pTWjdOU0lHS2VPTU1GVVhEMXRnWVBqU0ZERnFMRmR5Z2lDazBqSlBSLVdTMzRWWHFLQTJnN1VpVGVtZ0daUQ?oc=5)（鉅亨網）
-  - [息收＋價差雙賺、年配率衝5.3% 00940成高股息亮點！除息日在這天](https://news.google.com/rss/articles/CBMiqgJBVV95cUxPbEEwZVBSb0g3Z1J6eFZXeUJsdGxoZ1dEMUZ3ZHlNWkFZbTIyR3pVZHBWNkJETVFOakZ6TFJyaXktQ0xOYUU3c0VJUWNNNWZkUEdEWnhiaGtLdVFRSFRqSm55amRHMkFSNGNJTFJJT3QyOEN0bEQ1elRUSEZTOXFKME5mZk1nblVkaGFON3BFc084S200UlVFT0RWVFZBb2RGMklZYnRnSUstMllMRG93WWd0Q3ltLUQxRkl6bFpINTUtd0RRbVV3Tk0xWWpYTmhPbGNEdmRyRFBYUllOMVctcUxEUEFjQzJWLWNiTGtnNjBwU3RtQndYajNkM1JoV3FKRFh1MVVTUm5HTElzOE1CS3ZTZU5QV2g3ZWZJNjNrUzlQQkI3V0dPVnl3?oc=5)（Yahoo股市）
-  - [9月配息ETF一表看！00939、00940、00406A率先登場，除息日、配息金額與熱門高股息ETF比較！](https://news.google.com/rss/articles/CBMizwNBVV95cUxOSUVNaDlmRnhGWTRNQXd3ZlNfdDFiNGlKcjhtNy1raE50SkI1MWRtVDlESklWaFN4UWw5Z3VXVFd2Ym1jYjFlQzNwNUszbFpFaEVFRjAxbzFVLUZlVmh1X1BmelJDUldJTW1jRENNWDF2MEFacEpCV0Q0ejdCTlU3VWV1MDlCeFVKRVRVZXh0Y19uLWFsX25GVzdzSWdpaHh6OWJWWkktUmNLUjJZeUZRX3p2aWctM2NHRjV3MFMxaF9WV1lEaGlzNmJRYWtOS3RkN0VhbU1OMEVZOVRCY2NhYnBEX1hpaHlUbkJ5TFFJdHQ2ZTRqdXBBVzZnN2RERHRpemdJbHZILU8zTnhhbmJPOGlZdlp1cGZqcUczRC1kRWQyOF93SV9pX2dlenB5dkJPUFJpNVdpMTQxX2UxcFV4R3pvdnd6WEhmTWsydnBJUFF5TFZZYUxGMW10aTl2U0xTUUhDc2J1TTdsd0FfQngzaklfV09VaE9CWFFaM2h6Z1JRX3U5b3NwWWNXYmNMcEU3ZjZzWE03VlpzNHRBTjZzQjV3R2pHbS13NGNvVFFra0c2NU83ckhaZldCTjlicjA0ckd5OWkxRHFYSjRNTXNv?oc=5)（sinotrade.com.tw）
-### 主動群益台灣強棒（00982A）｜主動式 ETF
-- 技術分數：81/100（偏多）
-- 收盤：22.35，日變動：0.72%
-- 均線：MA5 21.80 / MA20 22.15 / MA60 22.94
-- RSI14：49.58；MACD hist：0.02；量能比：0.76x
-- 目標觀察價：23.55；支撐觀察價：22.20
-- 目標依據：取近 20 日高點作為第一壓力/目標觀察價。
-- K 線：十字線，站上月線；位於 20 日區間中段，等方向表態。
-- 基本面：ETF：EPS / PER / PBR 不適用；殖利率 資料源暫無
-- 訊號：站上 MA5、站上 MA20、RSI 位於健康區間、MACD 柱狀體偏多
-- 近 7 日新聞：
-  - [00982A 主動群益台灣強棒- 算力即石油！AI 雲端隨需價飆8 倍：股市資金正流向哪裡？ - 股市爆料同學會](https://news.google.com/rss/articles/CBMiWEFVX3lxTE4ydUlPTy14YkVJZWNpcTl3aFRrQ3ZoVGNWMlFZNnZuRW5nRS1FZXNGUFhLYWlhU2pZamNrVnZqQmZyQUVFNmpaNGNBWlNNQ09SUHBReGRfb3U?oc=5)（CMoney）
-### 中纖（1718）｜化纖 / 紡織原料
-- 技術分數：81/100（偏多）
-- 收盤：10.70，日變動：0.00%
-- 均線：MA5 10.70 / MA20 10.37 / MA60 11.09
-- RSI14：64.16；MACD hist：0.08；量能比：0.82x
-- 目標觀察價：11.45；支撐觀察價：10.35
-- 目標依據：取近 20 日高點作為第一壓力/目標觀察價。
-- K 線：上影線壓力，站上月線；位於 20 日區間中段，等方向表態。
-- 基本面：EPS 0.29（2026-06-30）；TTM EPS 0.59；PER 18.14；PBR 0.60；殖利率 0.00%
-- 訊號：站上 MA20、短均線優於月線、RSI 位於健康區間、MACD 柱狀體偏多
-- 近 7 日新聞：未抓到明確新聞，今日先以技術面觀察。
-### 台積電（2330）｜晶圓代工 / AI 權值
-- 技術分數：97/100（偏多）
-- 收盤：2410.00，日變動：-0.21%
-- 均線：MA5 2402.00 / MA20 2389.50 / MA60 2383.75
-- RSI14：56.67；MACD hist：3.12；量能比：0.71x
-- 目標觀察價：2445.00；支撐觀察價：2390.00
-- 目標依據：取近 20 日高點作為第一壓力/目標觀察價。
-- K 線：長黑偏弱，短多排列；位於 20 日區間中段，等方向表態。
-- 基本面：EPS 27.25（2026-06-30）；TTM EPS 86.28；PER 27.99；PBR 9.74；殖利率 0.91%
-- 訊號：站上 MA5、站上 MA20、站上 MA60、短均線優於月線、RSI 位於健康區間
-- 近 7 日新聞：
-  - [【0826台股盤後】輝達財報押寶！台積電領軍台股狂飆663 點站上45,832 點！KD50黃金交叉啟動，投本比鎖碼華星光、一詮、富喬｜豐雲學堂2026 年 08 月](https://news.google.com/rss/articles/CBMi3AVBVV95cUxOUEJGVHpxMnRiREhpZDJpOWV0aTJWTG9ZRmhQSldCazJhZDlrWFhTUnZXX2U3dkhTVzdvVHpOWmhiOGxkSHhjVWc5dmYzekNSNmdXdUJMYlgxUU5TRmhfVGFIbFVPNmVkNkg4WHFoWVRaVXg3TG41X1kwZ1JodjZZY2hmLV9FSWpObzJkaTVXYUl5dnhodmtlY2t1QzEzUTc0aEd0ZndvOWM1dEhCcXRMQjV0X0NCSUtLbmJWTml3UmFzRzZxRjhtSVlmeXdHQ09iQXpMYlQyYnp2MTJBaWluMnp6a0pQWVduMm93c3pkQ0Y4WHlvMFNEeWs3eW1tMmhjdVA5LVNuaTBCcERvMHV3U2pJYlF2T0Vub3JpN0tJRXFybHZFbUJqMEVUbTdxWkdqUU04RGhLQ1hWUzk4T1lmRGZTRXJ3UFlwMTNHbldtcFRwQWRYaUNKQ1hmX3BydndSRlZYOHZSdElodHBuaVp4cnl3TlZBLU40WHE3ZjVwbkl1cTY1R3ZrUEtsajlYSzR2VjJWVWNhM1BMNFhIeVpfQjIyV0pHbFg1TVc2LUxRbHpVbVlwY0tqMVFJcjZ1X3RfNnFDRENDZ0tmRTFuaXZVOHVFRndoOHZseU9yMjFKUXBpR1BQNzRvX0ZWRmttTUd2c19qdUNveTFrLWItc2tlN2ZVMmVuTWJKMUlYaWFEdXFKRFYtdFk0ZjZtMzJRdXdCdnlUWTlScWtTS1QtemhvUmUyY2pYejVUZWpfR3VFY2E1NHhiR2pDeWdYenZjVTM5MTlBREVJOUtWdVhJZzNfWDhEbFp3anlTYUsyRnVYZm9vcldSZDJJM0tyY0FVelBYV0cwYVZFRUtQeXJqTHVodmcwUU1OMnBxUk1ieGhHd0pYcVd2cUprc1Q5VjNqNjluODVJbXd6ZmpWNGZ2bHZpcDJ6Y3MyanNJOXFEMGNua1dtRHBsZGxBUGt2ZVI?oc=5)（sinotrade.com.tw）
-  - [台股4萬6震盪！杜金龍看好拉回打第二隻腳：台積電（2330）先獲利了結](https://news.google.com/rss/articles/CBMiUkFVX3lxTFBIc1U5YVNGTkFsS2Y3dEFRa3pGbFJCeVRnZUJUS2pqRlZYTDBTS085QmpFc3RCSC1RYkljUUxYMDhjSENQeS01QVAzLWpyaVBzaWfSAVdBVV95cUxNZDdDYlFPSFhGZUxmVWtPcWY3VGotaDRSMUpNWVVmemlpM2xVSndtQ2Jucklrc0NfS3BNbHhHVGFpZWw0NzZ5cUFLSm9ERVFCMzAwcFRyWjA?oc=5)（UDN）
-  - [2330 台積電 - 台股買盤歸隊！多頭集氣台積、聯發科等電子權值股強勢表態- 股市爆料同學會](https://news.google.com/rss/articles/CBMiWEFVX3lxTFAtWnJSSkdsbDNqYVh4VmZCQWRQMHdQbzctUWlwdS1JUjZES3pLdmMwOEU2a0xJYk95dmRpMlVKSklzUE1SRE13bUptTnd0VW9PbW1kMTJfdmg?oc=5)（CMoney）
-### 統一證（2855）｜證券 / 金融
 - 技術分數：84/100（偏多）
-- 收盤：47.80，日變動：0.84%
-- 均線：MA5 46.94 / MA20 46.13 / MA60 48.16
-- RSI14：68.33；MACD hist：0.23；量能比：0.86x
-- 目標觀察價：48.50；支撐觀察價：47.40
-- 目標依據：取近 20 日高點作為第一壓力/目標觀察價。
-- K 線：一般 K 線，短多排列；接近 20 日高檔，留意追價風險與突破量。
-- 基本面：EPS 1.33（2025-12-31）；TTM EPS 3.00；PER 4.92；PBR 1.58；殖利率 4.45%
-- 訊號：站上 MA5、站上 MA20、短均線優於月線、MACD 柱狀體偏多
+- 收盤：12.93，日變動：1.17%
+- 均線：MA5 12.74 / MA20 12.52 / MA60 12.38
+- RSI14：76.60；MACD hist：0.04；量能比：1.18x
+- 目標觀察價：13.10；支撐觀察價：12.80
+- 目標依據：已在近期高檔，改用 ATR 波動推估下一段觀察價。
+- K 線：長紅偏強，短多排列；接近 20 日高檔，留意追價風險與突破量。
+- 基本面：ETF：EPS / PER / PBR 不適用；殖利率 資料源暫無
+- Agent 快讀：技術面 偏多｜基本面 資料不足｜消息面 有訊號
+  - 技術：站上 MA5、站上 MA20、站上 MA60、RSI 偏熱，避免追價
+  - 基本：ETF 需改看成分股、折溢價、配息與追蹤誤差；目前不納入估值分數。
+  - 消息：4 則｜Yahoo股市, sinotrade.com.tw, 旺得富理財網｜最新：9月配息ETF一表看！00939、00940、00406A率先登場，除息日、配息金額與熱門高股息ETF比較！
+- 訊號：站上 MA5、站上 MA20、站上 MA60、短均線優於月線、RSI 偏熱，追價風險升高
 - 近 7 日新聞：
-  - [統一證 代子公司統一證券投資顧問(股)公司公告向統一綜合證券(股)公司取得使用權資產](https://news.google.com/rss/articles/CBMiWEFVX3lxTE96V0Zaa25EQzVXc1BfS0kwRDlMOVRKOElXdDhtUkpEQURsTE92NFhwWldmd0lOeEthQS11V0haOHhnelRSRXROdm41VFkxdnlwczhCU1E0N3U?oc=5)（CMoney）
-  - [《金融股》統一證Q2獲利三級跳H1爆賺111億元締年度新猷- 上市櫃](https://news.google.com/rss/articles/CBMiakFVX3lxTFBMc0sydGNqWUJEd2Y5TnhpOW1hcDRsdWJEWmhOT1RNajFFS002Ulg2MkIyT2d4MXJiWVVRWWQ3bEhwNzloVng2RlFOWW02OXFsRGc3NTBSM2c5bkdCVEkxNmRseks3OGl6d2c?oc=5)（旺得富理財網）
-  - [【統一證 FY2026 Q2 法說會】上半年每股大賺6.96元 自營業務改寫單月獲利紀錄](https://news.google.com/rss/articles/CBMiZkFVX3lxTE9pajNjcnJQSE9SZEs2V21SVk1YcWxYQktGYkE1ZUxYMldDRlE2Smp6czNWRVdUNGJqOEdGcmIxajFKeTV2TDNHalhPcVNJa3U5YmdtN3djUVpjQlVNYmNYTzBfNGh2dw?oc=5)（BigGo 財經）
-### 凱基金（2883）｜金融控股
+  - [9月配息ETF一表看！00939、00940、00406A率先登場，除息日、配息金額與熱門高股息ETF比較！](https://news.google.com/rss/articles/CBMizwNBVV95cUxOSUVNaDlmRnhGWTRNQXd3ZlNfdDFiNGlKcjhtNy1raE50SkI1MWRtVDlESklWaFN4UWw5Z3VXVFd2Ym1jYjFlQzNwNUszbFpFaEVFRjAxbzFVLUZlVmh1X1BmelJDUldJTW1jRENNWDF2MEFacEpCV0Q0ejdCTlU3VWV1MDlCeFVKRVRVZXh0Y19uLWFsX25GVzdzSWdpaHh6OWJWWkktUmNLUjJZeUZRX3p2aWctM2NHRjV3MFMxaF9WV1lEaGlzNmJRYWtOS3RkN0VhbU1OMEVZOVRCY2NhYnBEX1hpaHlUbkJ5TFFJdHQ2ZTRqdXBBVzZnN2RERHRpemdJbHZILU8zTnhhbmJPOGlZdlp1cGZqcUczRC1kRWQyOF93SV9pX2dlenB5dkJPUFJpNVdpMTQxX2UxcFV4R3pvdnd6WEhmTWsydnBJUFF5TFZZYUxGMW10aTl2U0xTUUhDc2J1TTdsd0FfQngzaklfV09VaE9CWFFaM2h6Z1JRX3U5b3NwWWNXYmNMcEU3ZjZzWE03VlpzNHRBTjZzQjV3R2pHbS13NGNvVFFra0c2NU83ckhaZldCTjlicjA0ckd5OWkxRHFYSjRNTXNv?oc=5)（sinotrade.com.tw）
+  - [00940要衝13元、配息也創新高！32萬人還能抱？達人搖頭：存這3檔CP值更高](https://news.google.com/rss/articles/CBMikANBVV95cUxNRTR5V1FvNFp6clJMd3paWFJPQU81dFE3c0Q5NVpWWGEtZmxROHJXclZ3U1A4MzZZbjBxaG5PelhwdWR1dm5jSV9VNlBNSkVtYUJTMzgyd3AyMnJqNlIyOFktUUcwbnJzX1ZaTlMtVmN1WUQ1ZmlDS1lya014VlhYendxOHZMa3dDOW5OSTJHRHdwM2lEQWpFM0k2YXpmZmhkY2Y3UHpUTHBZSUpnM0tORUdmVmo0YTRnNzQzN2JfVlBOU1dUZVNxa3pjc1dnb1FxZmpGQXAyMHQ2VGFnaGtuOWFPVjE5bjhVbnVLVGY4U2pxakN6RFZVam4zVTRTT2k2SGlES0tEaXZ4MVVmeHF3eDJHQUdkQXRQVkpSNFgtVUVVSXhOSXJYR0xubDJyTTY0RnlsTlBZZXFyWHAtd1o1SWY2Mkt5c24yWHdzZFRqSGhobm9YeVhJZVF2QllOZ3docEtkRDg2RXFrTG1xbmtyNHVMMldjcFltVDVfejNQYzVaZDJrZmh3LTlXSjdvWnU4?oc=5)（Yahoo股市）
+  - [00940單月配息數字再現0.05元 年化配息率逾5%](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5uNVhHekpYS3hFaHdsQUY3QmdKa05rYVRwZHd4WUJIa3V4Ui0wODcxVGV4d242Y1lMaGdMU1RoRDVUb0ZMbmE2UGhjc3JxMHdBUXZWZ2g0X05wUdIBX0FVX3lxTE13dy10ODJacV9jRXZBR2VrcHVFMFVoTVNlTWozbUFzTTZIS0RrVGk0MzdIa0RGdE9wTmNqd3ZDdW1RMDY5UDRYUnRzbjc3M2xsbVlkd0FjbmRtNDV2Slk0?oc=5)（經濟日報）
+### 主動群益台灣強棒（00982A）｜主動式 ETF
 - 技術分數：97/100（偏多）
-- 收盤：32.15，日變動：-0.31%
-- 均線：MA5 31.73 / MA20 31.16 / MA60 29.93
-- RSI14：62.75；MACD hist：0.04；量能比：0.77x
-- 目標觀察價：33.10；支撐觀察價：31.15
-- 目標依據：取近 20 日高點作為第一壓力/目標觀察價。
-- K 線：長黑偏弱，短多排列；位於 20 日區間中段，等方向表態。
-- 基本面：EPS 0.65（2025-12-31）；TTM EPS 1.74；PER 18.12；PBR 1.61；殖利率 3.10%
-- 訊號：站上 MA5、站上 MA20、站上 MA60、短均線優於月線、RSI 位於健康區間
-- 近 7 日新聞：
-  - [凱基金(2883) 個股概覽 | 個股 - 股市](https://news.google.com/rss/articles/CBMiU0FVX3lxTE5razMwcGM0azNqYW5MRDVOWVRHSnI0ZlhJNnFDekNVcURPdXZURGMzQUlPQ2h4dHhTTjczdGl3RDlqYk5KbDJWQTdYdnJYWU9OMkZv?oc=5)（CMoney）
-  - [00919換股納入凱基金 股價昨日飆漲停、今盤中續飆逾9%](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBMYXlZNUdDb3Vhb1FQdGJ4bzYweWYwd2VhbmUtc2toaUpCYUpOeXd0UE4tWGVzSjlyd0tzb2hZNGlBdlV3Q3AyZm1JeGhkZzA2WEZjSzNwaUx0d9IBX0FVX3lxTE84Q01wNjJrWXNsRU9GVWFjRzQ2V2d3SXUxQW5kcllFYXpfN0IxQVFIUXM2RFM0UllqaGc4WGE1N2ZneXI2cUZ5eHlsUGpZdFZUUUtZb2RSMUQxN2o1RHdv?oc=5)（經濟日報）
-  - [熱門股》配息銀彈增 凱基金飆24年新高](https://news.google.com/rss/articles/CBMiWEFVX3lxTFBVdGo3OVJvNElUbEFXeWRZbEZBSkM4WE83YnpjWFlNUkJIWEFHNlpoeFNnUDg1MFB2UTR4LUR2VWtpTXJGVXlhaXpxVTVScDZYTVVTeDJ1TzE?oc=5)（自由時報）
-### 群創（3481）｜面板 / 顯示器
-- 技術分數：71/100（偏多）
-- 收盤：46.25，日變動：-0.32%
-- 均線：MA5 46.19 / MA20 48.06 / MA60 54.17
-- RSI14：46.35；MACD hist：0.02；量能比：0.51x
-- 目標觀察價：48.05；支撐觀察價：43.80
-- 目標依據：目前在 MA20 下方，目標先看能否站回月線。
-- K 線：長黑偏弱，月線下方；位於 20 日區間中段，等方向表態。
-- 基本面：EPS 0.57（2026-06-30）；TTM EPS 0.78；PER 59.49；PBR 1.65；殖利率 2.16%
-- 訊號：站上 MA5、RSI 位於健康區間、MACD 柱狀體偏多、量能偏低，突破可信度不足
-- 近 7 日新聞：
-  - [【零股排行榜】 盤中零股成交量TOP 20｜0050 元大台灣50、00878 國泰永續高股息、2327 國巨*、2408 南亞科、3481 群創](https://news.google.com/rss/articles/CBMirARBVV95cUxOWVUwQmFkczFZRnNhaUxZSWIwckM3bERfTWV5Q1k2R2tXVmhhaHk2QkVDMkphRUw5NlZCWFQ5ZXU3cGxoQ1hSVi1jQUduZ1pzNy1Wd2I0aTVOUDItc0pEbTJUSmhlMmh2UDVkbWRjcmU3SUpnakZHbWl2Q1NLa21Xa0I0MlRsQ1hTZlM5dFRKSTktNjlvZFpiMDVuLWNPbk5adUtJbnR3ZzRyTjBNWkphakRGVDV5SnRINVJRZzJlbHhGRmd3SW1HNjIxeFFPVXYyVzZZZFcyRXdyaGN2QjZFQmpUUmlSYnBETVJULTdJNnpnR050dzhfSV95NUxtX2gwSHZhaTlQZjJrNDdKQ3JIaGpVTkNtSGhzSzZXS0RyMVFwcG9rODlRYWFMNHBhUWx1ZUN2Yl9qRExsSll0cDljUVFPM2ZVaC15cjdQRWF1NDdGaHQ1YTZ6YmhzZnhLOUNlRDRTQjYtUG9udGx3dWktWG1lQVJrQWJUNW5kZmtNLU5Ockp1UXhlZGdaTUp0TzN5cVNHM3pZQm1FTnY0cmNrRWVLQnlaSmk1dG9oSHJBaTFRUlVLUThVaUh6SWV5UFZpb3hvVXpnRW4wWjl2NEQwc2JJNlh0MHVCMzBrckJrejRET2hmSHRRQ1RPQ0RNMkxDU3lBbVRSVkR6QTFKdmNBcC15amlPZHJHSXRObldFX0JaT1RiMm41Zzd0VXc4b2I4YkNqYWVqd1dlalR5?oc=5)（sinotrade.com.tw）
-  - [群創股價連3跌 高檔套牢股民問「70樓怎麼辦」 網友兩派論戰](https://news.google.com/rss/articles/CBMiX0FVX3lxTE01elBrZ1c5SlRVOWE5aElSNFBLR29tRUVadG9sNjdlbXRkWEtXTTA5RTFMVWVwd2NMMGxiLV9sQ01MQ2lHMTFyR1FqMFdUNUY2bm5tVzRWbmtCSmNsVndz?oc=5)（自由財經）
-  - [群創光電 | 3481.TW 股價走勢與即時報價](https://news.google.com/rss/articles/CBMiVEFVX3lxTFBJSUJWaVg0Z0VlNmtudTBZUm9ZaGlRd2w2UEh5SV9ETGdHYkEyRUpKblhfY19xQWJMRWhWVXN1MmlmZlVJYzZLSFNuc1lKYUYxV0RuRQ?oc=5)（BigGo 財經）
-### 日月光投控（3711）｜封測 / 半導體
-- 技術分數：81/100（偏多）
-- 收盤：605.00，日變動：2.20%
-- 均線：MA5 593.40 / MA20 600.20 / MA60 614.68
-- RSI14：58.20；MACD hist：0.34；量能比：0.60x
-- 目標觀察價：643.00；支撐觀察價：600.00
-- 目標依據：取近 20 日高點作為第一壓力/目標觀察價。
-- K 線：一般 K 線，站上月線；位於 20 日區間中段，等方向表態。
-- 基本面：EPS 4.80（2026-06-30）；TTM EPS 13.92；PER 42.84；PBR 6.69；殖利率 1.11%
-- 訊號：站上 MA5、站上 MA20、RSI 位於健康區間、MACD 柱狀體偏多
-- 近 7 日新聞：
-  - [日月光投控法說／Q2 EPS衝上4.80元、資本支出全年上調至105億美元｜股市話題｜豐雲學堂2026 年 08 月](https://news.google.com/rss/articles/CBMiygNBVV95cUxOb3ZWN0hJZ2M2OEZQajFkbFQxdndES0QzMVZwQmd5OHI0Nl9rS2VfeVhWU3EtS1VPcWhFZ2NqYnZId000bUJDQWZsOU05NlZyZG05WjRsYklidzFMcXBsYkxvR01IbklBMWF4RFI2ZDNib1N4UU1EVDFLcnQzQjhUbV9CTHlMdjNseWVLd3FVZTRuNjlhQmdqVjBhZUNTMEJwd0wtX2cybXB4bkNWdmdOQmNzZGJWNHplRmFWSkI2WXBxa2dmZDczUW9sTkYycUJwcjZzbGV1REkwcENVUm13MExjUVotR1pObWFNbXYxRjJOT2Rfc3M4SkZxMGRHelFsOWFqWUh2aHY4T2RqM1I1N2cybm9HMjlzZ0Z5TlpGNjVCTnhFZWR6STQ2Q0M2b3h0VmhjRExqSjI2Wm9GY0RTU1otd0NnSG9uOUhGbllCckoyUURVNHd0VE5ldjRhWUpGakVjZ2c4bzE3XzlJTEdFYlQ0V1Y1blRhWkRla2NhWVV1R3hfWGw5enNIWGstMk5WYlNreTVQdzlsbzhjSkZ1Um1xSVBnX3FfNVR6LWZqcWJkcWtDWmVVY1JncUdmamhSZFRwRFgzY0VhZw?oc=5)（sinotrade.com.tw）
-  - [3711 日月光投控- 台股8/25（二）～8/28（五）走勢預測- 股市爆料同學會](https://news.google.com/rss/articles/CBMiWEFVX3lxTE42bmlUNUZvM3RpQ1BrNVQ1THcyeVZScnV2QUtHZ2pxek5EV0dSWHNIMTlDblBESkotLVpZRWZwQkg1eDIzbzlFc2lzWllkZjhSeWVRdjFlWlE?oc=5)（CMoney）
-  - [日月光投資控股股份有限公司 | 3711.TW 股價走勢與即時報價](https://news.google.com/rss/articles/CBMiVEFVX3lxTE5rcDdudXVRTEdqQl90eU9UVlFTREdoMml5WmYwZTJ4NHRNTGJiRi1IcG8zZmQ3SXphZTd2cUhLNGt4MDg4Q1ZqVHU1ZTNYa3l6YWV0RQ?oc=5)（BigGo 財經）
-### 磐亞（4707）｜化工
-- 技術分數：89/100（偏多）
-- 收盤：32.20，日變動：-7.07%
-- 均線：MA5 34.14 / MA20 31.60 / MA60 29.72
-- RSI14：50.86；MACD hist：0.16；量能比：0.78x
-- 目標觀察價：36.15；支撐觀察價：31.60
-- 目標依據：取近 20 日高點作為第一壓力/目標觀察價。
-- K 線：長黑偏弱，站上月線；位於 20 日區間中段，等方向表態。
-- 基本面：EPS 0.43（2026-06-30）；TTM EPS 1.28；PER 26.86；PBR 1.69；殖利率 1.44%
-- 訊號：站上 MA20、站上 MA60、短均線優於月線、RSI 位於健康區間、MACD 柱狀體偏多
-- 近 7 日新聞：
-  - [【10:28 即時新聞】磐亞(4707)股價勁揚逾6%至35.1元，受電子與AI特殊化學品題材點火＋均線多頭與主力成本支撐偏多（盤中新聞，與收盤表現可能不同）](https://news.google.com/rss/articles/CBMijgFBVV95cUxQYXJDdDlraEtkWFg3bGpWanJqeWVqakRPS3BRbTQ5MUNpRW1raC1XRlR4aE9xSlRMMkZYZ29DMEVNa29ZZ1hZY0xsRzFvMmZMQThKOWVYYTZkOXpId2JqWmVRY3lPYkZtekdqbWZUd3dGRHRCMm9MVFR3ZEJJdllpMTNPcTB4YlBCVWlfSEFB?oc=5)（CMoney投資網誌）
-### 聯策（6658）｜電子零組件 / 題材股
-- 技術分數：89/100（偏多）
-- 收盤：171.00，日變動：6.88%
-- 均線：MA5 161.10 / MA20 157.85 / MA60 175.18
-- RSI14：62.00；MACD hist：1.82；量能比：1.43x
-- 目標觀察價：177.00；支撐觀察價：160.00
+- 收盤：23.34，日變動：4.24%
+- 均線：MA5 22.56 / MA20 22.41 / MA60 22.88
+- RSI14：54.92；MACD hist：0.13；量能比：1.99x
+- 目標觀察價：23.55；支撐觀察價：22.40
 - 目標依據：取近 20 日高點作為第一壓力/目標觀察價。
 - K 線：長紅偏強，短多排列；接近 20 日高檔，留意追價風險與突破量。
-- 基本面：EPS 1.42（2026-06-30）；TTM EPS 4.13；PER 38.83；PBR 4.08；殖利率 0.75%
+- 基本面：ETF：EPS / PER / PBR 不適用；殖利率 資料源暫無
+- Agent 快讀：技術面 偏多｜基本面 資料不足｜消息面 有訊號
+  - 技術：站上 MA5、站上 MA20、站上 MA60、量能放大 1.99x
+  - 基本：ETF 需改看成分股、折溢價、配息與追蹤誤差；目前不納入估值分數。
+  - 消息：3 則｜CMoney, FTNN 新聞網, 今周刊｜最新：8/28 00982A 台半堆到 6484 張
+- 訊號：站上 MA5、站上 MA20、站上 MA60、短均線優於月線、RSI 位於健康區間
+- 近 7 日新聞：
+  - [8/28 00982A 台半堆到 6484 張](https://news.google.com/rss/articles/CBMiWEFVX3lxTE40M0FodF9PMzRJeFpFQVBkaTNkNjNjZzE0dlpCR1RwNlFLQVBjeUJiNnBtSTBfM182d1A2SExoNUc3bUZnZm5FRkFxZHgzall5cGx3UFZPVmM?oc=5)（CMoney）
+  - [00982A、00992A、00400A、00900…大立光可能變萬金股！12檔含「光」ETF出列，達人一理由：我會看它](https://news.google.com/rss/articles/CBMigAFBVV95cUxNdFBya1VSZndfa2NRWVhmY1hPMDZleDd4UmZ1YVJtYVpmVktjRm8xd2xGMmV6bk95eVo5YXZYVDdia1k4cFVGUjl6dWtoSDE1VUxYYmhJdGN4Z0tIUUlmQ2lkQzUtLUdsNUVUMERKM1lWblQ5OTkwN1pwU0VDTEUtQg?oc=5)（今周刊）
+  - [擁緯穎、聯發科、穩懋齊亮燈！00982A拚11個交易日填息「盤中暴漲4.82%」 18萬股民這天領錢](https://news.google.com/rss/articles/CBMiS0FVX3lxTFBBZHZRZXdHbWhnX2RaVEtidmNKbV9wcEt1R21VUzZnd08xeDN4QmNNSG84clcyYXdEc3J0NEZaRmtMNGdtMVkwbzBWaw?oc=5)（FTNN 新聞網）
+### 中纖（1718）｜化纖 / 紡織原料
+- 技術分數：89/100（偏多）
+- 收盤：11.15，日變動：2.29%
+- 均線：MA5 10.84 / MA20 10.60 / MA60 11.17
+- RSI14：48.65；MACD hist：0.10；量能比：2.11x
+- 目標觀察價：11.95；支撐觀察價：10.90
+- 目標依據：取近 20 日高點作為第一壓力/目標觀察價。
+- K 線：一般 K 線，短多排列；位於 20 日區間中段，等方向表態。
+- 基本面：EPS 0.29（2026-06-30）；TTM EPS 0.59；PER 18.47；PBR 0.61；殖利率 0.00%
+- Agent 快讀：技術面 偏多｜基本面 可參考｜消息面 有訊號
+  - 技術：站上 MA5、站上 MA20、短均線優於月線、量能放大 2.11x
+  - 基本：最近一季 EPS 為正；TTM EPS 為正；PER 位於可觀察區間
+  - 消息：1 則｜CMoney｜最新：1718 中纖 - 今日10.8買進等待後市，期待😊 - 股市爆料同學會
 - 訊號：站上 MA5、站上 MA20、短均線優於月線、RSI 位於健康區間、MACD 柱狀體偏多
+- 近 7 日新聞：
+  - [1718 中纖 - 今日10.8買進等待後市，期待😊 - 股市爆料同學會](https://news.google.com/rss/articles/CBMiWEFVX3lxTE1SOTcxdzZZZm56LURGNDZQSFRISWU1Qm53MWMtLWUtdjJnN0YtVXNIRnlxM1daNHJVT1BLUElnTS03enN1MWl1Si1lTE9IeGwxOXFZWUNlVEc?oc=5)（CMoney）
+### 台積電（2330）｜晶圓代工 / AI 權值
+- 技術分數：97/100（偏多）
+- 收盤：2440.00，日變動：1.46%
+- 均線：MA5 2418.00 / MA20 2397.00 / MA60 2385.25
+- RSI14：53.97；MACD hist：4.48；量能比：0.90x
+- 目標觀察價：2535.00；支撐觀察價：2405.00
+- 目標依據：已接近短壓，改看近 60 日高點壓力。
+- K 線：長紅偏強，短多排列；接近 20 日高檔，留意追價風險與突破量。
+- 基本面：EPS 27.25（2026-06-30）；TTM EPS 86.28；PER 27.88；PBR 9.70；殖利率 0.91%
+- Agent 快讀：技術面 偏多｜基本面 可參考｜消息面 高熱度
+  - 技術：站上 MA5、站上 MA20、站上 MA60
+  - 基本：最近一季 EPS 為正；TTM EPS 為正；PER 位於可觀察區間
+  - 消息：5 則｜CMoney, Yahoo股市, cmnews.com.tw｜最新：【零股排行榜】盤中零股成交量TOP 20｜0050 元大台灣50、1303 南亞、2330 台積電、2609 陽明、00981A 主動統一台股增長(0826)｜豐雲學堂2026 年 08 月
+- 訊號：站上 MA5、站上 MA20、站上 MA60、短均線優於月線、RSI 位於健康區間
+- 近 7 日新聞：
+  - [【零股排行榜】盤中零股成交量TOP 20｜0050 元大台灣50、1303 南亞、2330 台積電、2609 陽明、00981A 主動統一台股增長(0826)｜豐雲學堂2026 年 08 月](https://news.google.com/rss/articles/CBMitwRBVV95cUxOdDVnUDU3THRNN0JqWC1mU21DNXIwRnBobHR5dkRJTlQ5SlU0MFVvR01VN1pwdkhrbFFNRkZUbHhrYlFDRmd6dlZlS3RGaUtOSDFGakt2WUdJWUp0V0tQZU1Yd042RWtLZmtqZGNzVjk0eDlrZldHLW1TOVhWU0x1WXNtb2xnX1dYWTR6NGdONW9Scy1WTVhyakduQWJuVFFpUzBma0dKM2ZOMWFXR25nejN2bHVDODNzOTVzNTQ5NGJ1ZnRHd1dLS0lqbWh0ckhUa1NLUkxmeEpTcXUxSktPdjgwWHBpbWJLV1JNXzFfUkNqYUZ3ZzJXZnZvcW9HWlRPeVZ2dzhmdE1wbFJMMjdkWF9OUW52VFhOT0Z1bkxoRGRTb01JbzZxVlV2UFVaSHpYbmFEZmZubl9KMW5ja3ZZVkFaUGVmNk9xbUxtampPemNBcERKTldVRUZWWHdnOE83bTBNbnlRMFZBOFFFMEtzWllzVlc4MTJhR1d5MVhIS1M0YW50TEhOY3RVRVh3Q0pZOHE2aWxrWHltaWtfeFVQb1ZTX2ZoVzBraEVNdXlEWmpnRzdBTXRHVVRURE1OMUx6WGQ1ekNuTmNoaXVoRlZpN3JoSVNfWklvU096bmpqbDZzc3ctM0NmT0tkbUhqMG9zUnpoa21Od2V3WHBkY2FzeEMyUGJZcUN4YUJpUjhRQUtlMTBoN3M1aGpSNnMwNjlZdkM2SU1zVkhkSEJlLXlFMFM0SEVwVDA?oc=5)（sinotrade.com.tw）
+  - [2330 台積電 - 09/01 台股盤前：輝達砸35億美元認購聯發科，費半逆勢漲0.57%，台股AI能抗總經利空？ - 股市爆料同學會](https://news.google.com/rss/articles/CBMiWEFVX3lxTE9ieXVRcHNMSGp5LWhXcHBsOWQtUTdnYUFwc3I3MWUxOFA5UTdmakRsa1AtTlJ3NUNRcFUzV1Zwd0VCZDBNeWxVQ1RrOXBmZktScmYtdmVEYkM?oc=5)（CMoney）
+  - [買0050不如台積電（2330）？楚狂人公開復盤：別小看其餘四成持股威力| 存股族愛ETF | 股市](https://news.google.com/rss/articles/CBMiU0FVX3lxTFB1ZDlIbDU1VzVnLWh1SU90Unh6STNFWExNYWp5MlByaWw3NXItWThVeW1DU2tNYjRQVklZalUyY3NJbUJMMVEzNldQcG9HM2VZdTh3?oc=5)（udn）
+### 統一證（2855）｜證券 / 金融
+- 技術分數：92/100（偏多）
+- 收盤：50.00，日變動：0.91%
+- 均線：MA5 48.66 / MA20 46.92 / MA60 47.81
+- RSI14：65.24；MACD hist：0.43；量能比：1.41x
+- 目標觀察價：50.30；支撐觀察價：49.55
+- 目標依據：取近 20 日高點作為第一壓力/目標觀察價。
+- K 線：一般 K 線，短多排列；接近 20 日高檔，留意追價風險與突破量。
+- 基本面：EPS 1.33（2025-12-31）；TTM EPS 3.00；PER 5.15；PBR 1.65；殖利率 4.26%
+- Agent 快讀：技術面 偏多｜基本面 可參考｜消息面 有訊號
+  - 技術：站上 MA5、站上 MA20、站上 MA60
+  - 基本：最近一季 EPS 為正；TTM EPS 為正；PER 相對低，需查是否循環或一次性因素
+  - 消息：3 則｜BigGo 財經, 今周刊, 旺得富理財網｜最新：《金融股》統一證Q2獲利三級跳H1爆賺111億元締年度新猷- 上市櫃
+- 訊號：站上 MA5、站上 MA20、站上 MA60、短均線優於月線、MACD 柱狀體偏多
+- 近 7 日新聞：
+  - [《金融股》統一證Q2獲利三級跳H1爆賺111億元締年度新猷- 上市櫃](https://news.google.com/rss/articles/CBMiakFVX3lxTFBMc0sydGNqWUJEd2Y5TnhpOW1hcDRsdWJEWmhOT1RNajFFS002Ulg2MkIyT2d4MXJiWVVRWWQ3bEhwNzloVng2RlFOWW02OXFsRGc3NTBSM2c5bkdCVEkxNmRseks3OGl6d2c?oc=5)（旺得富理財網）
+  - [【統一證 FY2026 Q2 法說會】上半年每股大賺6.96元 自營業務改寫單月獲利紀錄](https://news.google.com/rss/articles/CBMiZkFVX3lxTE9pajNjcnJQSE9SZEs2V21SVk1YcWxYQktGYkE1ZUxYMldDRlE2Smp6czNWRVdUNGJqOEdGcmIxajFKeTV2TDNHalhPcVNJa3U5YmdtN3djUVpjQlVNYmNYTzBfNGh2dw?oc=5)（BigGo 財經）
+  - [存股助理第842期｜統一2026年半年報評析—統一證券扮演獲利成長大功臣｜股池更新](https://news.google.com/rss/articles/CBMikgFBVV95cUxNV0JZX3ZWb3NBdk9jTUZZYy1BbHRtOG5ab3pmbzJtUHVSd2FjVWFKcC0zdHZ5aVR4WGY0dEY4cm1Qc0UwM1prNk5iOUVQV2hyNWg5MUdfcmVZYzFZdUgwNldJMjVRclBLcjJWTkU5SDFKQU1IQjhpWm9uRFhKQW1xWHV2VmpTZy1VZ0lSYnExM0VjZw?oc=5)（今周刊）
+### 凱基金（2883）｜金融控股
+- 技術分數：92/100（偏多）
+- 收盤：34.95，日變動：3.25%
+- 均線：MA5 33.19 / MA20 31.64 / MA60 30.27
+- RSI14：74.83；MACD hist：0.29；量能比：1.26x
+- 目標觀察價：36.05；支撐觀察價：33.85
+- 目標依據：已在近期高檔，改用 ATR 波動推估下一段觀察價。
+- K 線：長紅偏強，短多排列；接近 20 日高檔，留意追價風險與突破量。
+- 基本面：EPS 0.65（2025-12-31）；TTM EPS 1.74；PER 11.84；PBR 1.34；殖利率 2.95%
+- Agent 快讀：技術面 偏多｜基本面 可參考｜消息面 高熱度
+  - 技術：站上 MA5、站上 MA20、站上 MA60
+  - 基本：最近一季 EPS 為正；TTM EPS 為正；PER 相對低，需查是否循環或一次性因素
+  - 消息：5 則｜CMoney, Yahoo股市, news.cnyes.com｜最新：凱基金(2883) 個股概覽 | 個股 - 股市
+- 訊號：站上 MA5、站上 MA20、站上 MA60、短均線優於月線、MACD 柱狀體偏多
+- 近 7 日新聞：
+  - [凱基金(2883) 個股概覽 | 個股 - 股市](https://news.google.com/rss/articles/CBMiU0FVX3lxTE5razMwcGM0azNqYW5MRDVOWVRHSnI0ZlhJNnFDekNVcURPdXZURGMzQUlPQ2h4dHhTTjczdGl3RDlqYk5KbDJWQTdYdnJYWU9OMkZv?oc=5)（CMoney）
+  - [凱基金法說》72萬股東關心股利！總座：證券銀行上繳7成 人壽成長樂觀「不會掉隊」](https://news.google.com/rss/articles/CBMikARBVV95cUxQeGJlM0dGU1c5SFhxRDVxczNYVkxmdF9WdGl3aWNkM0d4eWVrWm1sN3N0WHRfeWJwbldSX2wwR2FZSzNfV1lFUWdUSXd3aXVDVU1lNk1UejdTRmR4Um9TNTVpZHp4QkZMbmpyQUZfbjRRVzd4TVlaMnlyMHNPakVvSWFOd01MQVNIeWY5VDZFQjJzUFVDWGMwa2gyQUpLbG44ai1JWUxQYWhROUU1UlZ1eHBnYUVFU0o5UEprYk91cmRLUkpUWEE0Z3FabGRGRzRfdzZ0REY5aTdOVGZEQng3MWphWXlobVg0aVdMODZHWEVaRU1YQ0VnSm5OZ182YnFTazlWb1E2RUZic0RtYVhWaXM1Q29lVHRaOEFUdWJ4dExlVnplUTBMVXVHTzVJNGdDU2pZZHEwamRDS2xDZzBNN1NnTE1UTHh5MjZQSTNYOExrWFgzQzJ5RW00MDNNX0dXM0pjSkZETzBMRlltZ0RYN2Z1YU40RThSaVBmUlFqNmxmRjI0cUl6Y3piVVpjeUtnUF8yTjc0Y29GTGNmLUV1ZUNLMmNTdGNwMUNXN0hJeVhNQnVyX21WNzBFbFB0ZWNWTTdxMmppRlN3V0V2dkVoNFp2dE9DU2RPa0VvWVlLVWRVSUVsVHdySjNaTmZkYnRyVHQ4UUM5S2hxUmJGM3lrZGE1QjAza0gwcHhsRUxSOUk?oc=5)（Yahoo股市）
+  - [00919換股納入凱基金 股價昨日飆漲停、今盤中續飆逾9%](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBMYXlZNUdDb3Vhb1FQdGJ4bzYweWYwd2VhbmUtc2toaUpCYUpOeXd0UE4tWGVzSjlyd0tzb2hZNGlBdlV3Q3AyZm1JeGhkZzA2WEZjSzNwaUx0d9IBX0FVX3lxTE84Q01wNjJrWXNsRU9GVWFjRzQ2V2d3SXUxQW5kcllFYXpfN0IxQVFIUXM2RFM0UllqaGc4WGE1N2ZneXI2cUZ5eHlsUGpZdFZUUUtZb2RSMUQxN2o1RHdv?oc=5)（經濟日報）
+### 群創（3481）｜面板 / 顯示器
+- 技術分數：81/100（偏多）
+- 收盤：49.30，日變動：-1.10%
+- 均線：MA5 48.08 / MA20 48.49 / MA60 53.82
+- RSI14：46.26；MACD hist：0.46；量能比：0.62x
+- 目標觀察價：52.30；支撐觀察價：48.50
+- 目標依據：取近 20 日高點作為第一壓力/目標觀察價。
+- K 線：長黑偏弱，站上月線；位於 20 日區間中段，等方向表態。
+- 基本面：EPS 0.57（2026-06-30）；TTM EPS 0.78；PER 63.91；PBR 1.77；殖利率 2.01%
+- Agent 快讀：技術面 偏多｜基本面 可參考｜消息面 有訊號
+  - 技術：站上 MA5、站上 MA20、RSI 位於健康區間
+  - 基本：最近一季 EPS 為正；TTM EPS 為正；PER 偏高，估值需保守
+  - 消息：4 則｜BigGo 財經, CMoney, 工商時報｜最新：3481 群創 - 大漲老師終於群創了 https://youtube.com/... - 股市爆料同學會
+- 訊號：站上 MA5、站上 MA20、RSI 位於健康區間、MACD 柱狀體偏多
+- 近 7 日新聞：
+  - [3481 群創 - 大漲老師終於群創了 https://youtube.com/... - 股市爆料同學會](https://news.google.com/rss/articles/CBMiWEFVX3lxTE1TdDZvTk9laGU1ZTJmUi1ZcVZkdWxKNm1feEpNV1VvbFlsMnB1VUxrdnptTEFuNm05UnVpaGFiMTV6QnpwMzMyTzFRM3FHWU10cURlbWs2S2o?oc=5)（CMoney）
+  - [群創光電 | 3481.TW 股價走勢與即時報價](https://news.google.com/rss/articles/CBMiVEFVX3lxTFBJSUJWaVg0Z0VlNmtudTBZUm9ZaGlRd2w2UEh5SV9ETGdHYkEyRUpKblhfY19xQWJMRWhWVXN1MmlmZlVJYzZLSFNuc1lKYUYxV0RuRQ?oc=5)（BigGo 財經）
+  - [買群創身心受創？跌破50元後何時能解套？杜金龍看轉機、再點名3檔績優股- 證券](https://news.google.com/rss/articles/CBMiX0FVX3lxTE92R01SWEk5bGhITFYyM2RfaUpXaWZOT2VRaERLc3M0WTI0OE9tamNQdDQ2RHVOb2xtaXozTU1UZlZrREtjYmVPYUJ6OVhPZ3c0Y0VwYU9qdlg2OFJFWUhB?oc=5)（工商時報）
+### 日月光投控（3711）｜封測 / 半導體
+- 技術分數：81/100（偏多）
+- 收盤：610.00，日變動：4.45%
+- 均線：MA5 602.40 / MA20 603.45 / MA60 615.13
+- RSI14：46.26；MACD hist：1.39；量能比：1.29x
+- 目標觀察價：643.00；支撐觀察價：603.00
+- 目標依據：取近 20 日高點作為第一壓力/目標觀察價。
+- K 線：長紅偏強，站上月線；位於 20 日區間中段，等方向表態。
+- 基本面：EPS 4.80（2026-06-30）；TTM EPS 13.92；PER 42.26；PBR 6.60；殖利率 1.13%
+- Agent 快讀：技術面 偏多｜基本面 可參考｜消息面 有訊號
+  - 技術：站上 MA5、站上 MA20、RSI 位於健康區間
+  - 基本：最近一季 EPS 為正；TTM EPS 為正；PER 偏高，估值需保守
+  - 消息：4 則｜CMoney, cmnews.com.tw, sinotrade.com.tw｜最新：【零股排行榜】盤中零股排行榜TOP 20｜0050 元大台灣50、2327 國巨*、00981A 主動統一台股增長、3711 日月光投控、1303 南亞 (0831)｜豐雲學堂2026 年 08 月
+- 訊號：站上 MA5、站上 MA20、RSI 位於健康區間、MACD 柱狀體偏多
+- 近 7 日新聞：
+  - [【零股排行榜】盤中零股排行榜TOP 20｜0050 元大台灣50、2327 國巨*、00981A 主動統一台股增長、3711 日月光投控、1303 南亞 (0831)｜豐雲學堂2026 年 08 月](https://news.google.com/rss/articles/CBMi0ARBVV95cUxOeTBSRkRJb0xuOVQ4ZzBIeFRjNS1qRGZXREFEOE5oTzUtdnZVVXZrZFZPOVhSbVUyQ2I5czFkTlFkMzk5ckVQdzhPalc4bHlINndnWk9uS3BmelM4Qnd0M0lYV2h4WHZNd3pNeVpJTHppbkN4Y3hWMndqSlZseG5ldmhsRVU3eDBoUTFfN0RjVW9Da0JIQmh0SGVXeG9ycDBNX1VWVDF4OUJpSkd6T1FLNjR2M1FSTUZ6U2dkLWd5NWxNVV9HTHQ4Xzgxd2haaUduSjNVajVodXhYVjgxYXFWTGZOZmE3V1VQcDVpbENjMGJkVGVORXFxNDczdGhRQUZNXzh0NTI4eWk5T244aHlqTG5IRUJmQk9hOWxOTGVpQWJBWWpvdjl6ZWtKY3BWTXBLdFdsNGdPOF9Gb0t4anpZajhscXNNTVgyclY1T2lqSGxFaXJwcXpMbDVweHR5LTMyWDhQemdJT0tnQUtaLXRnbUg4Y1RQWDNQX2w2ZkVtRE53QUc0LXo1eS1jdlNpdUhvbW9RSF9SU1NLMTl0WG5kS0oyVng3SlQ5bHR3TUZjZFJybGc2dHI0ZUpsOG9jcTBONkV5aHdLQWZROGVpbEItWjl6cnBiVkpQTVZuSURfTWszeXpCQ3ljVXp4aHA0OG0zTThIbC13dmV5RXdzM3ZhY2ZFRi1fcUIzaW0zZnVFRGFlR01WVkRzMnBhekpSZ0N2NVZJVGhEUlpXWFE5NEktNEQ3WUE1M2tTcnZ3QjYzRGVlZTRYVVc2b2NmbWRqV2Ns?oc=5)（sinotrade.com.tw）
+  - [3711 日月光投控- 日月光跟力成FOPLP的比較，力成起步較早，感覺技術是不是... - 股市爆料同學會](https://news.google.com/rss/articles/CBMiWEFVX3lxTE53QlZmWmUzcWFNTTVBb1psTGNvMVE1NXlGWk4xSWpVZG1YTGdJVVdfT2lBaHFSdXRMSnFaaXFmZVdnWFhYdVZSVkI3Z09FeFNqWVBwdDdiYVE?oc=5)（CMoney）
+  - [【即時新聞】日月光投控(3711)獲先進封裝追單，這「6檔概念股」多空大洗牌！](https://news.google.com/rss/articles/CBMikAFBVV95cUxNdU1aU2ZEajlobTRobUc1NHNCWDJjSmd2ZkJtUW5wYmVoMkZTdnY2cmhHSHFaMVpUYi12ckhDY1VjQmNvbTJPMElMTVo1aVBhbVllVS1RVUtNYW1RalVNUTZDLXBIR2o0R3E3Y3I3WFNaZzBNSW5GVm1fM3Jrbk5yQTFxLUY4YzlCSEZNWFFsQlQ?oc=5)（cmnews.com.tw）
+### 磐亞（4707）｜化工
+- 技術分數：63/100（中性觀察）
+- 收盤：32.25，日變動：-3.44%
+- 均線：MA5 33.01 / MA20 32.67 / MA60 30.35
+- RSI14：47.46；MACD hist：-0.08；量能比：0.70x
+- 目標觀察價：32.65；支撐觀察價：28.80
+- 目標依據：目前在 MA20 下方，目標先看能否站回月線。
+- K 線：長黑偏弱，月線下方；位於 20 日區間中段，等方向表態。
+- 基本面：EPS 0.43（2026-06-30）；TTM EPS 1.28；PER 25.89；PBR 1.63；殖利率 1.50%
+- Agent 快讀：技術面 中性觀察｜基本面 可參考｜消息面 有訊號
+  - 技術：站上 MA60、短均線優於月線、RSI 位於健康區間
+  - 基本：最近一季 EPS 為正；TTM EPS 為正；PER 位於可觀察區間
+  - 消息：1 則｜cmnews.com.tw｜最新：【12:36 即時新聞】磐亞(4707)股價小幅走強漲3.38%，AI 應用材料題材發酵＋中長期均線多頭結構支撐（盤中新聞，與收盤表現可能不同）（盤中新聞，與收盤表現可能不同）
+- 訊號：站上 MA60、短均線優於月線、RSI 位於健康區間、MACD 柱狀體偏弱
+- 近 7 日新聞：
+  - [【12:36 即時新聞】磐亞(4707)股價小幅走強漲3.38%，AI 應用材料題材發酵＋中長期均線多頭結構支撐（盤中新聞，與收盤表現可能不同）](https://news.google.com/rss/articles/CBMijgFBVV95cUxQRFJuSHdzR3pUWUlqWWV0dkJ6cjBFT0gwYjVwWVV3TGhZTHp3T2dXeS1NN0dOU19yUEdXVWR2RThJd0dFNlJOT1FTUG5oNDlCZEk1UkQyWjZJQWJVZ242aUtJeDAtYnl5VkxDaGR1R2M0UUl5bkZrSU50ODRyWEg5ZlFXU2hnY0JsYThDdnZR?oc=5)（cmnews.com.tw）
+### 聯策（6658）｜電子零組件 / 題材股
+- 技術分數：97/100（偏多）
+- 收盤：188.50，日變動：9.91%
+- 均線：MA5 171.50 / MA20 162.65 / MA60 174.06
+- RSI14：62.72；MACD hist：3.29；量能比：3.01x
+- 目標觀察價：260.00；支撐觀察價：171.50
+- 目標依據：已接近短壓，改看近 60 日高點壓力。
+- K 線：長紅偏強，短多排列；接近 20 日高檔，留意追價風險與突破量。
+- 基本面：EPS 1.42（2026-06-30）；TTM EPS 4.13；PER 41.63；PBR 4.38；殖利率 0.70%
+- Agent 快讀：技術面 偏多｜基本面 可參考｜消息面 有訊號
+  - 技術：站上 MA5、站上 MA20、站上 MA60、量能放大 3.01x
+  - 基本：最近一季 EPS 為正；TTM EPS 為正；PER 偏高，估值需保守
+  - 消息：4 則｜CMoney投資網誌, sinotrade.com.tw, ww2.money-link.com.tw｜最新：家登創投參與 AOI 廠聯策私募 累計持股2,137張比率達5.57%｜新聞快訊｜豐雲學堂
+- 訊號：站上 MA5、站上 MA20、站上 MA60、短均線優於月線、RSI 位於健康區間
 - 近 7 日新聞：
   - [家登創投參與 AOI 廠聯策私募 累計持股2,137張比率達5.57%｜新聞快訊｜豐雲學堂](https://news.google.com/rss/articles/CBMidkFVX3lxTFBwZHV4TWpYUm1kYW1RX0dIbVpYdkRwREdFRzVDM0F1NkZOUkdMdGdvZExpOXdob0dOYmFkelZwWEx5Y2p6WVZMQ1M1a3dzS1RfUnhHbTdwY1liSTlWamh4RGdKUUVPS0NacUZRa2ZLVFdyanlRbGc?oc=5)（sinotrade.com.tw）
   - [【即時新聞】家登創投最新宣布參與聯策私募案，持股比例達5.57%](https://news.google.com/rss/articles/CBMikAFBVV95cUxQYjh4VmpaeVBidEhucm9TelhKTGNLRTlTcDY2dVVsUlRzYnVPWGlnV05aQ1IwUDdQOTZzYnRETlFCckttblotbEp4YnZFRUo4TmVKX3ZWSlpKQllZWTNxenB5NHQxdnh6alpDVVRxNmFmS0dPX2NBTTdpWTdONnE2UDVXSHdWMDNNdFl4UWlEMkE?oc=5)（CMoney投資網誌）
